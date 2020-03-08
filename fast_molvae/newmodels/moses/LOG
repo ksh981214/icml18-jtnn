@@ -1,0 +1,56 @@
+/home/shinhwan/.local/lib/python2.7/site-packages/torch/nn/functional.py:52: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+Namespace(anneal_iter=40000, anneal_rate=0.9, batch_size=32, beta=0.0, clip_norm=50.0, depthG=3, depthT=20, epoch=20, hidden_size=450, kl_anneal_iter=2000, latent_size=56, load_epoch=0, lr=0.001, max_beta=1.0, print_iter=50, save_dir='./newmodels/moses', save_iter=5000, step_beta=0.002, train='moses-processed', vocab='../data/moses/vocab.txt', warmup=40000)
+JTNNVAE(
+  (jtnn): JTNNEncoder(
+    (embedding): Embedding(531, 450)
+    (outputNN): Sequential(
+      (0): Linear(in_features=900, out_features=450, bias=True)
+      (1): ReLU()
+    )
+    (GRU): GraphGRU(
+      (W_z): Linear(in_features=900, out_features=450, bias=True)
+      (W_r): Linear(in_features=450, out_features=450, bias=False)
+      (U_r): Linear(in_features=450, out_features=450, bias=True)
+      (W_h): Linear(in_features=900, out_features=450, bias=True)
+    )
+  )
+  (decoder): JTNNDecoder(
+    (embedding): Embedding(531, 450)
+    (W_z): Linear(in_features=900, out_features=450, bias=True)
+    (U_r): Linear(in_features=450, out_features=450, bias=False)
+    (W_r): Linear(in_features=450, out_features=450, bias=True)
+    (W_h): Linear(in_features=900, out_features=450, bias=True)
+    (W): Linear(in_features=478, out_features=450, bias=True)
+    (U): Linear(in_features=478, out_features=450, bias=True)
+    (U_i): Linear(in_features=900, out_features=450, bias=True)
+    (W_o): Linear(in_features=450, out_features=531, bias=True)
+    (U_o): Linear(in_features=450, out_features=1, bias=True)
+    (pred_loss): CrossEntropyLoss()
+    (stop_loss): BCEWithLogitsLoss()
+  )
+  (jtmpn): JTMPN(
+    (W_i): Linear(in_features=40, out_features=450, bias=False)
+    (W_h): Linear(in_features=450, out_features=450, bias=False)
+    (W_o): Linear(in_features=485, out_features=450, bias=True)
+  )
+  (mpn): MPN(
+    (W_i): Linear(in_features=50, out_features=450, bias=False)
+    (W_h): Linear(in_features=450, out_features=450, bias=False)
+    (W_o): Linear(in_features=489, out_features=450, bias=True)
+  )
+  (A_assm): Linear(in_features=28, out_features=450, bias=False)
+  (assm_loss): CrossEntropyLoss()
+  (T_mean): Linear(in_features=450, out_features=28, bias=True)
+  (T_var): Linear(in_features=450, out_features=28, bias=True)
+  (G_mean): Linear(in_features=450, out_features=28, bias=True)
+  (G_var): Linear(in_features=450, out_features=28, bias=True)
+)
+Model #Params: 5340K
+...Finish Making Plot Folder...
+EPOCH: 1 | TIME: 2020-03-07 14:10:18.898195 
+/home/shinhwan/.local/lib/python2.7/site-packages/torch/nn/functional.py:1006: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+/home/shinhwan/.local/lib/python2.7/site-packages/torch/nn/functional.py:995: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+[0][50] Beta: 0.000, KL: 164.48, Word: 26.44, Topo: 82.49, Assm: 54.26, PNorm: 102.94, GNorm: 34.76

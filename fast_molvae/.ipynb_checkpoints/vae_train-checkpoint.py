@@ -64,7 +64,7 @@ parser.add_argument('--load_epoch', type=int, default=0)
 
 parser.add_argument('--hidden_size', type=int, default=450)
 parser.add_argument('--batch_size', type=int, default=32)
-parser.add_argument('--latent_size', type=int, default=56) #h_T, h_G = 28, 28
+parser.add_argument('--latent_size', type=int, default=56)
 parser.add_argument('--depthT', type=int, default=20)
 parser.add_argument('--depthG', type=int, default=3)
 
