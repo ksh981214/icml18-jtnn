@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*- 
-from tqdm import tqdm
+from tqdm import tqdm #for Debugging
 
 
 import rdkit
@@ -136,7 +136,8 @@ if __name__ == "__main__":
     lg.setLevel(rdkit.RDLogger.CRITICAL)
 
     cset = set()
-    for i,line in tqdm(enumerate(sys.stdin)):
+    #for i,line in tqdm(enumerate(sys.stdin)):
+    for i,line in enumerate(sys.stdin):
         smiles = line.split()[0]
         mol = MolTree(smiles)
         for c in mol.nodes:

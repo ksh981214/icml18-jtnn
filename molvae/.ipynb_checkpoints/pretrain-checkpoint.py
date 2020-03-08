@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*- 
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -11,6 +13,32 @@ from collections import deque
 
 from jtnn import *
 import rdkit
+
+from datetime import datetime
+import matplotlib
+matplotlib.use('Agg')
+from matplotlib import pyplot as plt
+import os # for save plot
+
+def save_KL_plt(save_dir, epoch, x, kl):
+    plt.plot(x, kl)
+    plt.xlabel('Iteration')
+    plt.ylabel('KL divergence')
+    plt.legend(['KL divergence'])
+    plt.grid()
+    plt.savefig('./pretrain_plot/{}/KL/epoch_{}.png'.format(str(save_dir),str(epoch)))
+    plt.close()
+def save_Acc_plt(save_dir, epoch, x, word, topo, assm, steo):
+    plt.plot(x, word)
+    plt.plot(x, topo)
+    plt.plot(x, assm)
+    plt.plot(x, steo)
+    plt.xlabel('Iteration')
+    plt.ylabel('Acc')
+    plt.legend(['Word acc','Topo acc','Assm acc', 'Steo acc'])
+    plt.grid()
+    plt.savefig('./pretrain_plot/{}/Acc/epoch_{}.png'.format(str(save_dir),str(epoch)))
+    plt.close()
 
 lg = rdkit.RDLogger.logger() 
 lg.setLevel(rdkit.RDLogger.CRITICAL)
@@ -53,12 +81,35 @@ dataset = MoleculeDataset(opts.train_path)
 MAX_EPOCH = 3
 PRINT_ITER = 20
 
+#print(type(opts))
+d=datetime.now()
+now = str(d.year)+'_'+str(d.month)+'_'+str(d.day)+'_'+str(d.hour)+'_'+str(d.minute)
+folder_name = opts.train_path.split('/')[2] + '_' +now#../data/zinc/train.txt --> zinc
+#folder_name = str(datetime.now())
+os.makedirs('./pretrain_plot/'+folder_name+'/KL')        #KL
+os.makedirs('./pretrain_plot/'+folder_name+'/Acc')       #Word, Topo, Assm
+print("...Finish Making Plot Folder...")
+#Plot
+x_plot=[]
+kl_plot=[]
+word_plot=[]
+topo_plot=[]
+assm_plot=[]
+pnorm_plot=[]
+gnorm_plot=[]
+steo_plot=[]
+
+
 for epoch in xrange(MAX_EPOCH):
+    start = datetime.now()
+    print("EPOCH: %d | TIME: %s " % (epoch+1, str(start)))
+    
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=4, collate_fn=lambda x:x, drop_last=True)
 
     word_acc,topo_acc,assm_acc,steo_acc = 0,0,0,0
 
     for it, batch in enumerate(dataloader):
+        #print(it)
         for mol_tree in batch:
             for node in mol_tree.nodes:
                 if node.label not in node.cands:
@@ -67,6 +118,16 @@ for epoch in xrange(MAX_EPOCH):
 
         model.zero_grad()
         loss, kl_div, wacc, tacc, sacc, dacc = model(batch, beta=0)
+        '''
+            KL_div: prior distribution p(z)와 Q(z|X,Y)와의 KL div
+            Word: Label Prediction acc
+            Topo: Topological Prediction acc
+            Assm: 조립할 때, 정답과 똑같이 했는가? acc
+            dacc(steo): 
+            Streo chemical관련, 같은 2D 구조를 가져도 3D 구조로 바꿨을 경우 다른 분자가 나올 수 있으므로 이에 대한 Loss를 따로 둔다. 모델에서는 이 옵션을 쓸 수도 안쓸수도 있음. 
+            molecule generation과 따로 분리하여 streo chemical configuration을 다루는 것이 효율적이라고 본문에 언급. 
+            논문 [Supplementary Material]에 언급
+        '''
         loss.backward()
         optimizer.step()
 
@@ -81,9 +142,31 @@ for epoch in xrange(MAX_EPOCH):
             assm_acc = assm_acc / PRINT_ITER * 100
             steo_acc = steo_acc / PRINT_ITER * 100
 
-            print "KL: %.1f, Word: %.2f, Topo: %.2f, Assm: %.2f, Steo: %.2f" % (kl_div, word_acc, topo_acc, assm_acc, steo_acc)
+            print "[%d][%d] KL: %.1f, Word: %.2f, Topo: %.2f, Assm: %.2f, Steo: %.2f" % (epoch, it+1, kl_div, word_acc, topo_acc, assm_acc, steo_acc)
+            
+            x_plot.append(it)
+            kl_plot.append(kl_div)
+            word_plot.append(word_acc)
+            topo_plot.append(topo_acc)
+            assm_plot.append(assm_acc)
+            steo_plot.append(steo_acc)
+            
             word_acc,topo_acc,assm_acc,steo_acc = 0,0,0,0
             sys.stdout.flush()
+        
+#         if (it + 1) / PRINT_ITER == 3:
+#             break
+
+    #Plot per 1 epoch
+    print "Cosume Time per Epoch %s" % (str(datetime.now()-start))
+    save_KL_plt(folder_name, epoch, x_plot, kl_plot)
+    save_Acc_plt(folder_name, epoch, x_plot, word_plot, topo_plot, assm_plot, steo_plot)
+    x_plot=[]
+    kl_plot=[]
+    word_plot=[]
+    topo_plot=[]
+    assm_plot=[]
+    steo_plot=[]
 
     scheduler.step()
     print "learning rate: %.6f" % scheduler.get_lr()[0]

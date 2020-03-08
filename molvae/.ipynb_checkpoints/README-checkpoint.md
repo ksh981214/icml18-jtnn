@@ -14,51 +14,49 @@ python ../jtnn/mol_tree.py < ../data/zinc/all.txt
 ```
 This gives you the vocabulary of cluster labels over the dataset `all.txt`.
 
-![deriving vocab resulg img](deriving_vocabulary_result.png)
+![deriving vocab resulg img](./result_img/deriving_vocabulary_result.png)
 
 ## Training
 We trained VAE model in two phases:
-1. We train our model for three epochs without KL regularization term (So we are essentially training an autoencoder).
+1. We train our model for three epochs **without KL regularization term** (So we are essentially training an autoencoder).
 Pretrain our model as follows (with hidden state dimension=450, latent code dimension=56, graph message passing depth=3):
 ```
 mkdir pre_model/
-CUDA_VISIBLE_DEVICES=0 python pretrain.py --train ../data/zinc/train.txt --vocab ../data/zinc/vocab.txt \
---hidden 450 --depth 3 --latent 56 --batch 40 \
---save_dir pre_model/
+nohup python pretrain.py --train ../data/zinc/train.txt --vocab ../data/zinc/vocab.txt --hidden 450 --depth 3 --latent 56 --batch 40 --save_dir pre_model/ > ./pre_model/LOG.out &
 ```
 PyTorch by default uses all GPUs, setting flag `CUDA_VISIBLE_DEVICES=0` forces PyTorch to use the first GPU (1 for second GPU and so on).
 
 The final model is saved at pre_model/model.2
 
-2. Train out model with KL regularization, with constant regularization weight $beta$. 
+### Error in Pre_training
+![error in pretrain_1](./error_img/pretrain_err_1.png)
+- jtnn_vae.py 166 lines 수정
+
+2. Train out model **with KL regularization**, with constant regularization weight $beta$. 
 We found setting beta > 0.01 greatly damages reconstruction accuracy.
 ```
-mkdir vae_model/
-CUDA_VISIBLE_DEVICES=0 python vaetrain.py --train ../data/zinc/train.txt --vocab ../data/zinc/vocab.txt \
---hidden 450 --depth 3 --latent 56 --batch 40 --lr 0.0007 --beta 0.005 \
---model pre_model/model.2 --save_dir vae_model/
+mkdir new_models/
+nohup python vaetrain.py --train ../data/zinc/train.txt --vocab ../data/zinc/vocab.txt --hidden 450 --depth 3 --latent 56 --batch 40 --lr 0.0007 --beta 0.005 --model pre_model/model.2 --save_dir new_models/ > ./new_models/LOG.out &
 ```
 
 ## Testing
 train된 모델로부터 새로운 분자들을 뽑아보고 싶을 때
 ```
-python sample.py --nsample 100 --vocab ../data/zinc/vocab.txt --hidden 450 --depth 3 --latent 56 --model MPNVAE-h450-L56-d3-beta0.005/model.4
-
 python sample.py --nsample 100 --vocab ../data/zinc/vocab.txt --hidden 450 --depth 3 --latent 56 --model MPNVAE-h450-L56-d3-beta0.005/model.iter-4
 ```
 This script prints each line the SMILES string of each molecule. `prior_mols.txt` contains these SMILES strings.
 
-![test1_result](test1_result.png)
+![test1_result](./result_img/test1_result.png)
 
 For molecule reconstruction, run  
 ```
-python reconstruct.py --test ../data/zinc/test.txt --vocab ../data/zinc/vocab.txt \
---hidden 450 --depth 3 --latent 56 \
---model MPNVAE-h450-L56-d3-beta0.005/model.4
+python reconstruct.py --test ../data/zinc/test.txt --vocab ../data/zinc/vocab.txt --hidden 450 --depth 3 --latent 56 --model MPNVAE-h450-L56-d3-beta0.005/model.iter-4
 ```
-Replace `test.txt` with `valid.txt` to test the validation accuracy (for hyperparameter tuning).
+hyper parameter tuning을 위해 test.txt 대신 valid.txt를 사용해서 실행이 가능하다.
 
-![test2_result](test2_result.png)
+![test2_result](./result_img/test2_result.png)
+
+이런 식으로 계속 나온다. 어느 정도 0.76에 수렴. 수치는 reconstruction의 정확도를 말한다.
 
 ## MOSES Benchmark Results
 We also trained our model over MOSES benchmark dataset. The trained model is saved in `moses-h450L56d3beta0.5/`. To generate samples from our model, run
