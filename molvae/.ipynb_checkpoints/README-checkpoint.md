@@ -16,6 +16,8 @@ This gives you the vocabulary of cluster labels over the dataset `all.txt`.
 
 ![deriving vocab resulg img](./result_img/deriving_vocabulary_result.png)
 
+- 초당 200iter
+
 ## Training
 We trained VAE model in two phases:
 1. We train our model for three epochs **without KL regularization term** (So we are essentially training an autoencoder).
