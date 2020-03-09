@@ -32,6 +32,8 @@ The final model is saved at pre_model/model.2
 
 ![training_result1](./result_img/molvae_training_result1.png)
 
+- 전체 LOG는 [/pre_model/LOG.out](https://github.com/ksh981214/icml18-jtnn/tree/master/molvae/pre_model/LOG.out)에서 확인
+
 - 메모리 약 11-12기가 차지
 
 ### Error in Pre_training

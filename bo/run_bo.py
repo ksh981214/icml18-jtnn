@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*- 
+
 import pickle
 import gzip
 from sparse_gp import SparseGP
@@ -79,6 +81,7 @@ logP_values_normalized = (np.array(logP_values) - np.mean(logP_values)) / np.std
 cycle_scores_normalized = (np.array(cycle_scores) - np.mean(cycle_scores)) / np.std(cycle_scores)
 
 from datetime import datetime
+start = datetime.now()
 
 iteration = 0
 while iteration < 5:
@@ -87,7 +90,13 @@ while iteration < 5:
     np.random.seed(iteration * random_seed)
     M = 500
     sgp = SparseGP(X_train, 0 * X_train, y_train, M)
-    sgp.train_via_ADAM(X_train, 0 * X_train, y_train, X_test, X_test * 0, y_test, minibatch_size = 10 * M, max_iterations = 100, learning_rate = 0.001)
+    sgp.train_via_ADAM(X_train, 0 * X_train, y_train, X_test, X_test * 0, y_test, minibatch_size = 10 * M, max_iterations = 50, learning_rate = 0.001)
+    '''
+        max_iterations ==> epoch수
+    '''
+    
+    print("Finish Training SGP")
+    print("Consume Time: {}".format(datetime.now()-start))
 
     pred, uncert = sgp.predict(X_test, 0 * X_test)
     error = np.sqrt(np.mean((pred - y_test)**2))

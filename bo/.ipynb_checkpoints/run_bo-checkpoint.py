@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*- 
+
 import pickle
 import gzip
 from sparse_gp import SparseGP
@@ -88,6 +90,9 @@ while iteration < 5:
     M = 500
     sgp = SparseGP(X_train, 0 * X_train, y_train, M)
     sgp.train_via_ADAM(X_train, 0 * X_train, y_train, X_test, X_test * 0, y_test, minibatch_size = 10 * M, max_iterations = 100, learning_rate = 0.001)
+    '''
+        
+    '''
 
     pred, uncert = sgp.predict(X_test, 0 * X_test)
     error = np.sqrt(np.mean((pred - y_test)**2))
