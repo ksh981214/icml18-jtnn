@@ -30,6 +30,10 @@ PyTorch by default uses all GPUs, setting flag `CUDA_VISIBLE_DEVICES=0` forces P
 
 The final model is saved at pre_model/model.2
 
+![training_result1](./result_img/molvae_training_result1.png)
+
+- 메모리 약 11-12기가 차지
+
 ### Error in Pre_training
 ![error in pretrain_1](./error_img/pretrain_err_1.png)
 - jtnn_vae.py 166 lines 수정
@@ -58,7 +62,7 @@ hyper parameter tuning을 위해 test.txt 대신 valid.txt를 사용해서 실�
 
 ![test2_result](./result_img/test2_result.png)
 
-이런 식으로 계속 나온다. 어느 정도 0.76에 수렴. 수치는 reconstruction의 정확도를 말한다.
+이런 식으로 계속 나온다. 어느 정도 0.76에 수렴(실제 논문의 result table에도 약 76.7%로 나와있음). 수치는 reconstruction의 정확도를 말한다.
 
 ## MOSES Benchmark Results
 We also trained our model over MOSES benchmark dataset. The trained model is saved in `moses-h450L56d3beta0.5/`. To generate samples from our model, run

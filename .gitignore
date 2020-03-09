@@ -1,3 +1,6 @@
 *.pyc
 processed/
 fast_molvae/moses-processed/
+
+bo/old_result/
+bo/*.txt
