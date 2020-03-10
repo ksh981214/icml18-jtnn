@@ -49,6 +49,10 @@ python setup.py install
 sgp.train_via_ADAM(X_train, 0 * X_train, y_train, X_test, X_test * 0, y_test, minibatch_size = 10 * M, max_iterations = 50, learning_rate = 0.001)
 ```
 
+- 학습된 SGP의 Log Likelihood와 Root Mean Squared Error
+- 학습의 iteration 수를 100 --> 50으로 수정해주고 실험해서 기존 성능보다 약간 못미치는 것 같다.
+- 기준 LL = -1.658 +- 0.023
+- 기준 RMSE = 1.290 +- 0.026
 - iteration당 약 55분이 걸린다.
 
 ### Error
@@ -66,5 +70,6 @@ python print_result.py
 
 ![print_result_img](./result_img/print_result_img.png)
 
-- print_result.py 결과의 일부분
+- print_result.py 결과의 일부분, 내림차순으로 정렬.
 - 전체 결과는 [print_result.out](https://github.com/ksh981214/icml18-jtnn/blob/master/bo/print_result.out) 참조
+- 이도 iteration 수를 수정했기때문에, 논문(5.30, 4.93, 4.49)보다 살짝 못미친 (4.34, 4.13, 3.95)의 결과를 보임.
