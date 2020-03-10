@@ -1,173 +1,4009 @@
+/home/shinhwan/.local/lib/python2.7/site-packages/torch/nn/functional.py:52: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
 Found New SMILES: 800
+/home/shinhwan/icml18/icml18-jtnn/jtnn/jtnn_dec.py:232: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  pred_score = nn.Softmax()(self.W_o(pred_hidden) * 20)
+0
 Improvement:1.76954031214 | Similarity: 0.280701754386
 New y(m): -0.735505362313 | Old y(m): -2.50504567445
 New SMILES: COc1cc(O)cc2c1C=CC2 | Old: COc1cc2c(cc1OC)CC([NH3+])C2
 
+1
 Improvement:3.54199896723 | Similarity: 0.274193548387
 New y(m): -2.39528002295 | Old y(m): -5.93727899018
 New SMILES: CC1CCN(C(=O)C(N)=O)CC1 | Old: C[C@@H]1CC[C@@H](C(N)=O)CN1C(=O)c1nnn[n-]1
 
+2
 Improvement:3.18391349327 | Similarity: 0.30487804878
 New y(m): -4.47774578349 | Old y(m): -7.66165927676
 New SMILES: CC[NH+]1C[C@@H](CNCc2ccc(S(N)(=O)=O)cc2)C[C@H]1C | Old: CC[NH+]1CC[C@@H](CNCc2ccc([O-])c[nH+]2)C1
 
+3
 Improvement:1.34389028926 | Similarity: 0.230769230769
 New y(m): -1.10968912817 | Old y(m): -2.45357941743
 New SMILES: FC(F)C(Br)Br | Old: OC[C@@H](Br)C(F)(F)Br
 
+4
 Improvement:1.96323155711 | Similarity: 0.237288135593
 New y(m): -0.550995684748 | Old y(m): -2.51422724186
 New SMILES: CNC(=O)/C(=C(\C)C(=O)Nc1ccc2c(c1)OC[C@@](C)(C#N)O2)c1ccccc1 | Old: CNC(=O)/C(C#N)=C(/[O-])C1=NN(c2cc(C)ccc2C)C(=O)CC1
 
+5
 Improvement:0.18318384233 | Similarity: 0.376811594203
 New y(m): -2.53674426396 | Old y(m): -2.71992810629
 New SMILES: C[NH+](C)CCSC1CC(C)(C)C(C#N)C(C)(C)C1 | Old: C[NH+](C)CCS[C@@H]1C[C@H](C(C)(C)C)CC[C@@H]1C#N
 
+6
 Improvement:-0.692996237995 | Similarity: 0.223776223776
 New y(m): -5.32480193442 | Old y(m): -4.63180569642
 New SMILES: COc1ccc(C(=O)N(C)c2nc(N3CCOCC3)cc(N3CC[NH2+][C@H]([NH3+])C3)n2)cc1 | Old: CN(c1ncnc(N2CCN(c3cccc[nH+]3)CC2)c1[N+](=O)[O-])C1CC[NH+](C)CC1
 
+7
 Improvement:4.68364803338 | Similarity: 0.219858156028
 New y(m): -0.511023274854 | Old y(m): -5.19467130823
 New SMILES: COc1cc(C(=O)N2C[C@@H](NCc3ccc4c(c3)CCC4)CC2=O)cc(OC)c1[N+](=O)[O-] | Old: COc1cc(C[NH+]2CC[C@@H]([NH+]3CCCC3)C2)ccc1OCC(=O)N1CCCC1
 
+8
 Improvement:-0.00920776040646 | Similarity: 0.494949494949
 New y(m): -5.27296439258 | Old y(m): -5.26375663217
 New SMILES: COCCN1C[C@@]23CC[C@@](C(=O)N(C)Cc4cnccn4)(C=C2C1=O)O3 | Old: COCCN1C[C@@]23C=C[C@@H](O2)[C@H](C(=O)N(C)Cc2cnccn2)[C@H]3C1=O
 
+9
 Improvement:1.27234036244 | Similarity: 0.232558139535
 New y(m): -1.66692618012 | Old y(m): -2.93926654255
 New SMILES: COc1ccc(C(=O)N2C(=O)[C@@H](N)S/C2=C\C(=O)NCc2ccc3c(c2)OCO3)cc1 | Old: COc1ccc(/C=C2\SC(=O)N(CC(=O)NCC(=O)[O-])C2=O)cc1OC
 
+10
 Improvement:0.904803752885 | Similarity: 0.370967741935
 New y(m): -3.25758653937 | Old y(m): -4.16239029226
 New SMILES: COCC[NH+]1CCC2(CCCCC2)CC1 | Old: COCC[NH+]1CC[C@H]2CCCC[C@@H]2C1
 
+11
 Improvement:5.81350342424 | Similarity: 0.203883495146
 New y(m): -0.335950066006 | Old y(m): -6.14945349024
 New SMILES: CCCOc1ccc2nc(N(C[C@H]3CCOC3)[C@H]3CCCS3(=O)=O)sc2c1 | Old: CCC[NH+](C1CCC([NH3+])CC1)[C@H]1CCOC1
 
+12
 Improvement:6.59822473448 | Similarity: 0.210084033613
 New y(m): -0.433152751084 | Old y(m): -7.03137748556
 New SMILES: CC(C)CNC(=O)c1ccc([N+](=O)[O-])c(S(=O)(=O)NCC2(N3CCOCC3)CCCCC2)c1 | Old: CC(C)CNC(=O)[C@H](C)[NH+]1CCCN(CC[NH3+])CC1
 
+13
 Improvement:-1.11838471563 | Similarity: 0.225806451613
 New y(m): -6.49796257595 | Old y(m): -5.37957786032
 New SMILES: C[C@H](C#N)N(CC(N)=O)[C@]1(C)CC[C@H](N2CC[NH+](C)CC2)C1 | Old: CN(CC[C@@H]1CCC[C@]1(N)C#N)CC[NH+]1CCCC1
 
+14
 Improvement:2.96454135042 | Similarity: 0.233644859813
 New y(m): -2.12069915957 | Old y(m): -5.08524050999
 New SMILES: O=C1Nc2ccccc2[C@H]1COc1cc(CO)cc([NH+]2CCCCC2)c1 | Old: OC[C@H]1C[NH+](Cc2ccccc2)CCC12OCCO2
 
+15
 Improvement:-1.88491354963 | Similarity: 0.209302325581
 New y(m): -5.31989328763 | Old y(m): -3.434979738
 New SMILES: CC[C@@H](O)[C@@H](C)[NH3+] | Old: CC[C@@H](O)[C@@]1(C[NH3+])CCC[C@H](C)C1
 
+16
 Improvement:-1.90497248659 | Similarity: 0.3
 New y(m): -5.02700861813 | Old y(m): -3.12203613154
 New SMILES: OCc1cn2c(n1)NC[C@H]2O | Old: OCc1cn2c(n1)OC(Cl)=CC2
 
+17
 Improvement:1.53313994323 | Similarity: 0.347826086957
 New y(m): -2.96813157199 | Old y(m): -4.50127151522
 New SMILES: CCn1cc(N2CCCC[C@@H](NS(C)(=O)=O)C2)ncc1=O | Old: CCn1ccnc(N2CCCC[C@@H](N3CC[NH+](C)CC3)C2)c1=O
 
+18
 Improvement:-0.250573018314 | Similarity: 0.205607476636
 New y(m): -4.77314966015 | Old y(m): -4.52257664184
 New SMILES: CC1=CC([C@H]2CCC[NH+]([C@H]3CC[C@@H](C)C3)C2)=CN(C(=O)COC(C)(O)O)C1 | Old: COCCOC[C@H]1CC[NH+](C2C[C@@H](C)O[C@H](C)C2)C1
 
+19
 Improvement:-0.715470729226 | Similarity: 0.274509803922
 New y(m): -6.09098400723 | Old y(m): -5.375513278
 New SMILES: NC(=O)C1CC[NH2+]CC1 | Old: NC(=O)C1(N2CCCC2)CC[NH2+]CC1
 
+20
 Improvement:1.14858542329 | Similarity: 0.206349206349
 New y(m): -4.11578305351 | Old y(m): -5.26436847681
 New SMILES: CC[C@@H](C)N1CC(=O)O[C@@]2(C(=O)OC3CCC3)C=CC=C[C@H]2C12NC([N@@+]13CC[C@H]4CC[C@H](CC1)[C@H]3C4)N2 | Old: CC[C@H](C)[NH+]1[C@@H](C(=O)[O-])CC[C@H]2CCCC[C@H]21
 
+21
 Improvement:-0.0737413360022 | Similarity: 0.264957264957
 New y(m): -3.90942962513 | Old y(m): -3.83568828912
 New SMILES: C=CCN1C(=O)[C@H](C(=O)NCc2cccc(N3CCC[C@H]([NH+](C)CC)C3)c2)N=C1C | Old: C=CCn1c(C)nn(C[NH+]2CCC[C@H](C(=O)NCCC)C2)c1=S
 
+22
 Improvement:3.24224569668 | Similarity: 0.345070422535
 New y(m): -0.531768341083 | Old y(m): -3.77401403776
 New SMILES: O=C(NCc1ccc([C@@H]2CCNC2)cc1)C(=O)N[C@H]1CCC[C@H](C(=O)Nc2ccccc2)C1 | Old: O=C(N[C@@H](C(=O)[O-])c1ccccc1)C1CCC(CNC(=O)[C@@H]2Cc3ccccc3C[NH2+]2)CC1
 
+23
 Improvement:0.0 | Similarity: 1.0
 New y(m): -5.90301181698 | Old y(m): -5.90301181698
 New SMILES: COC[C@H](O)C[NH+]1CCC(C)(C)C1 | Old: COC[C@H](O)C[NH+]1CCC(C)(C)C1
 
+24
 Improvement:3.7052756916 | Similarity: 0.303797468354
 New y(m): 0.0756403037507 | Old y(m): -3.62963538784
 New SMILES: C[C@@H](NS(=O)(=O)c1ccccc1)C(=O)NC(C(C)(C)C)C(C)(C)C | Old: C[C@@H](C(=O)[O-])[C@@H](N[S@](=O)C(C)(C)C)C(C)(C)C
 
+25
 Improvement:-3.63145831073 | Similarity: 0.236111111111
 New y(m): -5.95249293993 | Old y(m): -2.32103462919
 New SMILES: N[C@@]1(CO)NC(=O)[C@@](N)(c2ccccc2)N1 | Old: O=c1n(CCO)c2ccccc2n1CCO
 
+26
 Improvement:3.91732409631 | Similarity: 0.232
 New y(m): 1.23078642463 | Old y(m): -2.68653767167
 New SMILES: Cc1oc(C(=O)N(C)CC(=O)NCc2ccc(C(F)(F)F)cc2)c2c1CCCC2 | Old: Cc1ccc(C[NH+](C)[C@@H](C)C(=O)NCCc2ccc3c(c2)OCCO3)o1
 
+27
 Improvement:-2.14672791178 | Similarity: 0.25
 New y(m): -7.92104415825 | Old y(m): -5.77431624648
 New SMILES: Cc1[nH+]ccn1C[C@H](C)C12[NH2+]CCC1CC[NH2+]2 | Old: Cc1[nH+]cn(C[C@H](C)[C@H]2CC[NH+]3CCC[C@H]23)c1C
 
+28
 Improvement:-2.28613279969 | Similarity: 0.289473684211
 New y(m): -5.94696957383 | Old y(m): -3.66083677415
 New SMILES: NC1=C[C@@H](C(=O)NCc2coc(C(=O)[O-])c2)CN1 | Old: O=C([O-])c1ccc(CNC(=O)c2cnns2)o1
 
+29
 Improvement:-0.52910282778 | Similarity: 0.214285714286
 New y(m): -3.7136719696 | Old y(m): -3.18456914182
 New SMILES: C=C(C)[C@@H](C)[C@@H](C)[N@@H+](C)Cc1ncccn1 | Old: C=CCC[C@@H](C)[NH+](C)CCc1nccs1
 
+30
 Improvement:0.0 | Similarity: 1.0
 New y(m): -3.18112304071 | Old y(m): -3.18112304071
 New SMILES: C[C@H](Cn1ccnc1)NS(C)(=O)=O | Old: C[C@H](Cn1ccnc1)NS(C)(=O)=O
 
+31
 Improvement:-0.851998938623 | Similarity: 0.269841269841
 New y(m): -3.25952194506 | Old y(m): -2.40752300643
 New SMILES: CNC(=O)[C@]12C=C(S(=O)(=O)NC(C)(C)C[C@H](C)n3ccc(C)n3)C=C[C@@H]1CC(=O)N(C)C2 | Old: CNC(=O)[C@@H]1CCCN(S(=O)(=O)c2c(C)nn(CC(=O)NC(C)(C)C)c2C)C1
 
+32
 Improvement:-0.831725461907 | Similarity: 0.513513513514
 New y(m): -5.48698717592 | Old y(m): -4.65526171401
 New SMILES: C[C@@H]1CCC[C@](CNC(=O)N(N)C(=O)C(S)S)([NH+](C)C)C1 | Old: CSCC(=O)NNC(=O)NC[C@@]1([NH+](C)C)CCC[C@H](C)C1
 
+33
 Improvement:2.53507396649 | Similarity: 0.283018867925
 New y(m): -0.881710296474 | Old y(m): -3.41678426296
 New SMILES: CCOC(=O)Nc1ccc(C(=O)NCC(=O)Nc2cccc3c2CC[SH]3(C)=O)cc1 | Old: CCNC(=O)c1cccc(NC(=O)C[NH+](C)CC)c1
 
+34
 Improvement:0.242042723516 | Similarity: 0.240963855422
 New y(m): -3.68881564962 | Old y(m): -3.93085837314
 New SMILES: CC[NH2+][C@@]1(C(=O)NCc2ccsc2)CCCO1 | Old: CCC[NH2+][C@@H]1COC[C@H]1C(=O)NCc1cscc1C
 
+35
 Improvement:-2.52231404742 | Similarity: 0.267857142857
 New y(m): -5.93198371493 | Old y(m): -3.40966966751
 New SMILES: C=C(C)CNC(N)=[NH2+] | Old: C=C(C)CN/C(N)=[NH+]\Cc1ccc(C)cc1N(C)C
 
+36
 Improvement:1.55926141615 | Similarity: 0.201754385965
 New y(m): -2.2152157541 | Old y(m): -3.77447717024
 New SMILES: CCO[C@]1(N(C)S(=O)(=O)CC2CCC(O)CC2)C[C@@H]2C=CC=C[C@@H]21 | Old: CCO[C@@H]1C[C@@H]([NH+](C)C[C@@H]2CCCN(S(C)(=O)=O)C2)C12CCCCC2
 
+37
 Improvement:0.34919433385 | Similarity: 0.477611940299
 New y(m): -3.90024406021 | Old y(m): -4.24943839407
 New SMILES: CC1(n2cc(C#N)c([O-])nc2=O)CCC(O)CC1 | Old: N#Cc1cn(C[C@H]2CCCC[C@H]2O)c(=O)nc1[O-]
 
+38
 Improvement:3.62769750257 | Similarity: 0.218390804598
 New y(m): 0.610577082582 | Old y(m): -3.01712041999
 New SMILES: CS[C@H](C)C(=O)N1CCC[C@H](C(=O)c2cccc(Cl)c2)C1 | Old: C[C@H](CSc1ccc(C(=O)N(C)C)cn1)C(=O)[O-]
 
+39
 Improvement:-3.03194868906 | Similarity: 0.206896551724
 New y(m): -6.76451770011 | Old y(m): -3.73256901105
 New SMILES: C[C@]1(N)CNCCN1C(=O)C1CC[NH2+]CC1 | Old: CC[C@H]1CN(C(=O)[C@@H]2CC[C@@H]3CCCC[C@@H]3[NH2+]2)CCN1C
 
+40
 Improvement:1.67415696702 | Similarity: 0.278481012658
 New y(m): -1.60228809708 | Old y(m): -3.2764450641
 New SMILES: CCOC1([NH+](C)CC)CC(Nc2ccc(Cl)cc2F)C1 | Old: CCO[C@@H]1C[C@@H]([NH3+])[C@@H]1Nc1ncc(Cl)cc1F
 
+41
 Improvement:-0.373405606244 | Similarity: 0.208333333333
 New y(m): -4.24148555124 | Old y(m): -3.868079945
 New SMILES: CN1C=C(C(=O)NCCN2CCN(c3cccc[nH+]3)CC2)N=CC1 | Old: Cc1cnn(CCCNC(=O)N2CCCC[C@H](N3CC[NH+](C)CC3)C2)c1
 
+42
 Improvement:1.58748560616 | Similarity: 0.228070175439
 New y(m): -1.02870071626 | Old y(m): -2.61618632242
 New SMILES: Cc1c(Cl)nn(C)c1C | Old: Cc1nn(C)c(CO[C@@H]2CCC[C@@H]([NH3+])C2)c1Cl
 
+43
+Improvement:0.72698182492 | Similarity: 0.259615384615
+New y(m): -2.41527808799 | Old y(m): -3.14225991291
+New SMILES: Cc1cccc(N2C[C@@]3(CC2=O)C[C@@H](C)C[C@@]2(C(=O)[O-])C=CC=C[C@H]32)c1 | Old: C[C@@H]1CC[C@@H](C(=O)[O-])[C@H]2C(=O)N(c3ccccc3)C(=O)[C@@H]21
+
+44
+Improvement:3.41172035749 | Similarity: 0.230769230769
+New y(m): -0.610314213734 | Old y(m): -4.02203457122
+New SMILES: Cc1cccc(O)c1C(=O)NC(=O)N1CCN(C(=O)c2ccc3c(c2)OCO3)CC1 | Old: Cc1ccc(NC(=O)C(=O)N2CC[C@H]([NH+]3CCCC3)C2)cc1C(=O)N(C)C
+
+45
+Improvement:2.79503819512 | Similarity: 0.301587301587
+New y(m): 0.589092608159 | Old y(m): -2.20594558696
+New SMILES: CNc1ccccc1C | Old: CNc1ccccc1C(=O)N1CCN2C(=O)NC[C@H]2C1
+
+46
+Improvement:-1.23271849191 | Similarity: 0.391891891892
+New y(m): -4.6989628408 | Old y(m): -3.4662443489
+New SMILES: CC1(C)SCC[NH2+][C@@]1([NH3+])c1cccc2cn[nH]c12 | Old: C[C@H]1[C@@H](C)SCC[NH+]1Cc1cccc2cn[nH]c12
+
+47
+Improvement:-0.579331057881 | Similarity: 0.30303030303
+New y(m): -3.50215791389 | Old y(m): -2.92282685601
+New SMILES: C[C@H](O)[C@H](C)[C@H](O)c1ccccc1[SH](=O)=O | Old: CC(C)[C@H](O)[C@]1(C[NH3+])CCc2ccccc21
+
+48
+Improvement:0.0498798827307 | Similarity: 0.493506493506
+New y(m): -2.69549677474 | Old y(m): -2.74537665747
+New SMILES: CCOC(=O)[C@]1([NH2+]C(C)C)CC[C@H](n2nc(C)cc2Cl)C1 | Old: CCC[NH2+][C@]1(C(=O)OCC)CC[C@H](n2cc(Cl)c(C)n2)C1
+
+49
+Improvement:2.30189510026 | Similarity: 0.230769230769
+New y(m): -3.60617437072 | Old y(m): -5.90806947099
+New SMILES: Cc1cc(C(=O)N2CC(=O)C[C@@H](C(=O)N[C@@H](C)Nc3cccc([NH3+])c3)C2)no1 | Old: Cc1cc([C@H]2CCC[NH+]2CC(=O)NC(N)=O)no1
+
+50
+Improvement:0.439486722633 | Similarity: 0.266055045872
+New y(m): -2.56131486155 | Old y(m): -3.00080158418
+New SMILES: COc1ncc(CC(=O)NC2(c3ccccc3)CC[NH2+]CC2)c2oncc12 | Old: COc1ccc(Cc2noc(C3CC[NH2+]CC3)n2)cn1
+
+51
+Improvement:2.61948204538 | Similarity: 0.244094488189
+New y(m): -0.102215445183 | Old y(m): -2.72169749056
+New SMILES: Cc1ccc(CN(C(=O)c2ccc(N3CC(=O)C[C@H](O)C3)cc2)C2CCC2)o1 | Old: Cc1ccc(C[NH+]2CCC(N3CCC(C(=O)N4CCOCC4)CC3)CC2)o1
+
+52
+Improvement:-0.192148453797 | Similarity: 0.5
+New y(m): -2.85284137993 | Old y(m): -2.66069292613
+New SMILES: COc1ccc(CC(=O)N2C[C@H]3CC[C@H]2CN([S@@](C)=O)C3)cc1 | Old: COc1ccccc1CC(=O)N1C[C@H]2CC[C@@H]1CN(S(C)(=O)=O)C2
+
+53
+Improvement:1.10269757195 | Similarity: 0.211382113821
+New y(m): -3.00153494888 | Old y(m): -4.10423252083
+New SMILES: CC1=C[C@@](C)(C(=O)c2c(NC(=O)[C@@H](C)[NH+](C)C)cc(Cl)c3c2OCO3)N=N1 | Old: CC1=C(C(=O)C2=C([O-])C(=O)N(CC[NH+](C)C)[C@H]2c2cccc(Cl)c2)[C@H](C)N=N1
+
+54
+Improvement:2.51241423512 | Similarity: 0.208955223881
+New y(m): -0.345557839647 | Old y(m): -2.85797207477
+New SMILES: CC(C)Oc1ccc(Br)cc1C(=O)N1CC[C@H]([NH+]2C[C@@H](c3ccccc3)C[C@@H]2C)C1 | Old: CC(C)(C)OC(=O)N1CCc2cccc(C[NH+]3CC[C@H]([N+]4=CCCC4)C3)c21
+
+55
+Improvement:5.42157299736 | Similarity: 0.236641221374
+New y(m): 0.991724460675 | Old y(m): -4.42984853668
+New SMILES: COc1cccc(N(CC(=O)NCc2n[nH]c(=O)c3ccccc23)Cc2ccccc2F)c1 | Old: O=C(NC[C@@H]1CCC[NH+](Cc2ccccc2F)C1)c1nc[nH]n1
+
+56
+Improvement:3.9163553891 | Similarity: 0.28125
+New y(m): -0.427962998298 | Old y(m): -4.3443183874
+New SMILES: Cc1ccc(CC(=O)N[C@]2(C)CC(=O)N(CC(=O)Oc3cccc4c3CCC4)C2)cc1 | Old: Cc1ccc(CCN2C[C@]34C=C[C@H](O3)[C@H](C(=O)N3CC(O)C3)[C@H]4C2=O)cc1
+
+57
+Improvement:2.34740397204 | Similarity: 0.262711864407
+New y(m): 0.104388710191 | Old y(m): -2.24301526185
+New SMILES: COc1cc(C)cc(F)c1S(=O)(=O)NCC(=O)Nc1cccc(OC2CCOCC2)c1 | Old: COc1cccc(C(=O)NCC[NH+](C)C2CCCCC2)c1F
+
+58
+Improvement:2.94938416438 | Similarity: 0.25
+New y(m): -0.0432128900792 | Old y(m): -2.99259705446
+New SMILES: CC(=O)NCc1cccc(F)c1 | Old: CC(C)[NH+]1CCN(CC(=O)NCCc2ccc(F)cc2)CC1
+
+59
+Improvement:0.990667554051 | Similarity: 0.524590163934
+New y(m): -1.23000761829 | Old y(m): -2.22067517235
+New SMILES: C[C@@H](CO)NC(=O)NCc1ccccc1 | Old: C[C@@H](CO)NC(=O)NC[C@H]1Cc2ccccc2O1
+
+60
+Improvement:1.39144904307 | Similarity: 0.25
+New y(m): -3.93224368512 | Old y(m): -5.32369272818
+New SMILES: C[C@@H]([NH2+][C@H]1CCCCS1)C(C)(C)O | Old: CC(C)(O)CC[NH2+][C@H]1CCCS(=O)(=O)C1
+
+61
+Improvement:4.78772676681 | Similarity: 0.222222222222
+New y(m): 1.34331429296 | Old y(m): -3.44441247384
+New SMILES: CC(=O)c1ccc(C)cc1N(C)C(=O)COc1ccc(F)cc1 | Old: CC1(C)C(=O)NCC[NH+]1Cc1ccc(OCC(F)F)cc1
+
+62
+Improvement:-1.37540103957 | Similarity: 0.265625
+New y(m): -4.38055247147 | Old y(m): -3.0051514319
+New SMILES: N#C[C@H]1CNCCO1 | Old: N#C[C@H]1CN(C(=O)[C@H]2CNCc3ccccc32)CCO1
+
+63
+Improvement:-0.291843112701 | Similarity: 0.653846153846
+New y(m): -9.10014557153 | Old y(m): -8.80830245883
+New SMILES: O=C(NC[C@H]1CCC[N@@H+](CC2=c3ccccc3=[NH+]C2)C1)[C@@]12C=CC=C[C@H]1NN=C2 | Old: O=C(NC[C@@H]1CCC[NH+](CC2=c3ccccc3=[NH+]C2)C1)[C@H]1NN=C2C=CC=C[C@H]21
+
+64
+Improvement:3.90388223136 | Similarity: 0.214285714286
+New y(m): 0.67287658678 | Old y(m): -3.23100564458
+New SMILES: Cc1ccc(NC(=O)O)cc1 | Old: COC(=O)c1cc(NC(=O)[C@H]2CC[NH2+][C@H]2C)ccc1F
+
+65
+Improvement:5.2511240339 | Similarity: 0.2
+New y(m): -0.58477328498 | Old y(m): -5.83589731888
+New SMILES: CS(=O)(=O)N1CC[C@@H](C(=O)c2cccc(Br)c2)C1 | Old: C[C@H]1[C@H](C(=O)[O-])CCN1S(=O)(=O)[C@@H](C)C#N
+
+66
+Improvement:0.505817243399 | Similarity: 0.377049180328
+New y(m): -2.35167204846 | Old y(m): -2.85748929186
+New SMILES: O=C([O-])COc1ccccc1 | Old: O=C([O-])COc1ccccc1/C=N/NC(=O)C1CC1
+
+67
+Improvement:-0.0580907449613 | Similarity: 0.217948717949
+New y(m): -4.41647974401 | Old y(m): -4.35838899904
+New SMILES: CC(=O)[C@H]1CCCN(C(=O)C[NH3+])C1 | Old: CC(C)c1nc(C(=O)N2CCC[C@@H]([NH+]3CCCC3)C2)n[nH]1
+
+68
+Improvement:-3.77235245504 | Similarity: 0.242424242424
+New y(m): -6.00604591612 | Old y(m): -2.23369346107
+New SMILES: Nc1[nH+]ccn1[C@H]1NCCN[C@@]1(N)[C@@H](O)c1ccccc1 | Old: Cn1cc[nH+]c1N1CCN(C[C@@H](O)c2cccc(Br)c2)CC1
+
+69
+Improvement:3.23662181531 | Similarity: 0.253521126761
+New y(m): -0.814001117593 | Old y(m): -4.0506229329
+New SMILES: Cc1nn(C)c(C)c1C | Old: Cc1nn(C)c(C)c1-c1cc(C(=O)N[C@@H]2CC[C@H]([NH+](C)C)C2)n[nH]1
+
+70
+Improvement:0.94343086891 | Similarity: 0.246376811594
+New y(m): -2.42309770761 | Old y(m): -3.36652857652
+New SMILES: C[C@@H]1COCCN1C(=O)[C@@H]1CCSC1 | Old: C[C@H]1CN(C(=O)[C@@H]2CCS(=O)(=O)C2)C[C@H](C)O1
+
+71
+Improvement:-0.283913419834 | Similarity: 0.25641025641
+New y(m): -2.55787212806 | Old y(m): -2.27395870823
+New SMILES: CCOC(=O)c1cccc(N2C(=O)[C@H]3C=CC=C[C@@]3(N)N(C[C@@H](C)O)C2=O)c1 | Old: CCOC(=O)C1=C(N)N(C)c2ccccc2[C@@]12C(=O)OC(C)=C2C(C)=O
+
+72
+Improvement:2.40585198726 | Similarity: 0.259259259259
+New y(m): -1.71144406315 | Old y(m): -4.1172960504
+New SMILES: O=C(Nc1ccc2c(c1)OCO2)[C@@H]1CCCN(C(=O)N(C[C@@H]2CCCO2)[C@@H]2CCCS2(=O)=O)C1 | Old: O=C(NC1CC1)[C@@H]1CCC[NH+](C2CCN(C(=O)c3ccc[nH]3)CC2)C1
+
+73
+Improvement:3.52469361481 | Similarity: 0.24
+New y(m): -0.118422296791 | Old y(m): -3.6431159116
+New SMILES: CNC(=O)[C@H](C)Oc1cc(NC(=O)C(=O)Nc2ccccc2)c(C)cc1C | Old: CC[C@](C)(NC(=O)[C@](C)(N)c1ccccc1)C(=O)[O-]
+
+74
+Improvement:1.35864884493 | Similarity: 0.223300970874
+New y(m): -1.07379231414 | Old y(m): -2.43244115907
+New SMILES: CCc1noc(C)c1C(=O)N[C@@H]1CC[C@](C(N)=O)(c2ccccc2)C1 | Old: CCc1noc(C)c1C[NH+](C[C@@H]1CCCCO1)C(C)C
+
+75
+Improvement:3.0779021301 | Similarity: 0.201834862385
+New y(m): 0.202573593463 | Old y(m): -2.87532853664
+New SMILES: CC[C@H](CC(C)C)N(Cc1ccc([NH+]2CCCC2)cc1)Cc1ccoc1 | Old: CCC(CC)([C@H](Cc1nc(C)cs1)NC)[NH+]1CCCC1
+
+76
+Improvement:1.4229693454 | Similarity: 0.226804123711
+New y(m): -3.36821207534 | Old y(m): -4.79118142074
+New SMILES: CC(C)(C)S(=O)(=O)NNC(=O)c1cccc(N2CC(=O)CS2(=O)=O)c1 | Old: CC(C)(C)CS(=O)(=O)N1Cc2nc[nH]c2C[C@H]1C(=O)[O-]
+
+77
+Improvement:-2.45340980469 | Similarity: 0.215909090909
+New y(m): -9.35723250645 | Old y(m): -6.90382270176
+New SMILES: C[NH2+][C@H](Sc1cnnc2c1N[C@]1(CCC[NH2+]1)S2)C(=O)[O-] | Old: C[NH2+][C@@]1(C(=O)[O-])CC[C@H](Sc2nccc(=O)[nH]2)C1
+
+78
+Improvement:2.3587422937 | Similarity: 0.205673758865
+New y(m): -1.7493420074 | Old y(m): -4.10808430109
+New SMILES: COc1ccc(C(=O)N2CC[C@H]3C=CN=C[C@@]3(CNC(=O)[C@@]34C=CC=C[C@H]3C[C@@H](C)O4)C2)cc1 | Old: COc1ncccc1C(=O)NC[C@H]1C[C@H](O)C[NH+]1Cc1ccccc1
+
+79
+Improvement:-1.34753823529 | Similarity: 0.207317073171
+New y(m): -3.78460695845 | Old y(m): -2.43706872316
+New SMILES: CC(C)C[C@@H](C[NH3+])Cn1ncc([N+](=O)[O-])cc1=O | Old: CC(C)C[C@@H](C[NH3+])c1nc(C2CCOCC2)no1
+
+80
+Improvement:1.05086225923 | Similarity: 0.263157894737
+New y(m): -1.64944769072 | Old y(m): -2.70030994995
+New SMILES: O=C1N[C@]2(CC(=O)N(c3ccccc3)C2=O)CN1c1cccc([N+](=O)[O-])c1 | Old: O=C1N(C[NH+]2CCN(c3ccccc3)CC2)c2ccccc2C12O[C@@H]1CCCC[C@H]1O2
+
+81
+Improvement:2.12221378928 | Similarity: 0.305882352941
+New y(m): -0.198022169764 | Old y(m): -2.32023595904
+New SMILES: CCOC(=O)[C@]1(C#N)CCN(C(=O)Oc2ccc(C)cc2)C2(CCC2)C1 | Old: CCOC(=O)C1(C#N)CC(OC)(OC)C1
+
+82
+Improvement:2.54335769231 | Similarity: 0.263157894737
+New y(m): -3.26144282093 | Old y(m): -5.80480051324
+New SMILES: [NH3+][C@@H](CS)CSC(=O)c1ccsc1 | Old: [NH3+][C@@H](CSCc1nccs1)C(=O)[O-]
+
+83
+Improvement:2.28875089082 | Similarity: 0.220779220779
+New y(m): -1.08763146478 | Old y(m): -3.3763823556
+New SMILES: CC(C)N(C(=O)CSC(N)=O)c1ccccn1 | Old: CC(C)[C@@H]([NH2+][C@@H](C)CS(C)(=O)=O)c1cccnc1
+
+84
+Improvement:1.51474523786 | Similarity: 0.216981132075
+New y(m): -0.816212071612 | Old y(m): -2.33095730947
+New SMILES: Cc1cc(N[C@@H]2CC[C@](C#N)(NC(C)C)C2)cc(C(=O)N2CCOCC2)c1 | Old: CCCN[C@]1(C#N)CC[C@H](N2C[C@H](C)OC[C@@H]2C)C1
+
+85
+Improvement:0.338111518537 | Similarity: 0.221153846154
+New y(m): -3.96174776263 | Old y(m): -4.29985928117
+New SMILES: C[C@](O)(CC#C[C@]1([NH3+])C[C@H](c2ccncc2)CC[NH2+]1)c1ccccc1 | Old: C[C@H](O)CC#CC[NH+]1CCC[C@H](c2cccnc2)C1
+
+86
+Improvement:2.97322474895 | Similarity: 0.417910447761
+New y(m): -0.643962963797 | Old y(m): -3.61718771275
+New SMILES: CC(C)O[C@H](C)S(=O)(=O)NC1CCCCCC1 | Old: CC(C)OCCS(=O)(=O)N[C@@H]1CCCCC[C@H]1[NH3+]
+
+87
+Improvement:-1.79964524887 | Similarity: 0.478260869565
+New y(m): -5.45123161908 | Old y(m): -3.65158637021
+New SMILES: CN(C[C@@]1(N)COCCN1)C1(C[NH3+])CCCCC1 | Old: CN1CCO[C@@H](CN(C)C2(C[NH3+])CCCCC2)C1
+
+88
+Improvement:1.95786376023 | Similarity: 0.295454545455
+New y(m): -0.683903824538 | Old y(m): -2.64176758477
+New SMILES: Cc1ccc(C2=C3C=CCC[C@H]3N(CC(=O)N[C@@H]3C[C@H]3c3ccc4c(c3)OCO4)CC(=O)N2)cc1 | Old: Cc1c(C[NH+]2CCC[C@H]2c2ccc3c(c2)OCO3)cc(C#N)n1C
+
+89
+Improvement:4.08036006599 | Similarity: 0.223214285714
+New y(m): -1.88314397743 | Old y(m): -5.96350404342
+New SMILES: CCOc1ccc2c(c1)N([C@H](C(=O)[O-])c1cccc(F)c1)CC(=O)O2 | Old: CC[NH+]1CCC2(CC1)OC[C@H](C(=O)[O-])N2C(=O)c1ccc(F)cc1
+
+90
+Improvement:2.4631691598 | Similarity: 0.29
+New y(m): -1.93555206201 | Old y(m): -4.39872122181
+New SMILES: CC[NH+](CC)[C@@H](C)CNC(=O)Nc1cccc(N2CC(C)(C)CC2=O)c1 | Old: CC[NH+](CCNC(=O)N[C@H]1CC(=O)N(C(C)(C)C)C1)C(C)C
+
+91
+Improvement:3.78244319764 | Similarity: 0.21875
+New y(m): 0.662505893508 | Old y(m): -3.11993730413
+New SMILES: CC[C@@H](O[C@@H](C)NS(=O)(=O)c1ccc(N2CCSCC2)cc1)c1ccc(N2CCCC2=O)cc1 | Old: CC[C@@H]([NH2+]CCN1CCCS1(=O)=O)c1ccc(OC)cc1
+
+92
+Improvement:2.21984093073 | Similarity: 0.58064516129
+New y(m): -0.47178064961 | Old y(m): -2.69162158034
+New SMILES: CCCn1ncc(C[NH2+]c2cccc(C)c2)c1C(F)(F)F | Old: CCCn1ncc(C[NH2+]C)c1C(F)(F)F
+
+93
+Improvement:1.90353522916 | Similarity: 0.268041237113
+New y(m): -5.30765665615 | Old y(m): -7.21119188531
+New SMILES: C[C@@H](C(=O)NCC(=O)N1C[C@@H](C)[NH2+][C@H]2C=CC=C[C@H]21)N1CCCC1 | Old: C[C@H]1C[NH+]2CCCC[C@@H]2CN1C(=O)NC[C@@H](C)C(=O)[O-]
+
+94
+Improvement:1.69452410838 | Similarity: 0.21978021978
+New y(m): -2.6958328559 | Old y(m): -4.39035696428
+New SMILES: C[C@@H]1C[C@H](O)C[C@H](OC(F)(F)C[NH+](C)CCc2ccccc2)C1 | Old: C[C@@H]1CC[C@@H](O)[C@H]([NH+](C)CCOCC2CC2)C1
+
+95
+Improvement:1.4816013494 | Similarity: 0.333333333333
+New y(m): -1.17034768988 | Old y(m): -2.65194903928
+New SMILES: C[C@@H](Oc1cccc(F)c1)S(C)(=O)=O | Old: [NH3+]C[C@H]1CCC[C@H]1S(=O)(=O)c1cccc(F)c1
+
+96
+Improvement:2.39778349569 | Similarity: 0.2
+New y(m): -0.304431784258 | Old y(m): -2.70221527995
+New SMILES: Cc1cccc(NC=O)c1 | Old: C[C@H]1[NH2+]CCC[C@@H]1NC(=O)c1cccc(OC(F)F)c1
+
+97
+Improvement:0.0 | Similarity: 1.0
+New y(m): -2.66897816229 | Old y(m): -2.66897816229
+New SMILES: CC[C@@H]1C[C@H](C)CC[C@@H]1[NH2+]CCCN1CCCC1=O | Old: CC[C@H]1C[C@H](C)CC[C@@H]1[NH2+]CCCN1CCCC1=O
+
+98
+Improvement:1.49714867469 | Similarity: 0.202702702703
+New y(m): -1.95908917962 | Old y(m): -3.45623785431
+New SMILES: CC1(O[C@@H]2CC[C@](C)(N)C2)CCC1 | Old: CCN[C@@H]1[C@H]([NH+]2CCC[C@H]3CCC[C@@H]32)CCC1(C)C
+
+99
+Improvement:0.338517642719 | Similarity: 0.27619047619
+New y(m): -4.14578895 | Old y(m): -4.48430659272
+New SMILES: FC(F)n1ccnc1CN[C@@H]1C[N@H+](Cc2ccccc2)CCN1 | Old: FC(F)n1ccnc1CN1CC[NH+](CCN2CCOCC2)CC1
+
+100
+Improvement:-0.264836066274 | Similarity: 0.47619047619
+New y(m): -3.44194995716 | Old y(m): -3.17711389088
+New SMILES: O[C@H]1C[C@@H](C(F)F)C[NH+]1Cc1c[nH]c2ccccc12 | Old: O[C@@H]1C[C@@H](c2nc(C3CC3)no2)[NH+](Cc2c[nH]c3ccccc23)C1
+
+101
+Improvement:3.67295521373 | Similarity: 0.254237288136
+New y(m): 1.12248358746 | Old y(m): -2.55047162627
+New SMILES: Cc1cc(C)c2sc(NC(=O)C(=O)Nc3cccc([N+](=O)[O-])c3)nc2c1 | Old: Cc1ccc(-c2ccncc2)cc1NC(=O)C(=O)N[C@H]1CC[C@@H]([NH+](C)C)C1
+
+102
+Improvement:0.532826710703 | Similarity: 0.323076923077
+New y(m): -2.97197821155 | Old y(m): -3.50480492225
+New SMILES: CC1CCC(N)(C(=O)NCO)CC1 | Old: CC1CCC(C[NH3+])(NC(=O)N[C@H]2CCOC2)CC1
+
+103
+Improvement:1.77925429787 | Similarity: 0.203389830508
+New y(m): -0.94719792102 | Old y(m): -2.72645221889
+New SMILES: C[C@H]([C@@H](O)c1ccccc1)N1CCN(Cc2cc(F)nc(F)c2[N+](=O)[O-])CC1 | Old: O[C@H](C1CC[NH+](Cc2c(Cl)nc3ccccn23)CC1)C(F)(F)F
+
+104
+Improvement:0.0 | Similarity: 1.0
+New y(m): -6.04959890407 | Old y(m): -6.04959890407
+New SMILES: C[N+]1(/N=C(\[S-])NN)CCOCC1 | Old: C[N+]1(/N=C(\[S-])NN)CCOCC1
+
+105
+Improvement:0.0828431588127 | Similarity: 0.259541984733
+New y(m): -2.33228777643 | Old y(m): -2.41513093525
+New SMILES: NC(=O)CN1C(=O)N[C@@]23C=CC=C[C@@]12C=C(C(=O)N[C@H]1CCCOc2ccc(Cl)cc21)C=C3 | Old: NC(=O)CN1c2ccccc2C(=O)N[C@H]1c1cc(Cl)cc([N+](=O)[O-])c1[O-]
+
+106
+Improvement:1.40482858955 | Similarity: 0.272
+New y(m): -1.38644452603 | Old y(m): -2.79127311558
+New SMILES: CC(C)C(O)(O)n1cc(C(=O)N[C@@H](C)c2cnc3ccccc3c2)c([N+](=O)[O-])n1 | Old: C[C@@H](NC(=O)c1cc(C[NH+]2CCC(O)CC2)on1)c1cn(C)c2ccccc12
+
+107
+Improvement:3.41560938458 | Similarity: 0.311111111111
+New y(m): -0.502524882071 | Old y(m): -3.91813426665
+New SMILES: Cc1cscc1C | Old: Cc1cscc1C[NH2+][C@H](C)CS(C)(=O)=O
+
+108
+Improvement:5.6233115725 | Similarity: 0.21875
+New y(m): -1.77039424551 | Old y(m): -7.39370581801
+New SMILES: C[C@H](C(=O)[O-])[C@@H](c1cccc(N2CCCCC2=O)c1)N1C[C@@H](S(C)(=O)=O)c2ccccc21 | Old: C[C@@H](C(=O)C1=c2ccccc2=[NH+]C1)[NH+]1CCC[C@@H]1[C@@H]1CC=CS1
+
+109
+Improvement:-2.04968020336 | Similarity: 0.3125
+New y(m): -4.35331059744 | Old y(m): -2.30363039409
+New SMILES: CNC(=O)CS(=O)(=O)NC | Old: CNS(=O)(=O)CC(=O)N[C@H]1CCCN(c2ccccc2)C1
+
+110
+Improvement:0.618132925313 | Similarity: 0.264150943396
+New y(m): -2.68276038749 | Old y(m): -3.3008933128
+New SMILES: C[C@@H](O)N(Cc1ccc([S@@](C)=O)cc1)[C@@]12C=CC=C[C@H]1CC(=O)O2 | Old: C[S@@](=O)c1ccc(C[NH+]2CCC(OC[C@H]3CCCO3)CC2)cc1
+
+111
+Improvement:-0.376683882992 | Similarity: 0.25
+New y(m): -3.79715725937 | Old y(m): -3.42047337638
+New SMILES: CCN(C)c1c[nH+]cc(N)c1 | Old: CCN(CC)c1ccc(N)c(N)[nH+]1
+
+112
+Improvement:-1.18786934852 | Similarity: 0.230769230769
+New y(m): -3.5737975718 | Old y(m): -2.38592822328
+New SMILES: [NH3+]C([NH3+])c1ccccc1Cl | Old: C[NH2+]C[C@H]1C[C@H]1c1ccccc1Br
+
+113
+Improvement:4.40319652681 | Similarity: 0.327868852459
+New y(m): 0.15612111247 | Old y(m): -4.24707541434
+New SMILES: C=CC(=O)OCC(C)(C)c1cccc([N+](=O)[O-])c1 | Old: C=CC(=O)OCC(C)(C)C[NH+](C)C
+
+114
+Improvement:-1.50395655209 | Similarity: 0.226277372263
+New y(m): -4.03853880562 | Old y(m): -2.53458225353
+New SMILES: COCc1cccc(OC)c1C(=O)NC1(N2[C@@H](C)O[C@@]3(OC)C=CC=C[C@@H]23)CC[NH2+]CC1 | Old: COCc1cc([C@@H](C)NC2CC[NH+]([C@@H]3CCCC[C@@H]3O)CC2)ccc1OC
+
+115
+Improvement:-1.49181440168 | Similarity: 0.329545454545
+New y(m): -3.70282822095 | Old y(m): -2.21101381927
+New SMILES: N[C@]1([NH3+])NCCC[C@@H]1c1noc(-c2cccc(F)c2)n1 | Old: C[C@@H]1CN(Cc2noc(-c3ccc(F)cc3)n2)CC[C@@H]1[NH3+]
+
+116
+Improvement:2.64766800958 | Similarity: 0.227272727273
+New y(m): 0.0189866772805 | Old y(m): -2.6286813323
+New SMILES: COc1ccc(C=O)cc1 | Old: COc1ccc(OC)c([C@@H](O)Cc2[nH+]ccn2C)c1
+
+117
+Improvement:-0.308670712525 | Similarity: 0.267857142857
+New y(m): -2.56622459405 | Old y(m): -2.25755388153
+New SMILES: Cc1nnc(S)n1C | Old: Cc1nnc(S[C@H](C)C(=O)N2CCOCC2)n1C
+
+118
+Improvement:0.241245123641 | Similarity: 0.365384615385
+New y(m): -2.31333384738 | Old y(m): -2.55457897102
+New SMILES: C[C@H](O)c1ncccn1 | Old: [NH3+][C@H](Cc1ccc(O)cc1)c1ncccn1
+
+119
+Improvement:-0.218994714236 | Similarity: 0.223214285714
+New y(m): -3.58297045754 | Old y(m): -3.3639757433
+New SMILES: CC[NH+](CC(=O)N[C@@H](C)N1CCN(C(C)=O)CC1)Cc1ccccc1Br | Old: CC[NH+]1CCN(C[C@@H](C)CNC(=O)NCc2sccc2C)CC1
+
+120
+Improvement:-1.86127766749 | Similarity: 0.506024096386
+New y(m): -4.48043024344 | Old y(m): -2.61915257595
+New SMILES: CC[C@H](O)[C@@H]1CC[NH2+][C@]([NH3+])(c2nc3ccccc3n2CC)C1 | Old: CC[C@@H](O)[C@@H]1CCCC[NH+]1Cc1nc2ccccc2n1CC
+
+121
+Improvement:-1.50675603926 | Similarity: 0.223880597015
+New y(m): -7.0753916641 | Old y(m): -5.56863562483
+New SMILES: CC(=O)N1CC[NH2+][C@@H]([S@@](C)=O)C1 | Old: C[C@H]1CN(S(=O)(=O)[C@@H](C)c2cnccn2)CC[NH2+]1
+
+122
+Improvement:2.05944346747 | Similarity: 0.225352112676
+New y(m): -1.77041443749 | Old y(m): -3.82985790496
+New SMILES: O=C([O-])C1(c2cccc(O)c2)CCCC1 | Old: O=C([O-])C1([C@@H]2CCCC[C@H]2O)CCOCC1
+
+123
+Improvement:0.875755925948 | Similarity: 0.225352112676
+New y(m): -3.32802757539 | Old y(m): -4.20378350134
+New SMILES: [NH3+]C(=O)OCC1(O)CCCCC1 | Old: C[NH2+][C@]1(C(=O)[O-])CCC[C@@H](OCC2CCCCC2)C1
+
+124
+Improvement:4.33391737054 | Similarity: 0.322916666667
+New y(m): -1.75796924436 | Old y(m): -6.09188661489
+New SMILES: CC[N@@H+](CCOC1CCOCC1)Cc1ccc(N2CCCC2)cc1 | Old: CC[NH+](CCO[C@H]1CCCCO1)CC1CC[NH2+]CC1
+
+125
+Improvement:1.10717246887 | Similarity: 0.299145299145
+New y(m): -2.3114290131 | Old y(m): -3.41860148198
+New SMILES: CC(=O)N1C[C@H]2C=C(S(=O)(=O)N[C@@H](C)C(=O)NC(=O)c3ccc4c(c3)CCC4)C=C(C)[C@@H]2C1 | Old: CC(=O)N1CCc2cc(S(=O)(=O)N[C@@H](C(=O)[O-])C(C)C)ccc21
+
+126
+Improvement:5.59294775834 | Similarity: 0.248062015504
+New y(m): 1.88250633136 | Old y(m): -3.71044142698
+New SMILES: COc1cc(C)ccc1-c1ccc([N+](=O)[O-])c(NC(=O)C=C2Cc3ccccc3C2)n1 | Old: COc1ccc(-c2ccc(C[NH2+][C@@H]3CC[C@H]([NH+](C)C)C3)o2)c([N+](=O)[O-])c1
+
+127
+Improvement:0.395719554739 | Similarity: 0.365384615385
+New y(m): -2.64191724737 | Old y(m): -3.03763680211
+New SMILES: C[C@@H]1C[C@@H]2OC(C)(C)O[C@@H]2O1 | Old: CC1(C)O[C@@H]2O[C@@H]3OC(C)(C)O[C@H]3[C@@H]2O1
+
+128
+Improvement:3.31174228422 | Similarity: 0.28125
+New y(m): -1.53226257786 | Old y(m): -4.84400486207
+New SMILES: COc1cccc(-c2ccc3c(c2)N(C)C(=O)[C@@H]3C(=O)NCc2cc(C)ccn2)c1C(=O)[O-] | Old: COc1ccccc1[C@@H]1C[NH+](Cc2cc(C(C)=O)cn2C)C[C@H]1C(=O)[O-]
+
+129
+Improvement:-0.663115197673 | Similarity: 0.248120300752
+New y(m): -3.03130252681 | Old y(m): -2.36818732913
+New SMILES: CCO[C@@H](C)c1cccc(NC(=O)Cn2nnnc2[NH+]2CC[C@H]3C=CC=C[C@H]3C2)c1 | Old: CCO[C@@H](C)c1noc(CN2CC[NH+]([C@H]3CCCc4ccccc43)CC2)n1
+
+130
+Improvement:-1.98567836792 | Similarity: 0.277777777778
+New y(m): -6.25560789579 | Old y(m): -4.26992952787
+New SMILES: C[C@@]1(N)CNCCN1C(=O)[C@H]1[C@H]2C[C@@H]3OC(=O)[C@@H](C2)[C@H]31 | Old: CCN1CCN(C(=O)[C@H]2[C@@H]3C[C@H]4[C@H](OC(=O)[C@H]42)[C@H]3Cl)CC1
+
+131
+Improvement:1.23956369473 | Similarity: 0.280373831776
+New y(m): -2.51765669563 | Old y(m): -3.75722039036
+New SMILES: CC(C)CNC(=O)C(=O)N[C@@H]1CCC[C@H]([C@@H]2C[C@H](C)[NH+](c3ccccc3)C2)C1 | Old: CC(C)CNC(=O)[C@H](C)[NH+]1CCC[C@@H]1[C@@H]1CCCCC1=O
+
+132
+Improvement:-0.540102497502 | Similarity: 0.460526315789
+New y(m): -3.16767200822 | Old y(m): -2.62756951072
+New SMILES: CC[C@@H](C(S)S)[NH+](C)Cn1nc(-c2ccsc2)[nH]c1=S | Old: CC[C@@H](CSC)[NH+](C)Cn1nc(-c2cccs2)[nH]c1=S
+
+133
+Improvement:3.91899214864 | Similarity: 0.231481481481
+New y(m): 1.42717096337 | Old y(m): -2.49182118528
+New SMILES: C[C@@H](Cn1c(=O)n(C)c2cc(C(C)(C)C)ccc21)N(C)Cc1ccc(F)cc1 | Old: CC(C)(C)c1ccc([C@@]2(C)C[NH+]=C(N)N2CC2CC2)cc1
+
+134
+Improvement:1.85156911638 | Similarity: 0.264
+New y(m): -3.21305641392 | Old y(m): -5.06462553031
+New SMILES: Cc1nnc(Cc2cccc(CNC(=O)[C@]3(C)CC[N@H+]([C@@H]4CC[C@H](O)C4)[C@H](C)C3)c2)o1 | Old: Cc1nnc(CCC[NH+]2CCC(CC[NH+]3CCCC[C@@H]3C)CC2)o1
+
+135
+Improvement:3.17018864762 | Similarity: 0.366666666667
+New y(m): -0.413416677249 | Old y(m): -3.58360532487
+New SMILES: C[C@]1(SCc2ccccn2)CCSC1 | Old: C[C@H]1C[C@H]([NH2+]Cc2ccccn2)CS1
+
+136
+Improvement:-0.735314843927 | Similarity: 0.206349206349
+New y(m): -4.33309602732 | Old y(m): -3.59778118339
+New SMILES: C=C(C)[C@](C)(OCc1ccc(C[N@@H+]2CCC[C@H](C#N)C2)cc1)[C@]1(N)NC(=O)[C@@H]2C=CC=CN21 | Old: C=C(C)[C@@](C)(O)C#CC[NH+]1CCCC[C@@H]1c1cccnc1
+
+137
+Improvement:3.46230451913 | Similarity: 0.241935483871
+New y(m): 0.699884285091 | Old y(m): -2.76242023404
+New SMILES: CC[C@H](C)c1cccc(O)c1 | Old: CC[C@](C)(C[NH3+])[C@H](O)c1ccc2c(c1)OCO2
+
+138
+Improvement:-2.90337813977 | Similarity: 0.215384615385
+New y(m): -5.41890694186 | Old y(m): -2.51552880209
+New SMILES: C[C@@H]1CC(C)(C)N[C@](N)(C(=O)[O-])C1 | Old: C[C@H]1CCCN(C(=O)C2C(C)(C)C2(C)C)[C@@H]1C[NH3+]
+
+139
+Improvement:5.3072500446 | Similarity: 0.225806451613
+New y(m): 0.40336601794 | Old y(m): -4.90388402666
+New SMILES: Cc1ccccc1[N+](=O)[O-] | Old: O=[N+]([O-])c1ccc([C@@H]2OC[NH+]3COC[C@@H]23)cc1
+
+140
+Improvement:0.0 | Similarity: 1.0
+New y(m): -4.05517515986 | Old y(m): -4.05517515986
+New SMILES: COC(=O)[C@@H]1NS(=O)(=O)c2ccsc2C1=O | Old: COC(=O)[C@@H]1NS(=O)(=O)c2ccsc2C1=O
+
+141
+Improvement:2.71057994455 | Similarity: 0.465517241379
+New y(m): -4.75984837459 | Old y(m): -7.47042831914
+New SMILES: O=C(c1nnn[n-]1)N1CCCC1 | Old: O=C(c1nnn[n-]1)N1CCC[C@@H]1[C@@H]1CCC[NH2+]1
+
+142
+Improvement:-1.53287997906 | Similarity: 0.210526315789
+New y(m): -6.71098456424 | Old y(m): -5.17810458517
+New SMILES: C[C@@]1(C(=O)[O-])C=C[C@@H](C(=O)[O-])CC1 | Old: O=C([O-])CC1=C(C(=O)[O-])CCCC1
+
+143
+Improvement:1.66532155472 | Similarity: 0.316455696203
+New y(m): -0.96180715276 | Old y(m): -2.62712870748
+New SMILES: C[C@@H](NC(=O)c1cn[nH]c1N)c1ccccc1 | Old: Cn1cc(C(=O)NCCc2ccccc2)c(C(=O)[O-])n1
+
+144
+Improvement:3.42912581329 | Similarity: 0.333333333333
+New y(m): -0.814001117593 | Old y(m): -4.24312693088
+New SMILES: Cc1nn(C)c(C)c1C | Old: Cc1nn(C)c(C)c1CN[C@H]1CCC[NH2+]C1
+
+145
+Improvement:-0.351671393358 | Similarity: 0.254901960784
+New y(m): -4.57594119745 | Old y(m): -4.22426980409
+New SMILES: CC1(C)CC[NH2+]CC1 | Old: CC(C)[C@H]1C[NH2+]CC[C@]12CCO[C@H](C)C2
+
+146
+Improvement:2.31856195287 | Similarity: 0.319327731092
+New y(m): -1.30813938259 | Old y(m): -3.62670133546
+New SMILES: COc1ccc(S(=O)(=O)N2CCN(C(=O)[C@@H](C)NC(=O)c3ccccc3)CC2)c(N(C)C)c1 | Old: COc1ccc(S(=O)(=O)N(CC(=O)N2CC[NH2+]CC2)C(C)C)cc1
+
+147
+Improvement:3.66350800482 | Similarity: 0.209090909091
+New y(m): 1.45652512709 | Old y(m): -2.20698287773
+New SMILES: CC[C@@]1(c2ccc(OC)cc2)C[C@](CNc2cc(O)ccc2Br)(OC)[C@@H]1C | Old: CCC1(CO)CC[NH+](Cc2cc(OC)c(O)cc2Br)CC1
+
+148
+Improvement:2.31967772357 | Similarity: 0.336363636364
+New y(m): -0.366808403392 | Old y(m): -2.68648612697
+New SMILES: CCc1nc2n(n1)C[C@H](NC(=O)Nc1ccc3c(c1)CN(C1CCCC1)C3=O)CC2 | Old: CCc1nc2n(n1)CCC[C@@H]2N[C@H]1CCN(C2CC2)C1=O
+
+149
+Improvement:4.06603131496 | Similarity: 0.211111111111
+New y(m): -0.0780527190692 | Old y(m): -4.14408403403
+New SMILES: CC(C)C[C@H](c1cccc(NC(=O)N(C)C)c1)N1C[C@H](S)N=N1 | Old: CC(C)C[C@H](C[NH+](C)C)Nc1ncncc1N
+
+150
+Improvement:3.23911075065 | Similarity: 0.214953271028
+New y(m): -1.54942076386 | Old y(m): -4.78853151451
+New SMILES: CONCCC(=O)Nc1cccc(C=[N+]=Cc2ccc(O)cc2)c1 | Old: Oc1ccccc1/C=[NH+]/CCC/[NH+]=C/c1ccccc1O
+
+151
+Improvement:2.050685205 | Similarity: 0.237623762376
+New y(m): -0.476988076416 | Old y(m): -2.52767328141
+New SMILES: CC(C)C[C@](O)(CNC(=O)c1ccc(CN2CCC(=O)CC2)cc1)C(F)F | Old: CC(C)C[C@](C)(O)CNC(=O)C1CCC(C[NH3+])CC1
+
+152
+Improvement:1.52548043611 | Similarity: 0.391666666667
+New y(m): -1.47046176814 | Old y(m): -2.99594220425
+New SMILES: CC(=O)Nc1ccc(-c2nc3c(c(NCC4(CO)CCC4)n2)CC[NH+](C2CCCC2)C3)cc1 | Old: CC(=O)Nc1ccc(CN2CC[NH+](C3CCCC3)[C@H](CCO)C2)cc1
+
+153
+Improvement:2.32001587831 | Similarity: 0.25
+New y(m): -0.631548608312 | Old y(m): -2.95156448662
+New SMILES: COc1cc(C)cc([C@@]2(N)CN(C(=O)c3ccc(C)cc3)CC3(CCC3)N2)c1OC | Old: COc1cc(Cl)cc(CN2C[C@@H]3CCC[NH+]3C[C@H]2C)c1OC
+
+154
+Improvement:0.487623492853 | Similarity: 0.21568627451
+New y(m): -2.36482589681 | Old y(m): -2.85244938966
+New SMILES: CCn1nc2ncn(CC(C)(C)C3CCC(C)([NH3+])CC3)c(=O)c2c1N | Old: CN1CCN(c2ncc(C[NH2+]C(C)(C)C)s2)C(C)(C)C1=O
+
+155
+Improvement:-1.37856916379 | Similarity: 0.201923076923
+New y(m): -3.7731824934 | Old y(m): -2.39461332961
+New SMILES: C[C@@H]1COCCN1NC(=O)c1ccccc1[SH](=O)=O | Old: CC1CCN(S(=O)(=O)c2ccc(C(=O)N3CCC[C@@H]3C(=O)[O-])cc2)CC1
+
+156
+Improvement:3.79290186995 | Similarity: 0.285714285714
+New y(m): 0.275243552436 | Old y(m): -3.51765831752
+New SMILES: Cc1ccc(OC(=O)CNC(=O)N[C@@H](C)c2cccc(N)c2)c(C)c1 | Old: Cc1cc(NC(=O)C(=O)NC[C@H]2CC[NH+](C)C2)ccc1OC(C)C
+
+157
+Improvement:-0.837220137178 | Similarity: 0.310810810811
+New y(m): -4.60744119573 | Old y(m): -3.77022105855
+New SMILES: C#CC([NH3+])([NH3+])C(=O)Nc1cccc(C)c1 | Old: C#CC[NH2+]CC(=O)Nc1cccc(-c2nncn2C)c1
+
+158
+Improvement:2.67455800556 | Similarity: 0.333333333333
+New y(m): -0.291769879496 | Old y(m): -2.96632788506
+New SMILES: Cc1cccc(C(N)=O)c1 | Old: NC(=O)c1cccc(CNC(=O)[C@@H]2C[C@H]3CC[C@@H]2O3)c1
+
+159
+Improvement:-0.961927761943 | Similarity: 0.253012048193
+New y(m): -4.04639133516 | Old y(m): -3.08446357322
+New SMILES: C/[NH+]=C(\N)NCc1ccccc1 | Old: C/[NH+]=C(/NCc1cc(C)on1)NCc1ccccc1-n1ccnc1
+
+160
+Improvement:-0.243804246544 | Similarity: 0.318681318681
+New y(m): -2.51849310791 | Old y(m): -2.27468886137
+New SMILES: COc1ccc(CC(=O)N[C@]23C=CC=C[C@@H]2CS(=O)(=O)C3)cc1 | Old: COc1ccccc1CC(=O)N[C@@H]1CS(=O)(=O)C[C@H]1Cl
+
+161
+Improvement:-1.64506912582 | Similarity: 0.362068965517
+New y(m): -5.71105248252 | Old y(m): -4.0659833567
+New SMILES: C[NH2+][C@@H](Cc1csc(OC)n1)C(N)=O | Old: C[NH2+][C@@H](Cc1csc(C)n1)C(OC)OC
+
+162
+Improvement:-1.01899134214 | Similarity: 0.254545454545
+New y(m): -3.91921242079 | Old y(m): -2.90022107865
+New SMILES: [NH3+]C[C@H](O)c1cc(O)cc(F)c1 | Old: COc1c(F)cc([C@H]([NH3+])CO)cc1Cl
+
+163
+Improvement:4.03057940421 | Similarity: 0.270072992701
+New y(m): -0.219807601197 | Old y(m): -4.25038700541
+New SMILES: Cc1ccc(-c2nc(=O)n([C@@H]3CCCN(C(=O)Cc4ccc([N+](=O)[O-])cc4)C3)c3nc(N)[nH]c23)cc1 | Old: Cc1ccc(-c2nc3nc(CN4CC[NH+](C)CC4)cc([O-])n3n2)cc1
+
+164
+Improvement:0.864355564107 | Similarity: 0.304347826087
+New y(m): -2.48046607604 | Old y(m): -3.34482164015
+New SMILES: COc1ccc(C(=O)NC[C@@H]2CCCS2(=O)=O)cc1NC(=O)N1CCC[N@H+](C2CCCCCC2)CC1 | Old: COc1ccc([N+](=O)[O-])cc1CN1CCC[NH+](CC(=O)N2CCCC2)CC1
+
+165
+Improvement:0.453449543187 | Similarity: 0.325581395349
+New y(m): -2.48963949493 | Old y(m): -2.94308903812
+New SMILES: C[C@@H](c1ccc(C(=O)N2C[C@H]3C=CC(O)=C[C@H]3C2)cc1)c1ccc(C2([NH3+])CC[NH2+]CC2)cc1 | Old: C[C@@H](c1cccc(-c2ccc(C3(O)CC[NH2+]CC3)cc2)c1)[NH+]1CCCC1
+
+166
+Improvement:-0.33130999732 | Similarity: 0.328
+New y(m): -2.83175885395 | Old y(m): -2.50044885663
+New SMILES: Cc1cc(C)cc([NH+]2CCN([C@@H](c3nnnn3[C@@]3(C)CCCO3)C(C)C)CC2)c1 | Old: CCC[C@@H](c1nnnn1C[C@@H]1CCCO1)[NH+]1CCN(c2cc(C)ccc2C)CC1
+
+167
+Improvement:6.73443068352 | Similarity: 0.222222222222
+New y(m): -1.23232632171 | Old y(m): -7.96675700523
+New SMILES: CC[NH+](CC)Cc1cccc(C(=O)N2CCCCC2)c1 | Old: CC[NH+](CC)C[C@H]1CC[NH2+]C1
+
+168
+Improvement:1.60279490568 | Similarity: 0.473684210526
+New y(m): -4.12602371965 | Old y(m): -5.72881862533
+New SMILES: C[C@@H]([NH3+])C(=O)N1CCCC1 | Old: C[C@@H]([NH3+])C(=O)N1CC[C@@H](O)C1
+
+169
+Improvement:-0.8634788867 | Similarity: 0.327272727273
+New y(m): -4.06792084291 | Old y(m): -3.20444195621
+New SMILES: C#CC(C)(C)N[C@@]1(C)COCCN1 | Old: C#CC(C)(C)NC[C@H]1CN(C)CCO1
+
+170
+Improvement:-2.03319943382 | Similarity: 0.539473684211
+New y(m): -4.46036132726 | Old y(m): -2.42716189344
+New SMILES: CCO[C@H]1CC[NH2+][C@@]([NH3+])(C[C@@H](O)c2ccc(C)c(F)c2)C1 | Old: CCOC1CC[NH+](CC[C@@H](O)c2ccc(C)c(F)c2)CC1
+
+171
+Improvement:-0.548507434273 | Similarity: 0.20325203252
+New y(m): -3.7238885819 | Old y(m): -3.17538114763
+New SMILES: COC[C@@](C)(NC(=O)[C@@]1([NH3+])Cc2sc(C(C)=O)cc2C[NH2+]1)c1ccc(SC)cc1 | Old: COC[C@@H](C)NC(=O)C[NH+]1CCc2sc(-c3csc(C)n3)cc2C1
+
+172
+Improvement:-0.0371205842693 | Similarity: 0.293650793651
+New y(m): -3.7142333529 | Old y(m): -3.67711276863
+New SMILES: O=C(Nc1cccc(C(O)O)c1)/C([O-])=C\N1C=N[C@@]2(c3ccccc3)N=CC=C[C@H]2C1=O | Old: CCOc1cccc(NC(=O)/C(C#N)=C/[C@H]2C=c3ccccc3=[NH+]2)c1
+
+173
+Improvement:-1.77321489163 | Similarity: 0.230215827338
+New y(m): -6.67905514572 | Old y(m): -4.90584025409
+New SMILES: C[C@H](OC(=O)C(=O)NCc1cccc(N2C[C@H]([NH3+])[NH2+][C@H](c3ccccc3)C2)c1)[C@]1(N)CNCCO1 | Old: C[C@H](Cn1cccn1)[NH2+]CC(=O)N1C[C@H](C(N)=O)Oc2ccccc21
+
+174
+Improvement:0.890347245199 | Similarity: 0.2
+New y(m): -3.742231945 | Old y(m): -4.6325791902
+New SMILES: C[C@@H](Cn1cncn1)[NH+]1CCC(C(=O)NCc2cccc(C#N)c2)CC1 | Old: C[C@@H](C[NH+]1CCCCC1)NC(=O)c1n[nH]c(C2CC2)n1
+
+175
+Improvement:-1.34450432081 | Similarity: 0.265060240964
+New y(m): -5.45247841698 | Old y(m): -4.10797409617
+New SMILES: C[C@H]1C[C@@H](C)C[C@@]([NH3+])([C@@H](O)COC2(C)CCCC2)[NH2+]1 | Old: C[C@H]1C[C@@H](C)C[NH+](C[C@@H](O)CO[C@@H]2CCC[C@H]2C)C1
+
+176
+Improvement:2.84960054526 | Similarity: 0.290322580645
+New y(m): 0.136982650612 | Old y(m): -2.71261789465
+New SMILES: Cc1csc([C@H](C)NC(=O)C(C)(C)NC(=O)c2ccccc2)n1 | Old: Cc1csc([C@H](C)NC(=O)CCC[NH+]2CCCCC2)n1
+
+177
+Improvement:-2.71816792586 | Similarity: 0.271929824561
+New y(m): -5.47427760182 | Old y(m): -2.75610967596
+New SMILES: CN(CC(F)(F)F)[C@@H]1CC(=O)N(c2cccc(OC[C@H](O)[C@]3([NH3+])CCC[NH2+]3)c2)C1 | Old: O[C@]1(C[NH2+][C@@H]2CCN(CC(F)(F)F)C2)CCCc2ccccc21
+
+178
+Improvement:3.61342145146 | Similarity: 0.201612903226
+New y(m): -0.209022333275 | Old y(m): -3.82244378474
+New SMILES: CCOc1cccc(N2CCN(S(=O)(=O)CCn3c(=O)oc4ccccc43)CC2)c1 | Old: CCNS(=O)(=O)[C@@H]1CC[NH+](C[C@@H]2CCCc3ccccc32)C1
+
+179
+Improvement:4.27176740076 | Similarity: 0.2
+New y(m): 1.29681507262 | Old y(m): -2.97495232814
+New SMILES: Cc1nc(-c2ccc(F)cc2)n(C)c(=O)c1CCC(=O)NCc1ccc2c(c1)CCC2 | Old: Cc1nc(CCC(F)(F)F)[nH]c(=O)c1CCC(=O)[O-]
+
+180
+Improvement:2.8343539337 | Similarity: 0.38202247191
+New y(m): 0.421153388617 | Old y(m): -2.41320054508
+New SMILES: COc1ncc2nc([C@@H](C)Cl)n([C@H](C)C(=O)Nc3ccc(C)cc3)c2n1 | Old: COc1ncnc2c1nc([C@@H](C)Cl)n2[C@H](C)C(N)=O
+
+181
+Improvement:-0.0836743479326 | Similarity: 0.20652173913
+New y(m): -4.36477947099 | Old y(m): -4.28110512306
+New SMILES: O=C([O-])c1cscc1NN1CO[C@H]2C=CC=C[C@H]21 | Old: O=C([O-])[C@H]1C=C[C@H](NS(=O)(=O)c2ccc3c(c2)CCO3)C1
+
+182
+Improvement:0.0 | Similarity: 1.0
+New y(m): -3.2349150153 | Old y(m): -3.2349150153
+New SMILES: CCC[C@H]1CCC[NH+](CCCS)CC1 | Old: CCC[C@H]1CCC[NH+](CCCS)CC1
+
+183
+Improvement:1.72548453999 | Similarity: 0.336842105263
+New y(m): -0.707321540961 | Old y(m): -2.43280608095
+New SMILES: CC[S@](=O)c1ccccc1C(=O)N[C@@H]1CCCN(C(=O)NC(C)(C)C)C1 | Old: CC[S@](=O)[C@@H]1CCC[C@H](NC(=O)NNC(=O)C(C)(C)C)C1
+
+184
+Improvement:2.97361063218 | Similarity: 0.31007751938
+New y(m): -0.0408669503256 | Old y(m): -3.01447758251
+New SMILES: COc1cc(COc2ccc3c(c2)[C@H](n2cc[nH+]c2)CN(C(=O)C2CCC2)C3)cc(OC)c1 | Old: COc1cc(C[NH+]2CCC[C@]3(CCC(=O)N(C4CC4)C3)C2)cc(OC)c1
+
+185
+Improvement:1.35678458863 | Similarity: 0.311688311688
+New y(m): -2.61019078751 | Old y(m): -3.96697537614
+New SMILES: Cc1cccc([C@@H](C)[NH+]2[C@H]3CCC[C@H]2CC3)c1 | Old: Cc1ccccc1CC[NH+]1[C@H]2CC[C@@H]1CC(=O)C2
+
+186
+Improvement:2.63062527243 | Similarity: 0.346153846154
+New y(m): -0.362841009388 | Old y(m): -2.99346628182
+New SMILES: C[C@@H](NC1CC[NH+](C2(O)CCCCC2)CC1)c1cscc1-c1ccccc1 | Old: C[C@@H](NC1CC[NH+]([C@H]2CCCC[C@@H]2O)CC1)c1ccsc1
+
+187
+Improvement:3.74626536016 | Similarity: 0.298507462687
+New y(m): 0.619593505175 | Old y(m): -3.12667185499
+New SMILES: Cc1cc([C@@](O)(CNC(=O)NC(=O)NCc2ccc(C3CCCC3)cc2)N2CCCC2)c(C)o1 | Old: Cc1ccc([C@@](C)(O)CNC(=O)NC[C@@H](c2ccco2)[NH+]2CCCCC2)o1
+
+188
+Improvement:3.34252907687 | Similarity: 0.2
+New y(m): 0.433475724147 | Old y(m): -2.90905335272
+New SMILES: CC(=O)c1ccc(S(=O)(=O)NC(F)F)c(N2Cc3c(Br)cccc3C2=O)c1 | Old: C[C@@H]1[C@H](C(=O)[O-])CCN1S(=O)(=O)c1ccc(F)c(Cl)c1
+
+189
+Improvement:0.038944586338 | Similarity: 0.243902439024
+New y(m): -2.19631824059 | Old y(m): -2.23526282693
+New SMILES: C=CC(=O)OC | Old: COC(=O)/C=C/c1ccc[n+]([O-])c1
+
+190
+Improvement:0.0 | Similarity: 1.0
+New y(m): -4.2759844335 | Old y(m): -4.2759844335
+New SMILES: [NH3+]C[C@H]1CC[C@@H](C(=O)N(C[C@H]2CCCO2)[C@H]2CCSC2)O1 | Old: [NH3+]C[C@H]1CC[C@@H](C(=O)N(C[C@@H]2CCCO2)[C@H]2CCSC2)O1
+
+191
+Improvement:1.79844446333 | Similarity: 0.2
+New y(m): -2.31058958532 | Old y(m): -4.10903404865
+New SMILES: N#Cc1nn(-c2ccccc2)c([C@@H]2CN=CS2)c1C(=O)NC(N)=O | Old: N#Cc1nn(C(N)=O)c(N)c1C#N
+
+192
+Improvement:-2.02351931924 | Similarity: 0.280898876404
+New y(m): -5.78317538164 | Old y(m): -3.75965606241
+New SMILES: CNC(=S)N1CCNC[C@]1(N)C(=O)N1CCOCC1 | Old: C[C@H](CNC(=O)N1CCN(S(C)(=O)=O)CC1)N1CCOCC1
+
+193
+Improvement:-1.87403632886 | Similarity: 0.314285714286
+New y(m): -5.07071482804 | Old y(m): -3.19667849918
+New SMILES: [NH3+]C[C@@H](c1cccc(F)c1)[C@H]1NCC(=O)N1 | Old: [NH3+]C[C@@H](c1ccc(F)cc1)[C@@H]1CCS(=O)(=O)C1
+
+194
+Improvement:2.0060434083 | Similarity: 0.265957446809
+New y(m): -1.18124958011 | Old y(m): -3.18729298841
+New SMILES: CC(C)NC(=O)CNC(=O)N[C@H](C)C1CCCC1 | Old: CC(C)CNC(=O)NC(=O)[C@H](C)[NH2+]CC1(N2CCSCC2)CCCC1
+
+195
+Improvement:1.65993737385 | Similarity: 0.439024390244
+New y(m): -2.55574634045 | Old y(m): -4.2156837143
+New SMILES: [NH3+][C@@H](CO)c1cc(NC(=O)c2cc([O-])cc([N+](=O)[O-])c2)cc(C(F)(F)F)c1 | Old: [NH3+][C@@H](CO)c1cc(C(F)(F)F)cc([N+](=O)[O-])c1[O-]
+
+196
+Improvement:-0.359708065634 | Similarity: 0.222972972973
+New y(m): -4.65304252469 | Old y(m): -4.29333445906
+New SMILES: Cc1ccc(C2=C[C@@H]3[C@H](C=C2)NC(=O)[C@@]32N[C@](C)(CC(=O)[O-])C[C@]23CC(=O)N(C(C)(C)C)C3=O)cc1 | Old: CCCCN1C(=O)[C@@H]2[C@H](CCC(=O)[O-])N[C@]3(C(=O)Nc4c(CC)cccc43)[C@@H]2C1=O
+
+197
+Improvement:2.3390062053 | Similarity: 0.230088495575
+New y(m): 0.125220941902 | Old y(m): -2.2137852634
+New SMILES: Cc1nc(N)cc(Sc2cccc(NC(=O)N(C)C)c2)n1 | Old: Cc1cc(C)nc(NC(=[NH2+])Nc2ccc(S(=O)(=O)Nc3nccc(C)n3)cc2)n1
+
+198
+Improvement:-0.212211083175 | Similarity: 0.213235294118
+New y(m): -4.96697095714 | Old y(m): -4.75475987396
+New SMILES: Nc1nnc(CO[C@@H]2CCCN(C(=O)[C@@H]3CC[NH+]([C@@H]4CCCS4(=O)=O)C3)C2)n1-c1ccccc1 | Old: Cn1cnnc1C[NH+]1CC[C@]2(CCCN(C3CCCC3)C2=O)C1
+
+199
+Improvement:0.53583527491 | Similarity: 0.224137931034
+New y(m): -2.21775182821 | Old y(m): -2.75358710312
+New SMILES: CCN(CC)C(=O)C(=O)O | Old: CCN(CC(C)(C)O)C(=O)[C@H]1C[C@@H]2C=C[C@H]1C2
+
+200
+Improvement:1.5837629737 | Similarity: 0.264705882353
+New y(m): -3.95644050829 | Old y(m): -5.54020348199
+New SMILES: CC[C@@H](C)[NH2+][C@@H](C)NC(=O)C(C)C | Old: CC(C)C(=O)NCC[NH2+][C@@H](C)C[C@@H]1CCCCC[NH2+]1
+
+201
+Improvement:-2.39538062438 | Similarity: 0.297297297297
+New y(m): -4.77861461825 | Old y(m): -2.38323399387
+New SMILES: CC(C)C([NH3+])([NH3+])[C@@]12CC=CC[C@H]1OCCC2 | Old: CC(C)C[NH2+]C[C@H]1CCCO[C@H]1[C@H]1CC=CCC1
+
+202
+Improvement:-1.55890799521 | Similarity: 0.25
+New y(m): -4.27050995809 | Old y(m): -2.71160196288
+New SMILES: Cc1nc2c(s1)C=C[C@H]([NH3+])C2 | Old: Cc1nc2c(s1)[C@H]([NH+](C)Cc1cccn1C)CCC2
+
+203
+Improvement:3.2501065673 | Similarity: 0.319672131148
+New y(m): 0.0442867084141 | Old y(m): -3.20581985889
+New SMILES: COc1ccc(C(=O)N2CC[C@H](CN(C)S(=O)(=O)c3ccc(OC)cc3)C2)cc1 | Old: COc1ccc([C@@H]2CN(C(=O)Cn3nc4ccccc4n3)C[C@H]2[NH+](C)C)cc1
+
+204
+Improvement:2.03158517998 | Similarity: 0.203389830508
+New y(m): -1.29029627476 | Old y(m): -3.32188145473
+New SMILES: CC(=O)N[C@H](C)N1C=N[C@]2(SCC(=O)Nc3ccc4ccccc4c3)N=CC=C[C@H]12 | Old: CC(=O)NCCn1c(SCC(=O)[O-])nc2cccnc21
+
+205
+Improvement:1.58957040818 | Similarity: 0.208333333333
+New y(m): -1.61205923858 | Old y(m): -3.20162964676
+New SMILES: C[C@@H](NS(C)(=O)=O)C(=O)c1cccc(F)c1 | Old: C[C@@H]([NH2+]C[C@@H](C)[S@](C)=O)c1ccc(F)c(F)c1
+
+206
+Improvement:-1.29672657343 | Similarity: 0.435483870968
+New y(m): -4.10260581801 | Old y(m): -2.80587924458
+New SMILES: CC1(C(=O)N2CCCCC2([NH3+])[NH3+])CCCC1 | Old: C[NH2+]C1CCN(C(=O)C2(C)CCCC2)CC1
+
+207
+Improvement:4.27805630359 | Similarity: 0.242647058824
+New y(m): 1.21299416844 | Old y(m): -3.06506213515
+New SMILES: CCC(CC)C(=O)Nc1ccc([C@H](Cn2nc3cc(C)ccn3c2=O)S(=O)(=O)c2ccccc2)cc1 | Old: CCC(CC)[C@H](CNC(=O)c1cnc2c(C)cccn2c1=O)[NH+](C)C
+
+208
+Improvement:-1.56686971154 | Similarity: 0.511627906977
+New y(m): -6.05320993333 | Old y(m): -4.48634022179
+New SMILES: C[C@H](C([NH3+])[NH3+])[C@H](C)n1cccn1 | Old: C[NH2+]C[C@H](C)[C@H](C)n1cccn1
+
+209
+Improvement:2.01032777906 | Similarity: 0.30701754386
+New y(m): -0.607303196704 | Old y(m): -2.61763097576
+New SMILES: CC(=O)N(C)c1ccc(C(C)(C)C[NH+]2CCCN(C(=O)c3ccc(Cl)cc3)CC2)cc1 | Old: CC(C)[NH+]1CCCN(C(=O)C(C)(C)c2cccc(C#N)c2)CC1
+
+210
+Improvement:-1.5347216182 | Similarity: 0.4
+New y(m): -4.03143994181 | Old y(m): -2.49671832361
+New SMILES: CC(C)[C@@]1(N)NCCO[C@@]1(C)NC(=O)N1CCN(C(=O)C2CC2)CC1 | Old: CC(C)CN1CCO[C@H](CNC(=O)N2CCN(C(=O)[C@H]3C[C@H]3C)CC2)C1
+
+211
+Improvement:2.47613749885 | Similarity: 0.216981132075
+New y(m): -1.9574501488 | Old y(m): -4.43358764766
+New SMILES: CNS(=O)(=O)c1ccccc1C(=O)N1CC(C(C)(C)n2cnc(C)n2)C1 | Old: CNS(=O)(=O)[C@H]1CCC[NH+]([C@@H](C)c2ncc(C(C)(C)C)o2)C1
+
+212
+Improvement:-0.0198 | Similarity: 0.622641509434
+New y(m): -2.5292766885 | Old y(m): -2.5094766885
+New SMILES: Cc1cc(I)cc(NC[C@@H](C)C[C@@H](C)O)[nH+]1 | Old: Cc1[nH+]c(NC[C@@H](C)C[C@H](C)O)ccc1I
+
+213
+Improvement:0.724881717583 | Similarity: 0.298969072165
+New y(m): -1.9482480611 | Old y(m): -2.67312977868
+New SMILES: COC(=O)C(C)(C)c1cccc(NC(=O)C[N@@H+]2CCc3ccccc3C2)c1 | Old: COC(=O)C(C)(C)C[NH2+][C@@H]1C[C@H]1c1ccccc1
+
+214
+Improvement:0.891864906652 | Similarity: 0.256880733945
+New y(m): -4.77306876402 | Old y(m): -5.66493367067
+New SMILES: CC1=N[C@]2([C@H](C[NH+](C)C)N[C@@H]3CCS(=O)(=O)C3)C=CC=C[C@]2(N2CCC(C)CC2)S1 | Old: C[C@@H]1SCCC[C@]1(C[NH3+])N1CCC(C[NH+](C)C)CC1
+
+215
+Improvement:-1.92751131499 | Similarity: 0.220338983051
+New y(m): -4.33490516901 | Old y(m): -2.40739385402
+New SMILES: CC[NH2+][C@]1(C(=O)OCC)CNC[C@](N)([C@H](Nc2ncccn2)c2ccccc2)C1 | Old: CCC[NH2+][C@H](Cc1nn(C)c2ccccc12)c1ncc[nH]1
+
+216
+Improvement:-0.554031333459 | Similarity: 0.223300970874
+New y(m): -3.51792019366 | Old y(m): -2.9638888602
+New SMILES: CC(=O)NC1C[C@@H]2CN(C(=O)c3ccc(C(=O)[O-])cc3)C[C@@H]2C1 | Old: O=C([O-])[C@@H]1C[C@@H]1C(=O)N1CC2(CCCC2)c2c(F)cccc21
+
+217
+Improvement:2.58856928648 | Similarity: 0.205357142857
+New y(m): -0.22203715558 | Old y(m): -2.81060644206
+New SMILES: COc1ccc(CNC(=O)c2c(OC)cc(NC[C@]3(C)CCCS3(=O)=O)cc2OC)cc1 | Old: COc1cc(Br)c(C[NH2+]C[C@H](C)O)cc1OC
+
+218
+Improvement:3.30948897201 | Similarity: 0.205882352941
+New y(m): 0.36120144829 | Old y(m): -2.94828752373
+New SMILES: COc1cc(Cl)c2c(c1)N(C(=O)CN1C(=O)N[C@](C)(CCc3ccccc3)C1=O)CS2 | Old: COc1ccc(N2/C(=N/C(=O)CCCC(=O)[O-])S[C@@H]3CS(=O)(=O)C[C@H]32)cc1Cl
+
+219
+Improvement:0.848885023565 | Similarity: 0.409090909091
+New y(m): -5.95763000781 | Old y(m): -6.80651503137
+New SMILES: CC[C@@H](C)[NH+]1CCN(C2([NH3+])CCCC2)CC1 | Old: CC[C@@H](C)[NH+]1CCN([C@H]2CC[C@H]([NH2+]C)C2)CC1
+
+220
+Improvement:2.14708291697 | Similarity: 0.295454545455
+New y(m): -2.63902623793 | Old y(m): -4.7861091549
+New SMILES: CCCN1C(=O)CN2C[C@H]3C=CC(OCC(N)=O)=C[C@H]3C[C@@]2(c2ccccc2)C1=O | Old: CCCN1CC(=O)N2[C@@H](CC3=c4ccccc4=[NH+][C@@H]3[C@H]2c2ccccc2OC)C1=O
+
+221
+Improvement:0.792971086723 | Similarity: 0.604651162791
+New y(m): -2.12253187759 | Old y(m): -2.91550296431
+New SMILES: CC(C)=Cc1noc(CO[C@H]2CC[NH+](CCCc3ccccc3)C2)n1 | Old: Cc1noc(C[NH+]2CC[C@@H](OCCCc3ccccc3)C2)n1
+
+222
+Improvement:0.128451188551 | Similarity: 0.2
+New y(m): -2.24990867468 | Old y(m): -2.37835986323
+New SMILES: Cc1cc(CC(N)=O)c(Cn2cc([C@]3(O)CCC(C)(C)C[S@@]3=O)nn2)cc1Cl | Old: CCc1nn(C)c(C[C@]2(C[NH3+])CCCC(C)(C)[C@@H]2O)c1Cl
+
+223
+Improvement:3.45161085631 | Similarity: 0.23
+New y(m): -0.108476835911 | Old y(m): -3.56008769222
+New SMILES: COc1cc2c(c(NC(=O)Cc3ccccc3)c1)C=NC(=O)C2 | Old: COc1cc(NC(=O)C[C@@H]2C[NH2+]CCO2)cc(OC)c1
+
+224
+Improvement:-1.79184582269 | Similarity: 0.221153846154
+New y(m): -6.87422297134 | Old y(m): -5.08237714865
+New SMILES: [NH3+][C@]1(CNc2nccn(Cc3ccc(O)cc3)c2=O)CC[NH2+]C(O)(O)C1 | Old: COC1CC[NH+](CCNc2nccn(C)c2=O)CC1
+
+225
+Improvement:1.67001549721 | Similarity: 0.390243902439
+New y(m): -1.97626473608 | Old y(m): -3.64628023329
+New SMILES: C[C@@H](O)c1ccc(F)cc1N(C)C(=O)NC[C@H]1CCS(=O)(=O)C1 | Old: C[C@@H](O)c1cc(F)ccc1N(C)C[C@@H]1CCC[NH+]1C
+
+226
+Improvement:1.35023891307 | Similarity: 0.203539823009
+New y(m): -3.25807230383 | Old y(m): -4.60831121691
+New SMILES: C[C@@H](N1Cc2c(CC(O)O)cc(F)cc2C1=O)[NH+]1CCC[C@@H](C2CCCC2)C1 | Old: OCCC#Cc1cc(F)cc(C[NH+]2CCC[C@H]2CO)c1
+
+227
+Improvement:0.0106283076923 | Similarity: 0.666666666667
+New y(m): -3.19807939607 | Old y(m): -3.20870770376
+New SMILES: C[C@@H]1C[C@H](c2nncn2C2CCCCC2)C[NH2+]1 | Old: C[C@H]1[NH2+]CC[C@@H]1c1nncn1C1CCCCC1
+
+228
+Improvement:-0.909204954751 | Similarity: 0.207100591716
+New y(m): -3.97294845231 | Old y(m): -3.06374349756
+New SMILES: C[C@]1(n2c(-c3noc(-c4ccnc(N5CCCC5)n4)n3)c3cc4c(cc3cc2=O)CC=C4)CSC(N2CC[NH2+]C[C@]2(C)[NH3+])=N1 | Old: CC[NH+]1CCN(Cc2nc3nc(C)cc(N4CCCCCC4)n3n2)CC1
+
+229
+Improvement:1.40099238738 | Similarity: 0.233333333333
+New y(m): -1.13743387221 | Old y(m): -2.53842625959
+New SMILES: COc1cc(N)cc(NC(=O)N2CCCC[C@H]2O)c1 | Old: COc1cc(C)ccc1NC(=O)N[C@H]1CC[C@H]([NH+](C)C)C1
+
+230
+Improvement:0.389168898114 | Similarity: 0.314606741573
+New y(m): -1.88766787844 | Old y(m): -2.27683677655
+New SMILES: CC(C)(NC(=O)c1n[nH]c(=O)[nH]1)c1cccc(F)c1 | Old: O=C(NCCCc1n[nH]c(=O)[nH]1)[C@H]1C[C@@H]1c1c(F)cccc1F
+
+231
+Improvement:0.527103407669 | Similarity: 0.229885057471
+New y(m): -3.28120107072 | Old y(m): -3.80830447839
+New SMILES: COc1ccc(CN(C(C)(O)O)[C@]2(C[NH3+])CC[C@H](C)SC2)cc1 | Old: CCN(CCOC)[C@]1(C[NH3+])CCCS[C@@H]1C
+
+232
+Improvement:2.18061166652 | Similarity: 0.242990654206
+New y(m): -0.175703757645 | Old y(m): -2.35631542416
+New SMILES: CC(C)c1ccc(NC(=O)[C@@H](C#N)Nc2nc(C3CCC3)n[nH]2)cc1 | Old: CC(C)c1cc(NC(=O)C[NH+]2CCC[C@H]2c2cccs2)on1
+
+233
+Improvement:-0.756505551955 | Similarity: 0.265060240964
+New y(m): -3.86582101145 | Old y(m): -3.1093154595
+New SMILES: [NH3+][C@@H](Cc1cc(F)cc(F)c1)[C@H]1COCCN1 | Old: [NH3+][C@@H](Cc1cccc(F)c1F)[C@H]1CN2CCC[C@@H]2CO1
+
+234
+Improvement:0.0314984615385 | Similarity: 0.698113207547
+New y(m): -2.55167790496 | Old y(m): -2.5831763665
+New SMILES: C[C@H](CCO)[NH2+][C@@H]1CCc2cccc(Br)c21 | Old: C[C@H](CCO)[NH2+][C@H]1CCc2c(Br)cccc21
+
+235
+Improvement:4.49334122287 | Similarity: 0.322916666667
+New y(m): 1.29712627977 | Old y(m): -3.1962149431
+New SMILES: CC(C)C(=O)Nc1ccc(C(=O)NC(=S)NOc2ccccc2Br)cc1 | Old: CC(C)[C@@H](NC(=O)c1ccc(NS(C)(=O)=O)cc1)C(=O)[O-]
+
+236
+Improvement:2.56055227192 | Similarity: 0.256
+New y(m): -1.4560337379 | Old y(m): -4.01658600983
+New SMILES: COc1cc(C)ccc1C(=O)N[C@H](C)C(=O)N[C@@H]1CCCN([SH](C)(=O)c2cccc(F)c2)C1 | Old: COc1ccccc1[C@H](C)NC(=O)C[NH+](C)C1CCS(=O)(=O)CC1
+
+237
+Improvement:1.13205323049 | Similarity: 0.360824742268
+New y(m): -1.27030391216 | Old y(m): -2.40235714265
+New SMILES: COCc1ccc([C@H](O)C[N@H+](C)Cc2ccc(N3CCCCCC3)cc2)o1 | Old: COCc1ccc(C[NH+](C)Cc2ccccc2O)o1
+
+238
+Improvement:2.85274378691 | Similarity: 0.328125
+New y(m): -0.819116453306 | Old y(m): -3.67186024022
+New SMILES: COC(=O)c1cscc1NC(C)=O | Old: COC(=O)c1sccc1NC(=O)[C@@H]1CC[NH2+][C@@H]1C
+
+239
+Improvement:1.90248521974 | Similarity: 0.211538461538
+New y(m): -1.25305992254 | Old y(m): -3.15554514227
+New SMILES: COCCc1ccc(S(=O)(=O)N[C@H](C)C(=O)N2C[C@@H](C)CC(F)(F)C2)cc1 | Old: COCCCS(=O)(=O)/N=C(\[O-])c1cnn(C(C)C)c1C
+
+240
+Improvement:1.15997993631 | Similarity: 0.247191011236
+New y(m): -1.06288699458 | Old y(m): -2.22286693088
+New SMILES: CN1CN(CC(=O)Nc2cccc(C(=O)[O-])c2)c2ccc(Br)cc21 | Old: [N-]=[N+]=NC[C@H](Nc1ccc(Br)cc1)C(=O)[O-]
+
+241
+Improvement:2.03157565424 | Similarity: 0.211382113821
+New y(m): -0.465785599278 | Old y(m): -2.49736125352
+New SMILES: Cc1ccc(C(=O)NC(=S)N2CC[C@](C)(Nc3cc[n+](CC(F)F)cc3)C2)cc1 | Old: Cc1ccc([C@H](NC(=O)NC[C@H]2CC[NH+](C3CC3)C2)C2CC2)cc1
+
+242
+Improvement:1.78468537872 | Similarity: 0.333333333333
+New y(m): -0.431968598814 | Old y(m): -2.21665397753
+New SMILES: Cc1cc(F)cc(NC(=O)C(=O)NCC(=O)NCc2ccccc2)c1 | Old: Cc1ccc(F)cc1NC(=O)C(=O)NCCCn1cc[nH+]c1
+
+243
+Improvement:4.02414910366 | Similarity: 0.311688311688
+New y(m): -3.24614810829 | Old y(m): -7.27029721196
+New SMILES: C[C@H]([NH3+])[C@@H]1CCCN(C(=O)N[C@@H]2CC2(C)C)C1 | Old: CC[NH+]1CCC[C@@H]1CNC(=O)N1CCC[C@H]([NH+](C)C)C1
+
+244
+Improvement:0.531663772057 | Similarity: 0.226890756303
+New y(m): -2.88057494956 | Old y(m): -3.41223872162
+New SMILES: Cc1nsc(NNC(=O)c2ccc(CN3C[C@H](C)O[C@]4(CCS(=O)(=O)C4)C3)cc2)n1 | Old: Cc1nsc(N2CCC[NH+](Cc3ncccc3C)CC2)n1
+
+245
+Improvement:2.08463844094 | Similarity: 0.547619047619
+New y(m): -2.08382158055 | Old y(m): -4.16846002149
+New SMILES: Cc1nc(-c2ccccc2)sc1C[NH+]1CCC[C@@H]1CN1CCOCC1 | Old: Cc1nc(C[NH+]2CCC[C@@H]2CN2CCOCC2)cs1
+
+246
+Improvement:-0.658893512125 | Similarity: 0.244094488189
+New y(m): -4.55023012091 | Old y(m): -3.89133660878
+New SMILES: Cc1ccc2c(c1)N(C1CCCC1)C[C@@]2(C)[C@@]1([NH3+])CC[NH2+][C@@](O)(N2CCOCC2)C1 | Old: Cc1c(C[NH+]2CC[C@@H](N3CCOCC3)[C@H](O)C2)[nH]c2c(C)cccc12
+
+247
+Improvement:1.39234133516 | Similarity: 0.201834862385
+New y(m): -1.72658860227 | Old y(m): -3.11892993743
+New SMILES: CCN[C@@H]1C[C@]23C=C(N(C)C(=O)Oc4ccccc4)C=C(C)[C@]2(C[C@H]([NH3+])C3)C1 | Old: CCN[C@@H]1c2cc(OC)ccc2C[C@H]1[NH+](C)C(C)C
+
+248
+Improvement:-3.28980170069 | Similarity: 0.205882352941
+New y(m): -6.12037002124 | Old y(m): -2.83056832056
+New SMILES: COc1cc(O)cc([C@@]2([NH3+])C[NH2+][C@@]3(NC(=O)Cc4cccc(-n5cncn5)c4)NCC[C@H]32)c1 | Old: COc1cc(C[NH+]2CC[C@@H](NCc3scnc3C)C2)cc(OC)c1
+
+249
+Improvement:1.45576667539 | Similarity: 0.3
+New y(m): -2.09108976591 | Old y(m): -3.5468564413
+New SMILES: CC[C@@H](C)[C@H]1COCC(=O)C1 | Old: CC[C@H](C)[C@H]1OCCC[C@H]1C(=O)[O-]
+
+250
+Improvement:0.0555220138808 | Similarity: 0.35
+New y(m): -3.41016566518 | Old y(m): -3.46568767906
+New SMILES: Cc1cccc(N2CC[NH+](C)CC2)c1S(=O)(=O)NCC(=O)NC[C@@H](C)c1ccc2nccnc2c1 | Old: Cc1c(Cl)cccc1S(=O)(=O)NC[C@@H](C)CN1CC[NH+](C)CC1
+
+251
+Improvement:3.12999894786 | Similarity: 0.212389380531
+New y(m): -0.858334750716 | Old y(m): -3.98833369858
+New SMILES: CC(C)c1c(Br)cc(F)cc1N1CCN(C(=O)C[NH+]2CCc3ccccc3C2)CC1 | Old: CC(C)[C@@H]1C(=O)NCC[NH+]1Cc1cc(F)cc(F)c1
+
+252
+Improvement:1.15455915721 | Similarity: 0.205882352941
+New y(m): -7.08353899668 | Old y(m): -8.23809815389
+New SMILES: C[NH2+][C@@H](C)[C@@]1(C)CCCC[NH2+]1 | Old: C[C@@H](C[C@@H]1CCCC[NH2+]1)[NH2+]C[C@@H]1CCCC[NH+]1C
+
+253
+Improvement:1.44667648223 | Similarity: 0.255813953488
+New y(m): -6.2226328684 | Old y(m): -7.66930935064
+New SMILES: [NH3+]CC1(CN2CC[N@@H+](CO)C3(CCCCC3)C2)CCC1 | Old: [NH3+]C[C@](O)(CN1CC[NH+]2CCCC[C@H]2C1)C1CC1
+
+254
+Improvement:5.37871491121 | Similarity: 0.20325203252
+New y(m): 1.50560653818 | Old y(m): -3.87310837303
+New SMILES: Cc1cc(Br)cc(OC(=O)NC(=O)Nc2ccc3c(c2)[nH]c(=O)n3C2CC2)c1 | Old: Cc1ccc([N+](=O)[O-])cc1NC(=O)C(=O)N1CC[C@H]([NH+]2CCCC2)C1
+
+255
+Improvement:4.27385131533 | Similarity: 0.241935483871
+New y(m): -2.90235758639 | Old y(m): -7.17620890172
+New SMILES: CC(C)C[N@H+](CC(=O)CBr)Cc1ccc(N)cc1 | Old: CC(C)C[NH+](C)CCC(=O)[O-]
+
+256
+Improvement:-1.90663079604 | Similarity: 0.409638554217
+New y(m): -5.31831472102 | Old y(m): -3.41168392498
+New SMILES: N[C@@]1(c2coc(CO)c2)CCCC[C@@H]([NH+]2CCCC2)N1 | Old: OCc1ccc(CN2CCCC[C@@H]([NH+]3CCCC3)C2)o1
+
+257
+Improvement:1.40852380066 | Similarity: 0.258620689655
+New y(m): -2.33075504685 | Old y(m): -3.7392788475
+New SMILES: CCCn1nnnc1-c1cccc(N2CN(C(=O)[C@@H]3CC(=O)N(C)C3)CC2=S)c1 | Old: CCCn1nnnc1CN1CC[C@]2(C1)NC(=O)N(C(C)C)C2=O
+
+258
+Improvement:1.12776152427 | Similarity: 0.271739130435
+New y(m): -1.23186781818 | Old y(m): -2.35962934245
+New SMILES: C[C@H]1COCCN1c1ccccc1COC(N)=O | Old: C[C@H]1CN(c2ccccc2C[NH2+]C2CCC(O)CC2)C[C@@H](C)O1
+
+259
+Improvement:3.67249463488 | Similarity: 0.22
+New y(m): 0.298867913252 | Old y(m): -3.37362672162
+New SMILES: CCC(C)CC | Old: CC[C@H](C)C[C@H](C)NC(=O)[C@@H]1CCC[NH2+][C@@H]1C
+
+260
+Improvement:0.0 | Similarity: 1.0
+New y(m): -3.91202466574 | Old y(m): -3.91202466574
+New SMILES: COCC[N+]1=C(C)C[C@@H](C(=O)CSc2nccc([O-])n2)[C@H]1C | Old: COCC[N+]1=C(C)C[C@@H](C(=O)CSc2nccc([O-])n2)[C@H]1C
+
+261
+Improvement:-1.47390428443 | Similarity: 0.284210526316
+New y(m): -4.24129137639 | Old y(m): -2.76738709196
+New SMILES: CC[NH2+][C@H](C1(CC)CCCCC1)[C@]12NCCO[C@@H]1CCN2 | Old: CC[NH2+][C@H]([C@@H]1CN2CCC[C@@H]2CO1)[C@@H]1CCCC[C@H]1CC
+
+262
+Improvement:2.65687416183 | Similarity: 0.25
+New y(m): -2.75161676665 | Old y(m): -5.40849092847
+New SMILES: CCC(CC)(C(=O)N1CCC[C@@H](c2cccc(NCC(N)=O)c2)C1)[NH+](C)C | Old: CCC(CC)([C@@H](Cc1ccc[nH+]c1N)NC)[NH+](C)C
+
+263
+Improvement:1.64533508832 | Similarity: 0.214285714286
+New y(m): -1.81098261929 | Old y(m): -3.45631770761
+New SMILES: CN(C)C(=O)O | Old: CN(C)C(=O)O[C@@H]1CCCC[C@H]1C[NH3+]
+
+264
+Improvement:-2.71517717216 | Similarity: 0.322222222222
+New y(m): -5.39309229852 | Old y(m): -2.67791512636
+New SMILES: Nc1cc(Cl)cc(S(=O)(=O)N2CCN[C@@]3(C2)NCC(=O)N3)c1 | Old: Nc1ccc(Cl)c(S(=O)(=O)N2CCN3C(=O)NC[C@H]3C2)c1
+
+265
+Improvement:3.42420635652 | Similarity: 0.272727272727
+New y(m): 0.185348911045 | Old y(m): -3.23885744548
+New SMILES: COc1ccc(C(=O)N[C@@H]2CCS(=O)(=O)C2)cc1OCc1cc(C)cc(C)c1 | Old: COc1ccc(C[NH+]2CCNC(=O)CC2)cc1OCC(C)C
+
+266
+Improvement:1.94515816294 | Similarity: 0.251655629139
+New y(m): -1.55500609557 | Old y(m): -3.5001642585
+New SMILES: O=C1CC(=O)N(c2ccc(S(=O)(=O)NCC(=O)NCC3(c4cccc(O)c4)CCC3)cc2)C1 | Old: O=C(NCC[NH+]1CCN(C(=O)c2ccccc2[N+](=O)[O-])CC1)[C@H]1CC(=O)N(c2ccccc2)C1
+
+267
+Improvement:-0.106727650728 | Similarity: 0.644444444444
+New y(m): -5.81162373672 | Old y(m): -5.70489608599
+New SMILES: [NH3+][C@H](C(=O)[O-])[C@H](O)c1cccc(F)c1 | Old: [NH3+][C@H](C(=O)[O-])[C@H](O)c1ccc(F)cc1
+
+268
+Improvement:0.133320950498 | Similarity: 0.231884057971
+New y(m): -4.70212254842 | Old y(m): -4.83544349891
+New SMILES: C[C@@H]1COCCN1C(=O)[C@H](N)CC(N)=O | Old: CN(C)C(=O)C[C@H](C[NH3+])N1CCOCC1(C)C
+
+269
+Improvement:2.53941056096 | Similarity: 0.362637362637
+New y(m): -0.126174263527 | Old y(m): -2.66558482449
+New SMILES: C[C@H](CN(C)C(=O)c1ccc(F)cc1F)NC(=O)c1ccc2c(c1)OCO2 | Old: C[C@H](CN(C)C(=O)c1ccc(F)c(F)c1F)C(=O)[O-]
+
+270
+Improvement:3.49221485945 | Similarity: 0.358490566038
+New y(m): 0.128938130817 | Old y(m): -3.36327672863
+New SMILES: CCc1ccc([C@H](C)NC(=O)C(=O)Nc2cccc3c2OC[C@@H](C)O3)cc1 | Old: CCc1ccc([C@@H](C)NC(=O)[C@H](C)[NH+]2CCc3n[nH]cc3C2)cc1
+
+271
+Improvement:4.46258304209 | Similarity: 0.276119402985
+New y(m): -0.634223274854 | Old y(m): -5.09680631695
+New SMILES: CC(=O)c1cccc(N2C(=O)N=C([O-])C[C@@]2(CCN2CCCC2=O)c2cccc(F)c2)c1 | Old: CC(=O)C1=C([O-])C(=O)N(CCC2=c3ccccc3=[NH+][C@H]2C)[C@H]1c1ccccc1F
+
+272
+Improvement:-0.178897514611 | Similarity: 0.2625
+New y(m): -3.52418988153 | Old y(m): -3.34529236692
+New SMILES: C[C@H](Sc1nn(C2CC2)c(=O)[nH]1)C1([NH3+])CCCC1 | Old: [NH3+][C@H]1CCC[C@@H]1CCSc1n[nH]c(=O)n1C1CC1
+
+273
+Improvement:4.1259430572 | Similarity: 0.236842105263
+New y(m): 1.62640968014 | Old y(m): -2.49953337706
+New SMILES: CC(C)c1nc(NCc2cc(O)cc(Br)c2)cc(SCC(=O)NCC(=O)N2CC[C@H](c3ccccc3)C2)n1 | Old: CC(C)Cc1nc(SCC(=O)NC[C@@H]2CCCO2)c2c(=O)n(C)c(=O)n(C)c2n1
+
+274
+Improvement:-1.29625227895 | Similarity: 0.308641975309
+New y(m): -5.07719777868 | Old y(m): -3.78094549973
+New SMILES: C[C@]1([NH3+])CCC[C@H](NC(=O)c2ccc(O)cc2)[NH2+]1 | Old: CC[NH+]1CCC[C@H](NC(=O)c2ccc(OC)c(O)c2)C1
+
+275
+Improvement:0.719114898381 | Similarity: 0.236842105263
+New y(m): -3.5087991483 | Old y(m): -4.22791404668
+New SMILES: C[C@@H](NC(=O)N[C@@]1([NH3+])CC[C@@](C)(c2ccccc2)[NH2+]1)[S@@](=O)c1ccc(Cl)cc1 | Old: C[NH+]1CC[C@@H](NC(=O)NCCS(C)(=O)=O)[C@@H]1c1ccc(Cl)cc1
+
+276
+Improvement:-1.71002767664 | Similarity: 0.239130434783
+New y(m): -5.58545807045 | Old y(m): -3.87543039381
+New SMILES: CC(C)CN1C=N[C@]2(N[C@@H]3CC[NH2+]CC(=O)C3)C=CC=C[C@H]12 | Old: CC(C)Cn1cc[nH+]c(N2C[C@H]3CC[C@@H]2C3)c1=O
+
+277
+Improvement:1.13103300981 | Similarity: 0.201923076923
+New y(m): -1.54522986436 | Old y(m): -2.67626287417
+New SMILES: CCOC(=O)c1ccc(OC(=O)NC[C@@]2(C)NC(=O)N(C3CC3)C2=O)cc1 | Old: CCOC(=O)C1CCC(NC(=O)[C@@](C)([NH3+])CC)CC1
+
+278
+Improvement:-1.11969785847 | Similarity: 0.25
+New y(m): -4.19615908732 | Old y(m): -3.07646122884
+New SMILES: C[C@H](O)[C@H](C)CNC(=O)[C@]1(C)CCCS1(=O)=O | Old: C[C@H](CCCO)NC(=O)C[C@H]1CCS(=O)(=O)C1
+
+279
+Improvement:4.24423146928 | Similarity: 0.338345864662
+New y(m): 0.368272538541 | Old y(m): -3.87595893074
+New SMILES: O=C(c1cc(CSc2ccc(OC(F)F)cc2)on1)N1CCN(c2cc[n+]([O-])cc2)CC1 | Old: O=C(c1cc(COc2ccc(-n3cncn3)cc2)on1)N1CC[NH+]2CCC[C@H]2C1
+
+280
+Improvement:4.61171594522 | Similarity: 0.245901639344
+New y(m): 1.28188611555 | Old y(m): -3.32982982967
+New SMILES: CC(C)c1ccc(F)cc1N1C(=O)CN(CCC(=O)N(C)Cc2ccccc2)C1=O | Old: CC(C)[C@H]1CN(C(=O)CCC(N)=O)CCC[NH+]1Cc1ccc(F)cc1
+
+281
+Improvement:1.58446134783 | Similarity: 0.23275862069
+New y(m): -1.61979864377 | Old y(m): -3.2042599916
+New SMILES: N#Cc1ccc(S(=O)(=O)N2CCC(NC[C@@H]3C[C@@H]4C=CC=C[C@@H]4O3)CC2)cc1 | Old: N#Cc1ccnc(N2CCC([NH2+]C[C@@H]3CCCO3)CC2)c1
+
+282
+Improvement:0.068103277314 | Similarity: 0.357142857143
+New y(m): -2.24403859744 | Old y(m): -2.31214187476
+New SMILES: O=C([O-])c1cccc(F)c1 | Old: [NH3+]CC(=O)c1ccc(F)cc1
+
+283
+Improvement:3.99770299172 | Similarity: 0.211267605634
+New y(m): -0.882804399728 | Old y(m): -4.88050739145
+New SMILES: C[C@H](Cn1c(=O)n(C)c2ccc(C#N)cc21)N(C)C(=O)c1ccc(SCC(=O)N2CCOCC2)cc1 | Old: CNC(=O)[C@H](C)C[NH+](C)Cc1nnc2n(C)c(=O)c3cc(C)ccc3n12
+
+284
+Improvement:5.55882793163 | Similarity: 0.252873563218
+New y(m): -4.524048102 | Old y(m): -10.0828760336
+New SMILES: CC[NH+]1CCC[C@@H]1C(=O)NCC[C@](C)(O)c1ccc(S(C)(=O)=O)cc1 | Old: CC[NH+]1CCC[C@@H]1C[NH+](C)CCC(=O)[O-]
+
+285
+Improvement:-1.57684696266 | Similarity: 0.26582278481
+New y(m): -5.20048431373 | Old y(m): -3.62363735107
+New SMILES: CN(C(=O)CNC(=O)C1=N[C@@](C)(N)C(=O)N1)C1(C)CCC1 | Old: CCNC(=O)CN(CC)C(=O)CC1([NH3+])CCC1
+
+286
+Improvement:-0.0176406065098 | Similarity: 0.230769230769
+New y(m): -3.07043660074 | Old y(m): -3.05279599423
+New SMILES: CC1=C[C@@](C)(CC(=O)N[C@H]2CC[NH2+][C@@]([NH3+])(c3ccc(C)cc3)C2)CCC1 | Old: CC1=C(CC[NH+]2CCC[C@@H](C(N)=O)C2)C(C)(C)CCC1
+
+287
+Improvement:2.52172205191 | Similarity: 0.230769230769
+New y(m): -0.809767866815 | Old y(m): -3.33148991872
+New SMILES: COc1cncc(OC2C[C@@H]3C=CC=C[C@@H]3C2)c1 | Old: COc1cccc(O[C@@H]2CC[C@H]([NH3+])C2)n1
+
+288
+Improvement:1.08085100936 | Similarity: 0.375
+New y(m): -2.52887518186 | Old y(m): -3.60972619122
+New SMILES: CCS(=O)(=O)[C@H](C)[NH2+]/C(C)=C\c1ccc(C#N)cc1 | Old: C[S@](=O)CC[NH2+]C/C=C/c1ccc(C#N)cc1
+
+289
+Improvement:2.94378601754 | Similarity: 0.354166666667
+New y(m): -1.20313729621 | Old y(m): -4.14692331375
+New SMILES: CN[C@]1(C#N)CCC[C@H](S(=O)(=O)[C@H](C)c2ccc(-n3cccn3)cc2)C1 | Old: CN[C@]1(C#N)CCC[C@H]([NH+](C)CCc2ccccn2)C1
+
+290
+Improvement:3.68584262699 | Similarity: 0.272058823529
+New y(m): 0.502938201201 | Old y(m): -3.18290442579
+New SMILES: Cc1cc(C)c(C(=O)N2C[C@@H]3C=CC=C[C@H]3C2)c(NC(=O)CCn2c(=O)oc3ccccc32)c1 | Old: Cc1nn(-c2ccccc2)c(C)c1CNC(=O)[C@@H]1[C@@H](C(=O)[O-])[C@@H]2C=C[C@H]1C2
+
+291
+Improvement:-2.87552978745 | Similarity: 0.246753246753
+New y(m): -5.5684036628 | Old y(m): -2.69287387535
+New SMILES: CC(C)[C@H](C)NC(=O)C([NH3+])([NH3+])c1cscc1C(N)=O | Old: CCC[C@H](C)NC(=O)C[NH2+]Cc1cscc1C
+
+292
+Improvement:-2.05198017045 | Similarity: 0.266666666667
+New y(m): -7.30678503738 | Old y(m): -5.25480486692
+New SMILES: C/[NH+]=C(/NCc1c[nH]c(N)[nH+]1)N1CC[C@H](C)C1 | Old: C/[NH+]=C(/NCc1[nH+]ccn1CC(C)C)N1C[C@H]2CC=CC[C@@H]2C1
+
+293
+Improvement:0.450334346444 | Similarity: 0.222222222222
+New y(m): -2.91828357096 | Old y(m): -3.36861791741
+New SMILES: CC(C)OCC[N@@H+](Cc1ccccc1)Cn1ccc(C=O)n1 | Old: CC(C)[NH2+]CC1CC[NH+](CCSc2ccccc2)CC1
+
+294
+Improvement:3.18754454315 | Similarity: 0.280701754386
+New y(m): 0.15342723166 | Old y(m): -3.03411731149
+New SMILES: C[C@@H](CN)C[C@@H](C)Cc1csc(Br)c1 | Old: C[C@@H](Cc1[nH+]ccn1C)C[C@@H](C)Br
+
+295
+Improvement:-2.04122795763 | Similarity: 0.2
+New y(m): -7.08469380047 | Old y(m): -5.04346584285
+New SMILES: C[C@H]([NH3+])S[C@H](C)C(=O)[O-] | Old: C[C@H](SCC[NH3+])c1ccc(C(=O)[O-])o1
+
+296
+Improvement:3.45357173224 | Similarity: 0.228571428571
+New y(m): 0.877619988117 | Old y(m): -2.57595174413
+New SMILES: COc1ccc([C@H](C)N2CC[C@@H](N(C)C(=O)c3cccc4[nH]c(=O)cc(C)c34)CC2=[N+]2CCCCC2)cc1 | Old: Cc1ccc2ncc(C(=O)N(C)C3CC[NH+](C(C)C)CC3)n2c1
+
+297
+Improvement:3.40746487282 | Similarity: 0.280991735537
+New y(m): 1.11959024408 | Old y(m): -2.28787462874
+New SMILES: COCc1ccc2c(c1)n(-c1cccc(N)c1)c(=O)n2CC(=O)N(C)C1CCCCCC1 | Old: COCCn1c2ccccc2n2c(=O)n(CC(=O)N(C)C)nc12
+
+298
+Improvement:4.59068880017 | Similarity: 0.287671232877
+New y(m): 0.406960688609 | Old y(m): -4.18372811156
+New SMILES: CC1(C)CC[C@H](NC(=O)COc2ccccc2)C1 | Old: CC1(C)CCC[C@@H]1NC(=O)COCC(=O)[O-]
+
+299
+Improvement:7.05162211379 | Similarity: 0.220779220779
+New y(m): 4.10196930379 | Old y(m): -2.94965280999
+New SMILES: C[C@@H]1CC(O[C@@H](C)C(=O)N2CC(=O)N(Cc3cccc(-c4ccccc4)c3)c3ccccc32)=CC2(CCCCCC2)C1 | Old: CC1=C[C@@H](C)[C@H]2C(=O)N([C@H](Cc3ccccc3)C(=O)[O-])C(=O)[C@H]2C1
+
+300
+Improvement:2.41451590112 | Similarity: 0.217821782178
+New y(m): -5.97465799908 | Old y(m): -8.3891739002
+New SMILES: CNS(=O)(=O)N[C@H](CC(=O)OC)C(=O)N[C@]12C=CC=C[C@@H]1C(=O)C2 | Old: COC(=O)C[C@H](NC(=O)N1CC[NH+]2CCC[C@@H]2C1)C(=O)[O-]
+
+301
+Improvement:-0.184778733032 | Similarity: 0.2
+New y(m): -2.52740992425 | Old y(m): -2.34263119122
+New SMILES: C1=Cc2cncc(O[C@H]3CN=CC=N3)c2CC1 | Old: c1cnc2c(O[C@H]3CCC[NH2+]C3)cccc2c1
+
+302
+Improvement:-0.140689130177 | Similarity: 0.286885245902
+New y(m): -3.65860171304 | Old y(m): -3.51791258286
+New SMILES: CC(=O)c1cccc(N[C@@H]2CCC[N@H+](CC(=O)NC(=S)N[C@H](C)N3CCCC3)C2)c1 | Old: C[C@@H]1CCC[NH+](C[C@@H](C)NC(=O)N[C@@H]2CCCC[C@@H]2n2cccn2)C1
+
+303
+Improvement:-0.99353366983 | Similarity: 0.202898550725
+New y(m): -4.5201471638 | Old y(m): -3.52661349397
+New SMILES: CC(C)[NH2+][C@@]1([S@@](=O)C(C)C)CCC(=O)C1 | Old: CCC[NH2+][C@H]1[C@H](S(=O)(=O)C(C)C)CCC1(C)C
+
+304
+Improvement:-0.594466659019 | Similarity: 0.269565217391
+New y(m): -5.8576041938 | Old y(m): -5.26313753478
+New SMILES: C[C@@H](N(C)C(=O)Cc1cccc(N2CCO[C@@](C)(C(=O)[O-])C2)c1)[NH+](C)C | Old: CN(CC[NH+](C)C)C(=O)C[C@H]1COCCN1C(=O)c1ccc2[nH]nnc2c1
+
+305
+Improvement:1.21575585178 | Similarity: 0.279661016949
+New y(m): -2.5104485173 | Old y(m): -3.72620436908
+New SMILES: CC(C)CNC(=O)c1cccc(NC(=O)CN2CC[C@@]3(C(=O)[O-])C=CC=C[C@H]3C2)c1 | Old: CC(C)CNC(=O)CNC(=O)[C@H]1CCC[NH+]1Cc1ccc(F)cc1
+
+306
+Improvement:1.02449504122 | Similarity: 0.208955223881
+New y(m): -1.17959026103 | Old y(m): -2.20408530225
+New SMILES: CCO[C@H]1C[C@@H](C)CCN1C(=O)c1cccc(NC(=O)[C@@]23C=CC=C[C@H]2OCCO3)c1 | Old: CC1CCN(C(=O)C[NH+]2CCC[C@@H](c3nc4ccccc4o3)C2)CC1
+
+307
+Improvement:3.00709240921 | Similarity: 0.290322580645
+New y(m): -0.584469387572 | Old y(m): -3.59156179679
+New SMILES: Cc1ccccc1O[C@@H](C)C=O | Old: CCCCOc1ccccc1C[C@@H]([NH3+])C(=O)[O-]
+
+308
+Improvement:-3.05674795468 | Similarity: 0.224
+New y(m): -5.71601558187 | Old y(m): -2.65926762719
+New SMILES: C[C@@H](NC(=O)C(=O)N[C@@]12C=CC=C[C@@]1(C(N)=O)C=NN2)C12CCC(CC1)C2 | Old: NC(=O)c1n[nH]c2ccc(NC(=O)C(=O)NCC[C@H]3C[C@H]4CC[C@@H]3C4)cc12
+
+309
+Improvement:-0.347636634842 | Similarity: 0.789473684211
+New y(m): -3.49991531817 | Old y(m): -3.15227868333
+New SMILES: O[C@H]1CC[C@@H]2[C@@H]3CC[C@@H](O)[C@@H]3[C@H]12 | Old: O[C@H]1CCC2C1C1CC[C@H](O)C21
+
+310
+Improvement:0.247981174188 | Similarity: 0.25
+New y(m): -2.13803192623 | Old y(m): -2.38601310042
+New SMILES: CCc1nn(C)c(C(=O)N[C@@H](c2cccc(N3CNC(=O)C3)c2)C(C)(C)O)c1C | Old: CCc1nn(C)c(C(=O)NC[C@@H](CC)CCO)c1N
+
+311
+Improvement:3.20751735293 | Similarity: 0.2
+New y(m): 0.414306250907 | Old y(m): -2.79321110203
+New SMILES: CC(C)(OCc1ccccc1)[C@H]1NC(=O)N(C2CCN(C(=O)c3cccc4c3CCC4)CC2)C1=O | Old: CC(C)CN1C(=O)C2(CCCC2)[NH2+]C12CCN(C(=O)c1ccoc1)CC2
+
+312
+Improvement:-0.755000896218 | Similarity: 0.463768115942
+New y(m): -3.25171047354 | Old y(m): -2.49670957732
+New SMILES: Nc1cc(OC(=O)[C@H]2C[C@H]3CC[C@H]2O3)ccn1 | Old: COc1ccc(NC(=O)[C@H]2C[C@H]3CC[C@@H]2O3)cn1
+
+313
+Improvement:3.0847421802 | Similarity: 0.253731343284
+New y(m): -1.35255468418 | Old y(m): -4.43729686438
+New SMILES: CCOC(=O)N1CCC[C@H](C(=O)NCNC(=O)N2C[C@H](c3ccccc3)O[C@H]3C=CC(F)=C[C@@H]32)C1 | Old: CCOC(=O)N[C@@H]1CCCN(C(=O)NC[C@H]2CC[NH+](C3CC3)C2)C1
+
+314
+Improvement:-0.801220251971 | Similarity: 0.239436619718
+New y(m): -3.01192809508 | Old y(m): -2.21070784311
+New SMILES: C[C@@H]1Cc2nc(N3CCC[C@H](C(=O)N(C)CCc4ccccc4)C3)c(C(N)=O)c(=O)n2N1 | Old: CNc1nc(C2CCN(C(=O)Cc3ccccn3)CC2)[nH+]c2c1CN(C(C)=O)CC2
+
+315
+Improvement:-3.03205298502 | Similarity: 0.351851851852
+New y(m): -6.06362964214 | Old y(m): -3.03157665712
+New SMILES: CN1C=C2C=CC=C[C@@]2(C(=O)N(N)CC(=O)N[C@H]2CCC[C@@H]([NH+](C)C)C2)C1 | Old: C[NH+](C)[C@@H]1CCC[C@@H](NC(=O)NCc2cc(=O)[nH]c3ccccc23)C1
+
+316
+Improvement:1.44088604201 | Similarity: 0.34375
+New y(m): -2.24949362043 | Old y(m): -3.69037966244
+New SMILES: C[NH+](C)C1(NC(=O)c2ccc3c(c2)CCCN3)CCCC1 | Old: C[NH+](C)[C@@H]1CC[C@@H](NC(=O)c2ccc3c(c2)CCCN3S(C)(=O)=O)C1
+
+317
+Improvement:3.40399792354 | Similarity: 0.23
+New y(m): -0.68725150627 | Old y(m): -4.09124942981
+New SMILES: CC(C)[C@H](O)c1cccc(NC(=O)C(=O)NNS(=O)(=O)c2ccc(Br)cc2)c1 | Old: CC(C)[C@H](CO)NS(=O)(=O)c1ccsc1C(=O)[O-]
+
+318
+Improvement:3.15603897353 | Similarity: 0.280991735537
+New y(m): 0.0605334394543 | Old y(m): -3.09550553407
+New SMILES: C[C@H]1CCC[C@@H](NC(=O)[C@H](C)N(c2ccccc2)c2cc(=O)n(C3CC3)cn2)C1 | Old: C[C@H]1CCC[C@H](NC(=O)CN2CC[NH+](C/C=C/c3ccco3)CC2)C1
+
+319
+Improvement:4.0080747194 | Similarity: 0.278195488722
+New y(m): 0.495912550548 | Old y(m): -3.51216216885
+New SMILES: CC(=O)Nc1ccc(C(=O)N2C[C@H](COc3cnc4ccccc4n3)CC3(CC3)C2)cc1 | Old: NC(=O)CN1CC2(CCC1=O)CC[NH+](Cc1ccnc3ccccc13)CC2
+
+320
+Improvement:5.6778478634 | Similarity: 0.221238938053
+New y(m): -2.27226022628 | Old y(m): -7.95010808967
+New SMILES: C[N@@H+](CC(=O)N1CCC[C@H](C(=O)Nc2ccccc2)C1)Cc1ccc2c(c1)OCO2 | Old: C[NH+](CC(=O)N1CCOC1=O)CC1CC[NH2+]CC1
+
+321
+Improvement:-2.56162416687 | Similarity: 0.210526315789
+New y(m): -5.26770271488 | Old y(m): -2.70607854801
+New SMILES: CC(C)N1C=N[C@@]2(CC3(O)CC[NH2+]CC3)C=CC=C[C@@H]12 | Old: CCCn1c(C[C@@]2(O)CCC[NH2+]C2)nc2ccccc21
+
+322
+Improvement:1.60270168641 | Similarity: 0.333333333333
+New y(m): -0.806629368555 | Old y(m): -2.40933105496
+New SMILES: NC(=O)COc1ccccc1 | Old: CC[NH2+][C@@]1(C(=O)OC)CCC[C@@H](Oc2ccccc2)C1
+
+323
+Improvement:-0.859648397941 | Similarity: 0.33064516129
+New y(m): -3.24095076139 | Old y(m): -2.38130236345
+New SMILES: CC[C@@H](C)[C@@](C(=O)N1CCN(CC(=O)NC)CC1)(c1csc(=O)[nH]1)N1CCCC1 | Old: CCCC[C@@H](C(=O)N1CCN(CC(=O)N2CCCC[C@@H]2C)CC1)N1CCCS1(=O)=O
+
+324
+Improvement:1.068200412 | Similarity: 0.235294117647
+New y(m): -3.69538792199 | Old y(m): -4.76358833399
+New SMILES: C[NH+](C)C1(NC(=O)[C@@H]2C=CCCC2)CCCC1 | Old: C[NH+](C)[C@@H]1CC[C@H](NC(=O)[C@@H]2CCCc3[nH]ncc32)C1
+
+325
+Improvement:1.30461871506 | Similarity: 0.292134831461
+New y(m): -1.13015764663 | Old y(m): -2.43477636168
+New SMILES: CC(C)OCC(=O)NCC(=O)Nc1cc(C(N)=O)ccc1Br | Old: CC(C)CCNC(=O)[C@@H](C)Oc1ccc(N)cc1C(=O)[O-]
+
+326
+Improvement:0.0229605460769 | Similarity: 0.383720930233
+New y(m): -2.44460049387 | Old y(m): -2.46756103994
+New SMILES: CC(C)(NC(=O)c1cnccn1)N1CCOCC1 | Old: O=C(NCCCN1CCOCC1)c1nc(-c2cnccn2)no1
+
+327
+Improvement:0.932817999387 | Similarity: 0.206896551724
+New y(m): -1.66592059432 | Old y(m): -2.5987385937
+New SMILES: CC(C)OC(=O)[C@]1([C@H](C)NCc2ccccc2)CNC[C@](N)(c2ccccc2)O1 | Old: CCC[NH2+][C@H](Cc1ccccc1)[C@@H]1CN(CC)CCO1
+
+328
+Improvement:2.72067437179 | Similarity: 0.605263157895
+New y(m): -0.736939391393 | Old y(m): -3.45761376318
+New SMILES: Brc1ccc(-n2nncc2C[NH+](CC2CCCCC2)C2CC2)cc1 | Old: Cn1nncc1C[NH+](CC1CCCCC1)C1CC1
+
+329
+Improvement:2.57743643639 | Similarity: 0.225225225225
+New y(m): -1.59346200786 | Old y(m): -4.17089844425
+New SMILES: C[C@H]1C[C@H](C(=O)N(C)C)C[C@H](NS(=O)(=O)c2ccc3oc(=O)n(C4CC4)c3c2)C1 | Old: C[C@H]1C[C@H]([NH+]2CC[C@H](S(=O)(=O)NC3CC3)C2)CC(C)(C)C1
+
+330
+Improvement:0.706119098143 | Similarity: 0.397590361446
+New y(m): -2.77760169726 | Old y(m): -3.4837207954
+New SMILES: O=C(Nc1cc(F)cc(Cl)c1)[C@]1([NH2+]C2CC2)CCC[C@@H]1O | Old: NC(=O)[C@]1([NH2+]C2CC2)CC[C@H](Oc2cc(F)cc(F)c2)C1
+
+331
+Improvement:1.37462697571 | Similarity: 0.3
+New y(m): -3.93373240449 | Old y(m): -5.30835938021
+New SMILES: C[C@@]1(NC(=O)[C@H]2CCCN(C(N)=O)C2)CCS(=O)(=O)C1 | Old: O=C(NC[C@H]1CCS(=O)(=O)C1)N1CCC[C@H]([NH+]2CCCC2)C1
+
+332
+Improvement:1.35297751931 | Similarity: 0.203389830508
+New y(m): -4.80300717165 | Old y(m): -6.15598469096
+New SMILES: COc1ccc([C@@]23C=CC=C[C@@]2([N+](=O)[O-])N(C2=NC([O-])=NC(=O)C2)CC3=O)cc1 | Old: COc1ccc(OC)c([C@H]2CC[NH+](c3c([O-])c(=[OH+])c3=O)C2)c1
+
+333
+Improvement:3.44978415306 | Similarity: 0.208955223881
+New y(m): -2.73678926992 | Old y(m): -6.18657342298
+New SMILES: CC(C)(C)[C@H]([NH3+])CC(=O)N1CCCC1 | Old: CC(C)C[C@@H]([NH3+])C(=O)N1CC[C@H](C(=O)[O-])[C@@H]1C
+
+334
+Improvement:3.59552559809 | Similarity: 0.261146496815
+New y(m): 1.33001137308 | Old y(m): -2.26551422501
+New SMILES: O=C(Nn1cnc(-c2cc(F)cc(-c3ccccc3)c2)n1)[C@@H]1CCCN(C(=O)c2ccccc2)C1 | Old: O=C(c1cccc(F)c1)N1CCCC[C@@H]1c1nc2c(c(=O)[nH]1)C[NH+](Cc1cccnc1)CC2
+
+335
+Improvement:3.04421693878 | Similarity: 0.295774647887
+New y(m): 0.337922909062 | Old y(m): -2.70629402972
+New SMILES: CC1CCC(C#N)(C(=O)NOCc2ccccc2)CC1 | Old: CC1CCC(C#N)([C@H](O)C=O)CC1
+
+336
+Improvement:1.25328901794 | Similarity: 0.243902439024
+New y(m): -4.90311787542 | Old y(m): -6.15640689336
+New SMILES: C=C(C)N(CC(=O)[O-])C(=O)[C@@H](CC)NC(=O)c1cccc([NH3+])c1 | Old: C=CCN(CC(=O)[O-])C(=O)[C@@H](C[NH3+])C(C)C
+
+337
+Improvement:0.920818645484 | Similarity: 0.25
+New y(m): -2.58831592706 | Old y(m): -3.50913457254
+New SMILES: CSC1(NC(=O)N[C@@H](C)CN)CCCC1 | Old: CS[C@H]1CC[C@H](NC(=O)N[C@@H](C)Cn2cc[nH+]c2)C1
+
+338
+Improvement:-2.85904473989 | Similarity: 0.208333333333
+New y(m): -6.32427655862 | Old y(m): -3.46523181873
+New SMILES: N[C@H]1CN(S(=O)(=O)c2onc3c2CN(S)N=C3)CCN1 | Old: CC(C)n1cc(S(=O)(=O)N2CCn3c(nn(C)c3=O)C2)cn1
+
+339
+Improvement:2.18742598411 | Similarity: 0.219512195122
+New y(m): -0.639371105118 | Old y(m): -2.82679708923
+New SMILES: C[C@H](c1cc(N)nc2c1CCC=C2)[N@@H+](C)Cc1ccc(C(=O)NCc2ccccc2)cc1 | Old: C[NH+](Cc1ccsc1)Cc1ccc(C(N)=O)cc1[N+](=O)[O-]
+
+340
+Improvement:1.5164981734 | Similarity: 0.212328767123
+New y(m): -1.90810211782 | Old y(m): -3.42460029122
+New SMILES: C[C@@H]1CCCN(c2nc(=O)cc(CN(C)C3=C[C@@H]4C[NH+]([C@H](C)[C@H](C)c5ccccc5)C[C@@H]4C=C3)[nH]2)C1 | Old: CC(C)[C@H](C)[NH+]1Cc2cccc(NCc3cc(=O)n4ccsc4[nH+]3)c2C1
+
+341
+Improvement:-0.32379811204 | Similarity: 0.327586206897
+New y(m): -5.45757762664 | Old y(m): -5.1337795146
+New SMILES: C[C@H](NC(=O)N[C@@H]1CCCO1)C(=O)[O-] | Old: O=C([O-])CCNC(=O)N[C@@H]1CCOC1
+
+342
+Improvement:-1.59149833387 | Similarity: 0.236363636364
+New y(m): -6.39022064937 | Old y(m): -4.7987223155
+New SMILES: O=C([O-])CNC(=O)CO | Old: O=C([O-])COCCNC(=O)[C@@H]1CCCCO1
+
+343
+Improvement:0.66507580263 | Similarity: 0.759259259259
+New y(m): -2.29087385013 | Old y(m): -2.95594965276
+New SMILES: CCCCn1nc(C)c(C[NH2+]C[C@@H](C)OC)c1Cl | Old: CCCCn1nc(C)c(C[NH2+]C[C@@H](C)O)c1Cl
+
+344
+Improvement:-0.473610281679 | Similarity: 0.352941176471
+New y(m): -3.43104872902 | Old y(m): -2.95743844734
+New SMILES: CC(C)(C(=O)N1CCC[C@@H](N2C(=O)N[C@H]3C=CC=C[C@H]32)C1)n1cncn1 | Old: O=C(CCCn1cncn1)N1CCC[C@@H](N2CCNC2=O)C1
+
+345
+Improvement:-0.235803734142 | Similarity: 0.297297297297
+New y(m): -3.34992612821 | Old y(m): -3.11412239407
+New SMILES: C[C@H]1COCCN1C(=O)NCc1ncn[nH]1 | Old: C[C@H]1CN(C(=O)NCc2ncnn2C)C[C@@H](C)O1
+
+346
+Improvement:0.323429307875 | Similarity: 0.302631578947
+New y(m): -4.54965324204 | Old y(m): -4.87308254991
+New SMILES: CCc1c2c([nH+]n1C)NC(C)=CN[C@]21CCOC1 | Old: CCc1[nH+]n(C)c2c1NC[C@]1(C)COC[C@H]1N2
+
+347
+Improvement:2.82574440667 | Similarity: 0.369863013699
+New y(m): -0.0223051977715 | Old y(m): -2.84804960444
+New SMILES: CNC(=O)Nc1cccc(F)c1 | Old: CCNC(=O)N1CC[C@@H]([NH2+][C@H](C)CC(=O)Nc2cccc(F)c2)C1
+
+348
+Improvement:4.37189542209 | Similarity: 0.207547169811
+New y(m): -0.876324392425 | Old y(m): -5.24821981451
+New SMILES: CC(C)Oc1ccc(N)cc1N1CC[NH+](CC(=O)N2Cc3ccc(F)cc3O[C@H](Cc3ccc(F)cc3)C2)CC1 | Old: CC(C)[NH+]1CCC(N2CC[NH+](Cc3c(F)ccc(F)c3F)C[C@@H]2CCO)CC1
+
+349
+Improvement:1.3293698055 | Similarity: 0.350427350427
+New y(m): -1.28126647599 | Old y(m): -2.61063628149
+New SMILES: CCO[C@@H]1CC[NH2+][C@]2(C1)C[C@H](c1ccccc1)CCN2C(=O)c1ccccc1 | Old: CC[NH+]1C[C@H](c2ccccc2)CC2(CCN(C(=O)c3ccon3)CC2)C1
+
+350
+Improvement:0.314108613835 | Similarity: 0.464285714286
+New y(m): -3.09248529167 | Old y(m): -3.4065939055
+New SMILES: [NH3+]C1([C@H]2CCCOC2)CCCC1 | Old: [NH3+]C1([C@H]2CCO[C@@]3(CCSC3)C2)CCCC1
+
+351
+Improvement:2.43661135342 | Similarity: 0.216666666667
+New y(m): -0.358579004034 | Old y(m): -2.79519035746
+New SMILES: CC(C)[C@H](O)c1csc(Cl)c1 | Old: CC(C)([C@H](O)c1ccc(Cl)s1)[NH+]1CCCC1
+
+352
+Improvement:4.91500380829 | Similarity: 0.231481481481
+New y(m): -0.254083601493 | Old y(m): -5.16908740979
+New SMILES: CC(C)Oc1ccc(N[C@@H](C(=O)N(C)C[C@H]2CCCN(C#N)C2)C2CC2)cc1 | Old: CC(C)N[C@@]1(C#N)CC[C@@H](N(C)C[C@@H]2CC[NH+](C)C2)C1
+
+353
+Improvement:1.72913953756 | Similarity: 0.313725490196
+New y(m): -2.41475780399 | Old y(m): -4.14389734154
+New SMILES: CCC(=O)N1CCC(C(=O)NC[C@H](c2ccc(F)cc2)[NH+]2CCCC2)CC1 | Old: CCC(=O)N1CCCC[C@@H]1C(=O)NC[C@@H](C1CC1)[NH+](C)C
+
+354
+Improvement:-0.201009815455 | Similarity: 0.233082706767
+New y(m): -4.40618783501 | Old y(m): -4.20517801956
+New SMILES: Cc1nc([N@@H+]2CC[C@H]3C=CC=C[C@@H]3C2)n(OCC(=O)NC(=S)Nc2cccc(CCO)c2)n1 | Old: Cc1nc2n(n1)C[C@H]([NH2+]C[C@@H](O)CN(C)Cc1ccccc1)CC2
+
+355
+Improvement:-0.259483232896 | Similarity: 0.582278481013
+New y(m): -3.60274594126 | Old y(m): -3.34326270837
+New SMILES: C[C@@]1(N2CC[NH+](C3CCCCCC3)CC2)C[C@H]2C=C[C@H]1C2 | Old: C1=C[C@H]2C[C@@H]1C[C@H]2CN1CC[NH+](C2CCCCCC2)CC1
+
+356
+Improvement:3.06966272461 | Similarity: 0.2
+New y(m): -1.35249711845 | Old y(m): -4.42215984307
+New SMILES: COC(=O)c1ccc(C(=O)N(C)[C@H](C)N2CC(=O)C[C@@H]3C=CC=C[C@@H]3C2)cc1 | Old: COC(=O)c1sccc1C[NH+](C)CC(=O)N(C)C
+
+357
+Improvement:2.99326031231 | Similarity: 0.428571428571
+New y(m): -0.113149346453 | Old y(m): -3.10640965876
+New SMILES: CCN(C)S(=O)(=O)c1ccc(C(=O)NCc2ccc3c(c2)OCO3)cc1F | Old: CCN(C)S(=O)(=O)c1ccc(C[NH2+]C)cc1F
+
+358
+Improvement:3.02506481713 | Similarity: 0.290322580645
+New y(m): -1.25580216107 | Old y(m): -4.2808669782
+New SMILES: NC(=O)N1CCCCC1 | Old: NC(=O)N1CCC[C@H](C(=O)N2CCC(C(=O)[O-])CC2)C1
+
+359
+Improvement:1.33742673535 | Similarity: 0.247619047619
+New y(m): -2.04231317155 | Old y(m): -3.3797399069
+New SMILES: CCc1ccc2c(c1)[S@H](CS)C(NC(=O)C1([NH+](C)C)CCCCCC1)=N2 | Old: CCc1ccc(S(=O)(=O)NCC2([NH+](C)C)CCOCC2)s1
+
+360
+Improvement:3.09409951103 | Similarity: 0.223776223776
+New y(m): 0.132972285261 | Old y(m): -2.96112722577
+New SMILES: Cc1ccc([N+](=O)[O-])c(-c2cc(Cc3ccccc3)nn2[C@@]2(N)CC(=O)[C@@H](C3CCCC3)N2)c1 | Old: Cc1nn(-c2ccccc2)c(C)c1CN1C[C@@H](C[NH+]2CCCC2)[C@@H](CO)C1
+
+361
+Improvement:1.94561641765 | Similarity: 0.537037037037
+New y(m): -1.88721667309 | Old y(m): -3.83283309073
+New SMILES: CC1CCN(c2cccc[nH+]2)CC1 | Old: CC1CCN(c2[nH+]cccc2C(=O)[O-])CC1
+
+362
+Improvement:2.4635866841 | Similarity: 0.217391304348
+New y(m): -1.52473470603 | Old y(m): -3.98832139012
+New SMILES: CC(C)CN(C(=O)N[C@]1(C)C[C@@H]2C=CC=C[C@]2(C(=O)N2CCCCC2)O1)[C@H](C)C#N | Old: CC(C)CN(CCC#N)C(=O)NC[C@@H]1CC[C@H](C(=O)[O-])O1
+
+363
+Improvement:-0.0200418231227 | Similarity: 0.212598425197
+New y(m): -2.71434155825 | Old y(m): -2.69429973513
+New SMILES: CC(C)N1C[C@]23C=CC=C[C@]2(C=C(NC(=O)CC[C@H](C)O[C@@H]2CCS(=O)(=O)C2)C=C3)C1=O | Old: CC(C)N1CC[C@H]([NH2+][C@H](C)CCc2ccc3c(c2)OCO3)C1=O
+
+364
+Improvement:3.05274851767 | Similarity: 0.234042553191
+New y(m): -1.80339960917 | Old y(m): -4.85614812684
+New SMILES: Cc1ccc([NH+]2CCC[C@@]2(C)NC(=O)CCc2nc(C)cs2)cc1 | Old: Cc1nc(CCC[NH+]2CCC[C@H]2C(N)=O)cs1
+
+365
+Improvement:3.65241928847 | Similarity: 0.222222222222
+New y(m): 1.26969670465 | Old y(m): -2.38272258382
+New SMILES: Cc1ccccc1C | Old: Cc1ccc(C)c([C@@H](O)[C@@H](C)[C@@H](C)C(=O)[O-])c1
+
+366
+Improvement:2.23980590291 | Similarity: 0.205882352941
+New y(m): 0.0229512982654 | Old y(m): -2.21685460464
+New SMILES: Cc1noc2cc(N(C)C)cc(NC(=O)C(=O)NCc3ccc(O[C@@H]4CCSC4)cc3)c12 | Old: Cc1nn(C)c2ncc(NC(=O)NC[C@H](c3ccccc3)[NH+](C)C)cc12
+
+367
+Improvement:1.86326661468 | Similarity: 0.28125
+New y(m): -0.373717545687 | Old y(m): -2.23698416036
+New SMILES: NC(=O)c1ccccc1 | Old: NC(=O)c1cccc(CNC(=O)[C@@H]2C[C@@H]3C=C[C@H]2C3)c1
+
+368
+Improvement:4.66992475137 | Similarity: 0.258064516129
+New y(m): 1.02831412007 | Old y(m): -3.6416106313
+New SMILES: C[C@H](NC(=O)N1CCC[C@@H](NC(=O)Oc2ccccc2)C1)c1c(F)cc(F)cc1F | Old: CN(C(=O)N[C@H]1CC[C@@H]([NH+](C)C)C1)[C@@H]1CCN(c2ccccc2F)C1=O
+
+369
+Improvement:-1.34071609564 | Similarity: 0.241758241758
+New y(m): -3.72678279299 | Old y(m): -2.38606669736
+New SMILES: O=C(Nc1ccncc1)[C@@]12N=CNC1=CC=CN2 | Old: O=C(Nc1cccnc1)C1=CC=CN2CCS(=O)(=O)N=C12
+
+370
+Improvement:3.55398666664 | Similarity: 0.218390804598
+New y(m): 0.247381532014 | Old y(m): -3.30660513462
+New SMILES: CCn1ncc(C(=O)N[C@@]2(C)CCC[C@H](N)C2)c1-c1ccc(Br)cc1 | Old: CCn1ncc(C[NH2+]C)c1C1CC1
+
+371
+Improvement:3.22612722468 | Similarity: 0.204724409449
+New y(m): -0.0318985454197 | Old y(m): -3.2580257701
+New SMILES: CC(C)(C(=O)N1CC[C@H]2C=CC=C[C@H]2C1)[C@@]1(Oc2ccccc2)NC(=O)C(=O)N1c1cccc(Br)c1 | Old: CC(C)[C@@H](ON1C(=O)c2ccccc2C1=O)C(=O)[O-]
+
+372
+Improvement:-1.14490705484 | Similarity: 0.230769230769
+New y(m): -6.57550665507 | Old y(m): -5.43059960023
+New SMILES: C[C@@H]1CC[C@]2(C[NH2+]CC[C@]2(C)[NH3+])C1 | Old: C[C@H]1CCCC[NH+]1C[C@@H]1CCC(C)(C)[C@@H]1[NH3+]
+
+373
+Improvement:-1.92947754681 | Similarity: 0.232876712329
+New y(m): -5.92134727408 | Old y(m): -3.99186972727
+New SMILES: CNC(=O)[C@@]1(N)CNCCN1C(C)=O | Old: CNC(=O)CN1CCN(C(=O)c2nc(C)n[nH]2)CC1
+
+374
+Improvement:4.85730409766 | Similarity: 0.368852459016
+New y(m): 2.05293040165 | Old y(m): -2.80437369601
+New SMILES: Cc1ccc(C(=O)Nc2cccc(S(=O)(=O)N(C)CCOc3ccccc3)c2)cc1 | Old: Cc1ccccc1C[NH+](C)CC(=O)Nc1cccc(S(=O)(=O)/N=C2\CCCN2)c1
+
+375
+Improvement:-0.725898380232 | Similarity: 0.347222222222
+New y(m): -2.92188385396 | Old y(m): -2.19598547373
+New SMILES: Cc1nc(CNC(=O)[C@@]2(C)CCOC2)no1 | Old: C[C@H]1OCC[C@H]1C(=O)NCc1noc(C(C)(C)C)n1
+
+376
+Improvement:-0.279637061483 | Similarity: 0.54
+New y(m): -2.82050594952 | Old y(m): -2.54086888803
+New SMILES: CCOc1c(N)ncnc1S(C)(=O)=O | Old: CCOc1ncnc(S(=O)(=O)CC)c1N
+
+377
+Improvement:-2.9280596763 | Similarity: 0.220183486239
+New y(m): -5.79348412709 | Old y(m): -2.8654244508
+New SMILES: CC(=O)c1cccc(N2C=[NH+][C@H](C(=O)N[C@H](C)NC(=O)O)C2=O)c1 | Old: CC(=O)c1cn(CCC(=O)N[C@@H]2CCC[NH+](C)C2)c2ccccc12
+
+378
+Improvement:-0.480702110341 | Similarity: 0.275
+New y(m): -2.8540249184 | Old y(m): -2.37332280806
+New SMILES: COC(=O)[C@@H](C)CC(=O)NC[C@H]1C=CCC(=O)C1 | Old: COC(=O)C(CC[C@@]1(C)[C@@H](C)CC=C[C@H]1O)C(=O)OC
+
+379
+Improvement:-0.320386299553 | Similarity: 0.281045751634
+New y(m): -3.03828480731 | Old y(m): -2.71789850776
+New SMILES: CCOc1ccc(N2C(=O)N[C@@]3(C(=O)N[C@@]4(OCC)CCS(=O)(=O)C4)C=CC=C[C@@H]23)cc1 | Old: CCOc1ccc(NC(=O)c2ccc(N3C(=O)N4CCC5=c6ccccc6=[NH+][C@H]5[C@@]4(C)C3=O)cc2)cc1
+
+380
+Improvement:3.70858425316 | Similarity: 0.26618705036
+New y(m): 1.21754304805 | Old y(m): -2.49104120511
+New SMILES: CC(=O)Nc1ccc(C(=O)N[C@]2(C)CN(Cc3cccs3)C(=O)N2c2ccccc2)cc1 | Old: O=C(Cn1nnn(-c2cccs2)c1=O)NC[C@@H]1CN(Cc2ccccc2)CCO1
+
+381
+Improvement:3.55037143959 | Similarity: 0.298611111111
+New y(m): -1.36027930278 | Old y(m): -4.91065074238
+New SMILES: Cc1c(-c2ccccc2)nc([O-])nc1S(=O)(=O)NCc1ccc2c(N3CCOCC3)n[nH]c2c1 | Old: [O-]c1nc(-c2cccnc2)nc2c1CC[NH+](Cc1ccnc(N3CCOCC3)n1)C2
+
+382
+Improvement:2.35888842096 | Similarity: 0.333333333333
+New y(m): -0.0958250823305 | Old y(m): -2.45471350329
+New SMILES: Cc1ccn2c(=O)cc(C(=O)NC(=S)Nc3cccc(F)c3)nc2c1 | Old: Cc1ccn2c(=O)c(C(=O)Nc3n[n-]c(C(F)(F)F)n3)cnc2c1
+
+383
+Improvement:2.44233867568 | Similarity: 0.205882352941
+New y(m): -1.88141883309 | Old y(m): -4.32375750877
+New SMILES: Nn1nc(Sc2ccccc2Br)[nH]c1=O | Old: O=c1[nH]nc([O-])n1/N=C/c1ccco1
+
+384
+Improvement:-0.231653677092 | Similarity: 0.227272727273
+New y(m): -5.13088018155 | Old y(m): -4.89922650446
+New SMILES: CC(C)(C#N)NC(=O)[C@H]1CC[C@@](C)([NH3+])O1 | Old: N#CCCCNC(=O)[C@H]1CC[C@H](C[NH3+])O1
+
+385
+Improvement:-1.16925973492 | Similarity: 0.301369863014
+New y(m): -3.77562956106 | Old y(m): -2.60636982614
+New SMILES: NC(=O)[C@@H]1CCCN(C=O)C1 | Old: NC(=O)[C@@H]1CCCN(C(=O)Cn2nc(-c3cccs3)oc2=O)C1
+
+386
+Improvement:4.28633418265 | Similarity: 0.254901960784
+New y(m): -0.817313395608 | Old y(m): -5.10364757826
+New SMILES: CC(C)[C@H](CNC(=O)Nc1cc(N2CCC(=O)C2)cc([S@](C)=O)c1)C1CC1 | Old: CC(C)[C@H](CNC(=O)N[C@H]1C[C@@H]1C)N1CC[NH+](C)CC1
+
+387
+Improvement:-0.9352509151 | Similarity: 0.280701754386
+New y(m): -3.7047800215 | Old y(m): -2.7695291064
+New SMILES: CC(C)(C)Sc1nnc([O-])c(=O)[nH]1 | Old: CCCCCSc1nnc([O-])[nH]c1=O
+
+388
+Improvement:-0.486020445344 | Similarity: 0.381818181818
+New y(m): -3.32765041705 | Old y(m): -2.84162997171
+New SMILES: Nc1[nH]cc(C[C@H]2CCC[NH+](Cc3nc(-c4ccc(Cl)cc4)co3)C2)[nH+]1 | Old: Cn1cc[nH+]c1C[C@H]1CCC[NH+](Cc2ncc(-c3ccccc3Cl)o2)C1
+
+389
+Improvement:2.35921496473 | Similarity: 0.224489795918
+New y(m): -0.400346593893 | Old y(m): -2.75956155862
+New SMILES: CC(=O)N[C@H](Cc1ccccc1)C(=O)NCc1sc(C)nc1C | Old: Cc1nc(C)c(C[NH2+]C[C@H](C(C)C)N2CCOCC2)s1
+
+390
+Improvement:0.132537848529 | Similarity: 0.385714285714
+New y(m): -3.13729601145 | Old y(m): -3.26983385998
+New SMILES: CC[C@H](C)[NH2+][C@H](C)c1n[nH]c(-c2ccoc2)n1 | Old: CC[C@H](C)[NH2+]CCc1n[nH]c(-c2ccco2)n1
+
+391
+Improvement:0.567754938536 | Similarity: 0.259615384615
+New y(m): -3.56937919422 | Old y(m): -4.13713413275
+New SMILES: C[C@H](NC=C(C#N)C#N)C(=O)N[C@@H]1C(=O)CC(=O)N1c1ccccc1 | Old: N#CC(C#N)=CNCCCN1C(=O)[C@@H]2[C@@H]3C=C[C@@H](C3)[C@H]2C1=O
+
+392
+Improvement:-2.87072555027 | Similarity: 0.21978021978
+New y(m): -6.06144880274 | Old y(m): -3.19072325247
+New SMILES: C/[NH+]=C(/NCC(=O)NC(C)(C)C)[C@H]1C[C@H]2C[C@H]1CC2=O | Old: C/[NH+]=C(\NCC(C)(C)c1ccc(OC)cc1)N[C@H]1C[C@H]1C
+
+393
+Improvement:1.05727098278 | Similarity: 0.492957746479
+New y(m): -3.55598462338 | Old y(m): -4.61325560616
+New SMILES: [NH3+]C1([NH+]2CC[C@@H](c3ccccc3)C2)CCCCC1 | Old: [NH3+][C@H]1CCC[C@@H]([NH+]2CC[C@@H](c3ccccc3)C2)C1
+
+394
+Improvement:4.69496152505 | Similarity: 0.304347826087
+New y(m): -1.58702857256 | Old y(m): -6.28199009761
+New SMILES: CC(=O)Oc1cccc([C@H]2CN(C)C(=O)N2)c1 | Old: COc1cccc([C@H]2C[NH2+]CC[NH+]2C)c1
+
+395
+Improvement:-2.2212647109 | Similarity: 0.268656716418
+New y(m): -7.40166289558 | Old y(m): -5.18039818468
+New SMILES: CC(O)(O)C(=O)N[C@]1(C)CC[C@H](C(=O)[O-])O1 | Old: COCCC(=O)NC[C@@H]1CC[C@@H](C(=O)[O-])O1
+
+396
+Improvement:-1.97692928393 | Similarity: 0.274509803922
+New y(m): -6.17004924771 | Old y(m): -4.19311996379
+New SMILES: C#CC(N)(N)C(=O)NC[C@@H](C)O | Old: C#CCNCC(=O)NC[C@@H](C)CO
+
+397
+Improvement:0.230189665629 | Similarity: 0.251748251748
+New y(m): -2.68039589959 | Old y(m): -2.91058556522
+New SMILES: C[C@]1(O)CC(=O)[NH2+][C@]2(CSC[C@H](NCc3cccc(N4CCN(c5ccccc5)CC4)c3)C2)C1 | Old: O[C@@H]1C[C@H](CNCc2cnn(-c3ccccc3)c2)[NH+](Cc2ccccc2)C1
+
+398
+Improvement:2.12343953069 | Similarity: 0.266666666667
+New y(m): -3.90161253927 | Old y(m): -6.02505206996
+New SMILES: CN[C@@]1(C(N)=O)CCC[C@H]1N1C[C@H]2C=CC=C[C@H]2C1 | Old: CN[C@@]1(C(N)=O)CC[C@@H](N2CC[C@H]([NH+]3CCCCC3)C2)C1
+
+399
+Improvement:0.753190414844 | Similarity: 0.201550387597
+New y(m): -1.45264789369 | Old y(m): -2.20583830853
+New SMILES: CC(=O)c1ccc(C(=O)NCC(=O)N2Cc3ccccc3[C@H](C(N)=O)C2)cc1 | Old: CC(C)CC[NH+]1Cc2cccc(NC(=O)C(=O)NC[C@@H]3CC=CCC3)c2C1
+
+400
+Improvement:1.00032102239 | Similarity: 0.309523809524
+New y(m): -1.27635849259 | Old y(m): -2.27667951498
+New SMILES: CO[C@@H](Cc1ccccc1)C(=O)NCc1cc(Br)ccc1C(=O)[O-] | Old: C[C@H](O)C[C@@H](Cc1cccc(Br)c1)C(=O)[O-]
+
+401
+Improvement:-3.25909323305 | Similarity: 0.21875
+New y(m): -5.65510480639 | Old y(m): -2.39601157335
+New SMILES: C[C@H]1C[C@H]2C=CC(C(=O)[C@@](C)(NCc3ccccc3)C3=CC(=O)O[C@@H](N4CC[NH2+][C@@H]([NH3+])C4)C3)=C[C@H]2O1 | Old: C[C@H]1Cc2cc(C(=O)C3=C([O-])C(=O)N(CCN4CCOCC4)[C@H]3c3ccco3)ccc2O1
+
+402
+Improvement:1.18888365288 | Similarity: 0.25
+New y(m): -2.7892109643 | Old y(m): -3.97809461719
+New SMILES: C[C@@]1(C(=O)N2CCOCC2)CCOC1 | Old: C[C@H]1OCC[C@H]1C(=O)N1CCO[C@H](C#N)C1
+
+403
+Improvement:0.189662656371 | Similarity: 0.208333333333
+New y(m): -2.14620880659 | Old y(m): -2.33587146296
+New SMILES: N#C[C@H](C(=O)N1CC[C@@H]2C=C(F)C=C[C@]2(C(N)=O)C1)c1ccccc1 | Old: N#CC1(C#N)[C@H](C(N)=O)[C@@H]1c1ccc(F)cc1
+
+404
+Improvement:2.92643479133 | Similarity: 0.204545454545
+New y(m): 0.139757459476 | Old y(m): -2.78667733186
+New SMILES: COc1ccc(C(=O)NNc2cc(OC(C)=O)cc([N+](=O)[O-])c2)cc1 | Old: COc1cc(NS(=O)(=O)c2ccc(N3C(=O)[C@H]4[C@@H]5C=C[C@@H](C5)[C@@H]4C3=O)cc2)nc(OC)n1
+
+405
+Improvement:4.54539664173 | Similarity: 0.274193548387
+New y(m): 0.515706085053 | Old y(m): -4.02969055668
+New SMILES: COc1ccc(O[C@H]2C[C@H]3C=CC=C[C@@]3(Br)[C@@]2(C)NC(=O)C(=O)Nc2ccc3c(c2)CCC3)cc1 | Old: COc1ccc(O[C@H]2CC[C@@]([NH2+]C(C)C)(C(=O)[O-])C2)cc1
+
+406
+Improvement:2.44856225645 | Similarity: 0.225806451613
+New y(m): -0.659855034894 | Old y(m): -3.10841729134
+New SMILES: COC(=O)CN([C@H]1CCC[C@H](C)C1)S(=O)(=O)c1cccc(CN2CCCC2=O)c1 | Old: C[C@H]1CCC[C@@H]([NH+](C)CC(=O)N2CCC(C(=O)N3CCCC3)CC2)C1
+
+407
+Improvement:2.72035680473 | Similarity: 0.283950617284
+New y(m): -2.27248100853 | Old y(m): -4.99283781326
+New SMILES: CC(=O)[C@@H]1CCCCN(S(=O)(=O)c2ccc(N)[nH]2)C1 | Old: Cn1ccc(S(=O)(=O)N2CCO[C@H](CC(=O)[O-])C2)c1
+
+408
+Improvement:3.88259439005 | Similarity: 0.238805970149
+New y(m): 1.39544235468 | Old y(m): -2.48715203537
+New SMILES: CC(C)(C)OCc1ccccc1 | Old: CC[C@](C)([NH3+])C(=O)N1CCOc2ccccc2C1
+
+409
+Improvement:2.37859991599 | Similarity: 0.207692307692
+New y(m): -5.08077907566 | Old y(m): -7.45937899165
+New SMILES: CC(C)[NH+]1CCC(C)(N2C(=O)C[C@]3(Cc4nnc(N)[nH]4)C=CC=C[C@H]23)CC1 | Old: CC(C)[NH+]1CCC(N2CCN(CC3=c4ccccc4=[NH+]C3)C[C@@H]2CCO)CC1
+
+410
+Improvement:0.282384809051 | Similarity: 0.3
+New y(m): -3.40677644156 | Old y(m): -3.68916125061
+New SMILES: COc1ccc2c(c1)CCN(C(=O)CN1C(=O)N(C)[C@]3(CO3)C1=O)C2 | Old: Cn1c(=O)c(=O)n(CC(=O)N2CCC3(CC2)OCCO3)c2cccnc21
+
+411
+Improvement:3.9132257243 | Similarity: 0.25
+New y(m): 1.20942181238 | Old y(m): -2.70380391192
+New SMILES: CCC(=O)N1C[C@@H](CS(=O)(=O)c2ccccc2)C[C@H](Oc2ccc(C(C)C)cc2)C1 | Old: CC[C@@H]1CN(S(=O)(=O)C(C)C)CC[C@@H]1[NH2+]Cc1cccc(C#N)c1
+
+412
+Improvement:3.46693638983 | Similarity: 0.212389380531
+New y(m): -0.751996847036 | Old y(m): -4.21893323686
+New SMILES: COC(=O)c1cn(CCCNS(=O)(=O)c2ccc(F)cc2F)nc1C | Old: C[NH+](C)CCNC(=O)C[C@@H]1C(=O)NCCN1Cc1c(F)cccc1Cl
+
+413
+Improvement:3.84783645438 | Similarity: 0.333333333333
+New y(m): 1.34209591688 | Old y(m): -2.50574053751
+New SMILES: Cc1cc(Cl)cc(N2CCN(C(=O)c3ccc(N4CCOC4=O)cc3)CC2)c1 | Old: Cc1ccc(Cl)cc1N1CCN(C(=O)[C@@H]2CCC[NH2+]2)CC1
+
+414
+Improvement:-0.0407059058172 | Similarity: 0.369565217391
+New y(m): -3.4928946996 | Old y(m): -3.45218879378
+New SMILES: C[C@H]1CC(N)=C(C#N)[C@H]1C#N | Old: C[C@H]1CC(N)=C(C#N)C1(C#N)C#N
+
+415
+Improvement:5.39351667979 | Similarity: 0.24
+New y(m): -2.35250849408 | Old y(m): -7.74602517387
+New SMILES: CCC[NH2+]Cc1ccc(OCC(C)(C)N(C)S(C)(=O)=O)cc1 | Old: CCC[NH2+]CC[NH+](C)CC(C)(C)O
+
+416
+Improvement:3.92574891086 | Similarity: 0.214285714286
+New y(m): -2.55592668535 | Old y(m): -6.48167559621
+New SMILES: CCC[C@H](C(=O)N[C@]1(O)CC[C@](C)([NH3+])C1)c1ccccc1 | Old: CCC[C@H](C[NH3+])[C@@]1(O)CCC[NH+](CC)CC1
+
+417
+Improvement:1.41426385212 | Similarity: 0.246268656716
+New y(m): -0.899901188278 | Old y(m): -2.3141650404
+New SMILES: CCS(=O)(=O)N1CCN[C@](N)(c2noc(-c3ccc(OC)c(Oc4cccc(Cl)c4)c3)n2)C1 | Old: CCc1nc(CN2CC[NH+](Cc3cc(Cl)c(OC)c(OC)c3)CC2)no1
+
+418
+Improvement:3.51865822148 | Similarity: 0.224299065421
+New y(m): 0.924584529996 | Old y(m): -2.59407369149
+New SMILES: Nc1ccc(CC(=O)N2CCO[C@H](c3ccc(OC(F)F)c(Br)c3)C2)cc1 | Old: O=C([O-])C[C@@H]1CN(c2ccc([N+](=O)[O-])cc2Cl)CCO1
+
+419
+Improvement:2.31456231233 | Similarity: 0.2
+New y(m): -2.11911634671 | Old y(m): -4.43367865904
+New SMILES: CC(C)(C)OC=O | Old: CC(C)(C)OC(=O)[C@@H]1N[C@H](C(=O)[O-])C(C)(C)S1
+
+420
+Improvement:-0.0574399130833 | Similarity: 0.530864197531
+New y(m): -3.21161994831 | Old y(m): -3.15418003522
+New SMILES: CCC1CCC(C[NH2+][C@@H]2CC[C@H](C3CC[NH2+]CC3)C2)CC1 | Old: CCC1CCC(C[NH2+][C@@H]2CCC[C@H]2[C@@H]2CCCC[NH2+]2)CC1
+
+421
+Improvement:1.22576493627 | Similarity: 0.230158730159
+New y(m): -1.72721518239 | Old y(m): -2.95298011866
+New SMILES: COc1cc(C(=O)NCc2ccc(OC(C)C)cc2)c(N2C[C@H]([NH3+])NC2=O)cc1OC | Old: COc1cc(C[NH2+][C@@H]2C[C@H]3CC[C@]2(C)C3(C)C)ccc1OCC(N)=O
+
+422
+Improvement:-1.85008251444 | Similarity: 0.236363636364
+New y(m): -5.36002693486 | Old y(m): -3.50994442042
+New SMILES: C[C@@H](NS(=O)(=O)C1(N2CCOCC2)CC[NH2+]CC1)OC1(CO)CCCCC1 | Old: O[C@@]1(C[NH2+]C2CCN(C3CCCCC3)CC2)CCOC1
+
+423
+Improvement:-1.23788890443 | Similarity: 0.282352941176
+New y(m): -6.81065886759 | Old y(m): -5.57276996316
+New SMILES: N[C@@]1(C(=O)Nc2nc3ccccn3n2)CNCC[NH2+]1 | Old: NC(=O)[C@H]1C[NH2+]CCN1c1nc2c(Br)cccn2n1
+
+424
+Improvement:2.94913600561 | Similarity: 0.331081081081
+New y(m): 0.684344145148 | Old y(m): -2.26479186046
+New SMILES: COc1ccc(C(=O)N2CCC[C@@H]([C@H](c3cn(C)c4ccccc34)[NH+](C)Cc3ccccc3)C2)cc1 | Old: COc1ccc2[nH]cc([C@H](C(=O)[O-])[NH+]3CCN(Cc4cccc5ccccc45)CC3)c2c1
+
+425
+Improvement:3.61866898841 | Similarity: 0.323529411765
+New y(m): -0.745730678174 | Old y(m): -4.36439966658
+New SMILES: Cc1nc(C)c(Br)c(C(=O)NCCC(=O)N2CC[NH+](Cc3ccc(-c4ccccc4)cc3)CC2)n1 | Old: Cc1cc(C)nc(CCNC(=O)C[C@@H]2C(=O)NCC[NH+]2Cc2ccccc2)n1
+
+426
+Improvement:2.79015668608 | Similarity: 0.254545454545
+New y(m): -0.524470631058 | Old y(m): -3.31462731714
+New SMILES: Cc1csc(C)n1 | Old: Cc1nc(C[C@@H]([NH3+])[C@@H]2CN(C(C)C)CCO2)cs1
+
+427
+Improvement:2.84226239152 | Similarity: 0.212962962963
+New y(m): 0.486399475271 | Old y(m): -2.35586291625
+New SMILES: CC[C@@H](Cc1ccccc1)NC(=O)COc1cccc2c1[C@H](C)C[C@@]2(C)O | Old: CC[C@@H](CCO)C[NH2+][C@H]1C[C@H](C)c2c(C)ccc(O)c21
+
+428
+Improvement:3.13666882179 | Similarity: 0.241071428571
+New y(m): -2.22771721801 | Old y(m): -5.36438603979
+New SMILES: COCC(=O)N1[C@@H](C)CN(CC(=O)NC2CC34C=CC=CC3(C=CC=C4)C2)C[C@H]1C | Old: COCCN1[C@@H](C)CN(C(=O)C[NH+](C)C2CC2)C[C@H]1C
+
+429
+Improvement:5.74898263718 | Similarity: 0.215384615385
+New y(m): 0.129604216363 | Old y(m): -5.61937842082
+New SMILES: CC(C)[C@@H](Cc1ccc(O)cc1)NC(=O)N1CCC(NS(=O)(=O)c2ccc([N+](=O)[O-])cc2)CC1 | Old: CC(C)C[C@@H](C[NH+](C)C)NC(=O)N1CCC([NH+]2CCCC2)CC1
+
+430
+Improvement:-0.559625392405 | Similarity: 0.215517241379
+New y(m): -3.41663436664 | Old y(m): -2.85700897423
+New SMILES: C[C@H](NC(=O)[C@]12C=CC(N(C)C3CCC3)=C[C@@H]1OCCO2)[C@H](C)n1cncn1 | Old: C[C@H](CCn1cncn1)[NH2+]Cc1ccn(C2CCCC2)n1
+
+431
+Improvement:-3.23698440265 | Similarity: 0.216981132075
+New y(m): -6.10477231453 | Old y(m): -2.86778791188
+New SMILES: C[C@@H](O)Cc1cccc(NC(=O)[C@@]2([NH3+])C(=O)[NH+]=C(N)N2c2ccccc2)c1 | Old: C[C@@H](CO)C[NH2+]Cc1cn(C)nc1-c1ccccc1
+
+432
+Improvement:3.04253210608 | Similarity: 0.236363636364
+New y(m): 0.132870838928 | Old y(m): -2.90966126716
+New SMILES: Cc1cc(N)cc(Br)c1 | Old: Cc1c(F)cc(N)cc1S(=O)(=O)NCC(N)=O
+
+433
+Improvement:1.93408882411 | Similarity: 0.2
+New y(m): -2.60016317372 | Old y(m): -4.53425199784
+New SMILES: CC(C)[NH+](CC(C)(C)O)[C@@H](C)c1ccc2c(c1)OCO2 | Old: CC(C)[NH+](C[C@@H](C)O)C1C[C@H](C)O[C@@H](C)C1
+
+434
+Improvement:1.6378149397 | Similarity: 0.4375
+New y(m): -0.598693957965 | Old y(m): -2.23650889766
+New SMILES: O=C(NC1CCCCC1)C1CCNCC1 | Old: O=C(NC1CCCCC1)C1CCN(C2=NC=NC3=NC=N[C@H]32)CC1
+
+435
+Improvement:3.72847042376 | Similarity: 0.369230769231
+New y(m): 0.889654798923 | Old y(m): -2.83881562483
+New SMILES: Cc1ccc(C(=O)NC2CCC2)cc1 | Old: Cc1ccc(C(=O)N[C@H]2CCC[NH2+][C@H]2C)cc1F
+
+436
+Improvement:-1.36808025737 | Similarity: 0.219512195122
+New y(m): -6.44189067378 | Old y(m): -5.07381041641
+New SMILES: Cc1[nH]c2c([nH+]1)N[C@H](NS(N)(=O)=O)CC2 | Old: Cc1cn2c([nH+]1)CC[C@H](NS(=O)(=O)N1CCO[C@H](C)C1)C2
+
+437
+Improvement:2.52719544875 | Similarity: 0.389473684211
+New y(m): 0.196098497607 | Old y(m): -2.33109695114
+New SMILES: CCc1cc(O[C@@H](C)C(=O)NC(C)(C)Cc2cccc3c2OCO3)ccn1 | Old: CCC(C)(C)NC(=O)[C@@H](C)Oc1ccc(C[C@H](C)[NH3+])nc1
+
+438
+Improvement:2.09499031006 | Similarity: 0.245762711864
+New y(m): -0.276164915518 | Old y(m): -2.37115522558
+New SMILES: CC[C@@](Cl)(C(=O)NC(=O)N1CCN(c2cccc(F)c2)CC1)n1nc(C)cc1C | Old: CCc1nn(C)cc1NC(=O)C(=O)N1CCN(CC(F)(F)F)[C@@H](C)C1
+
+439
+Improvement:-1.98750532371 | Similarity: 0.454545454545
+New y(m): -4.85646324275 | Old y(m): -2.86895791904
+New SMILES: CC(O)(O)[C@H](O)CSC1COC1 | Old: CCOC[C@H](O)CSC1COC1
+
+440
+Improvement:-0.556958053332 | Similarity: 0.217821782178
+New y(m): -3.46076149136 | Old y(m): -2.90380343803
+New SMILES: CCn1nc(Cl)c(C)c1CNC(=O)C[N@@H+]1C[C@@H]2C[C@H](c3ccccc3)[C@H]1C2 | Old: CCn1nc(C)c(Cl)c1C[NH2+]CC1(C)COC1
+
+441
+Improvement:-1.30813148352 | Similarity: 0.327102803738
+New y(m): -4.11975694446 | Old y(m): -2.81162546094
+New SMILES: [NH3+]CC(=O)CNc1ccccc1C(=O)N1CCC[C@@H](NC(=O)NO)C1 | Old: O=C(CCNc1ccccc1[N+](=O)[O-])N1CCC[C@@H]([NH+]2CCCC2)C1
+
+442
+Improvement:3.2193637009 | Similarity: 0.245614035088
+New y(m): 0.976578714515 | Old y(m): -2.24278498638
+New SMILES: COc1cc(OCc2cc(F)cc(F)c2)cc(C(=O)N2CCC(CC(N)=O)CC2)c1 | Old: COc1cc(OC)cc([C@H]2CC[NH+](CCC(F)(F)F)C2)c1
+
+443
+Improvement:1.21816425181 | Similarity: 0.201388888889
+New y(m): -2.60135372168 | Old y(m): -3.81951797348
+New SMILES: C=Cc1cccc(NC(=O)Cc2cn([C@@]3(N)C=c4cc(C)ccc4=CC3)nc2[NH+]2CCCCC2)c1 | Old: C=Cn1cc(C[NH+]2CC[C@@H](CNC(=O)c3ccc(C#N)cc3)C2)cn1
+
+444
+Improvement:-1.23302724279 | Similarity: 0.239583333333
+New y(m): -5.5734723734 | Old y(m): -4.34044513061
+New SMILES: C=CC[NH+](CC(=O)[O-])[C@H](C)c1cccc(C(=O)N2C[C@H](C)C[C@@H]2O)c1 | Old: C=CC[NH+](CC(=O)[O-])[C@@H]1CCC[C@H](C(C)(C)C)CC1
+
+445
+Improvement:-3.1489407491 | Similarity: 0.207207207207
+New y(m): -5.49005798578 | Old y(m): -2.34111723668
+New SMILES: CCn1cc(C(=O)N[C@@H](C)[C@H]2C[C@@H](C)C[NH+]([C@H]3CSC(=O)CN3)C2)cn1 | Old: CCn1cc([C@H]2OCC[C@H]2C[NH2+]Cc2ccc(C)s2)cn1
+
+446
+Improvement:2.87636604228 | Similarity: 0.291139240506
+New y(m): 0.468945073132 | Old y(m): -2.40742096915
+New SMILES: COC(=O)C1CCCCCC1 | Old: COC(=O)[C@H]1CCCCC[C@@H]1NC(=O)Cn1nc2ccccn2c1=O
+
+447
+Improvement:0.993118517603 | Similarity: 0.228915662651
+New y(m): -2.22120894298 | Old y(m): -3.21432746058
+New SMILES: O=S(=O)(Cc1cccc2c1NCC2)NS | Old: [NH3+]Cc1ccccc1CS(=O)(=O)N1CCN2CCC[C@@H]2C1
+
+448
+Improvement:-0.411990509603 | Similarity: 0.238095238095
+New y(m): -3.60295620658 | Old y(m): -3.19096569697
+New SMILES: COc1ccc2c(c1)CC[N@H+](CC(=O)N1CCN(Cn3cccc3)CC1)CC2 | Old: O[C@H]1CCCC[C@@H]1[NH+]1CCN(Cc2cnn(-c3ccccc3)c2)CC1
+
+449
+Improvement:3.79631062779 | Similarity: 0.210526315789
+New y(m): -1.09324326351 | Old y(m): -4.8895538913
+New SMILES: CN1CCOc2c(F)cc([NH2+]CCOC3CCN(C(=O)c4ccccc4)CC3)cc21 | Old: Fc1ccc2c(c1)[C@H]([NH2+]C1CC[NH+](CCN3CCOCC3)CC1)CC2
+
+450
+Improvement:1.7572351298 | Similarity: 0.266233766234
+New y(m): -0.513753791227 | Old y(m): -2.27098892102
+New SMILES: O=C(OCC(=O)N1C[C@@H]2C=CC=C[C@]2(c2ccc(Br)cc2)C1)c1cccc(N2C[C@H](n3cncn3)CC2=O)c1 | Old: O=C(OC[C@@H]1CC(=O)N(c2ccccc2)C1)[C@@H]1CCC[NH+]1Cc1ccccc1
+
+451
+Improvement:0.654288521913 | Similarity: 0.240310077519
+New y(m): -2.10514890063 | Old y(m): -2.75943742255
+New SMILES: C[C@H]1N(N)CC(=O)N1c1cccc(OC(=O)[C@H]2CN(Cc3ccccc3)CCO2)c1 | Old: O=C1NCCN1[C@H]1CCC[NH+](Cc2cccc(-c3ccncc3)c2)C1
+
+452
+Improvement:-2.14941703468 | Similarity: 0.238636363636
+New y(m): -5.69240401416 | Old y(m): -3.54298697948
+New SMILES: CN1CCO[C@@](C)(N2C=C3C=NC=C[C@@]3(C[NH3+])C2)C1 | Old: CN1CCO[C@@H](Cn2cc(C[NH3+])c3cccnc32)C1
+
+453
+Improvement:3.90854518932 | Similarity: 0.234782608696
+New y(m): -0.0807903713569 | Old y(m): -3.98933556068
+New SMILES: O=C(NCc1ccccc1)[C@@]1(O)C[C@@H]2C(NCc3ccc(F)cc3)=CC(F)=C[C@@H]2C1 | Old: OC1(C(F)(F)F)[C@H]2CC[C@@H]1C[NH+](Cc1ccccc1)C2
+
+454
+Improvement:4.45883688413 | Similarity: 0.25
+New y(m): 0.452597761576 | Old y(m): -4.00623912256
+New SMILES: CCCN(Cc1ccc(C)cc1)C(=O)c1cc[n+]([O-])cc1 | Old: CCCN(CC)c1cc[nH+]c(C(=O)[O-])c1
+
+455
+Improvement:1.4766296096 | Similarity: 0.2
+New y(m): -2.31882122395 | Old y(m): -3.79545083355
+New SMILES: CCO[C@@]12C=CC=C[C@H]1[C@@](C)(CN1CCC[C@@H]([NH2+]C3=N[C@@H](n4cnc5ccccc54)C(=O)S3)C1)C2 | Old: CCO[C@@H]1C[C@@H]([NH+](C)CCn2c(=O)oc3cccnc32)C12CCCC2
+
+456
+Improvement:1.50409376862 | Similarity: 0.31884057971
+New y(m): -1.70401800372 | Old y(m): -3.20811177234
+New SMILES: CNS(=O)(=O)c1ccccc1N | Old: CCNS(=O)(=O)c1ccccc1N[C@H](C)C[C@@H]1CCC[NH2+]1
+
+457
+Improvement:4.38449562026 | Similarity: 0.469387755102
+New y(m): 0.756054809149 | Old y(m): -3.62844081111
+New SMILES: C=Cc1ccc(OC)cc1 | Old: COc1ccc(/C=C/C2=[NH+]CCN2)cc1
+
+458
+Improvement:-0.0966808974818 | Similarity: 0.24347826087
+New y(m): -2.41445406274 | Old y(m): -2.31777316526
+New SMILES: CO[C@@H](CNC1(C[NH+](C)C)C[C@@H]2C=CC=C[C@H]2C1)c1ccc(C)cc1 | Old: CO[C@@H](C[NH2+][C@H]1CCN(C[C@@H]2CCCO2)C[C@@H]1C)c1ccc(F)cc1
+
+459
+Improvement:4.91001734729 | Similarity: 0.271739130435
+New y(m): 1.50728950055 | Old y(m): -3.40272784674
+New SMILES: CC(C)c1nsc(NC(=O)Cc2ccc(F)cc2N2CCCCC2)n1 | Old: CC(C)c1nsc(NC[C@H](C2CC2)[NH+](C)C)n1
+
+460
+Improvement:5.04010887519 | Similarity: 0.24
+New y(m): 2.11854439173 | Old y(m): -2.92156448346
+New SMILES: Cc1ccc(C(C)(C)C(=O)NCCNC(=O)N(C)c2ccc(C3CCC3)cc2)cc1 | Old: Cc1cccc(C(C)(C)CNC(=O)NC[C@@H](C)C[NH+]2CCN(C)CC2)c1
+
+461
+Improvement:-1.86566929234 | Similarity: 0.256097560976
+New y(m): -4.86895018922 | Old y(m): -3.00328089688
+New SMILES: CNC(=O)C1(NS(=O)(=O)[C@@H]2CC=CN2)CC=CC1 | Old: CCNS(=O)(=O)[C@@H]1CCN(C(=O)NC2CC=CC2)C1
+
+462
+Improvement:-0.805456316928 | Similarity: 0.333333333333
+New y(m): -3.18713118233 | Old y(m): -2.3816748654
+New SMILES: COC(=O)[C@@H](C)N | Old: COC(=O)[C@@H](N)CC(=O)OC(C)(C)C
+
+463
+Improvement:1.89900138268 | Similarity: 0.212121212121
+New y(m): -2.10240435939 | Old y(m): -4.00140574207
+New SMILES: C[C@@H](N)c1cccc2[nH]c(=O)[nH]c12 | Old: C[C@@]1(c2ccc(C[NH3+])cc2)NC(=O)NC1=O
+
+464
+Improvement:1.98787827344 | Similarity: 0.302083333333
+New y(m): -3.10232117901 | Old y(m): -5.09019945245
+New SMILES: CCOC(=O)c1cc(F)c2sc(NC(=O)[C@H](C)[N@@H+]3CCC[C@](C)(O)C3)nc2c1 | Old: CCOC(=O)[C@H](F)[C@@]1(O)CCC[NH+](C(C)C)CC1
+
+465
+Improvement:3.19640095313 | Similarity: 0.296296296296
+New y(m): -2.21088723049 | Old y(m): -5.40728818362
+New SMILES: C[C@@H]1CCN(S(C)(=O)=O)C1 | Old: C[C@@H]1CN(S(=O)(=O)[C@@H]2CCC[NH2+]C2)C[C@H]1C
+
+466
+Improvement:1.50298786649 | Similarity: 0.25
+New y(m): -1.07384482277 | Old y(m): -2.57683268926
+New SMILES: O=C(/C=C1/CN(c2ccc([N+](=O)[O-])cc2)C([O-])=NC1=O)Nc1cccc(Cl)c1 | Old: O=C1NC(=S)NC(=O)C1=CNc1ccc([N+](=O)[O-])cc1O
+
+467
+Improvement:-3.23163493942 | Similarity: 0.268817204301
+New y(m): -6.50450593929 | Old y(m): -3.27287099987
+New SMILES: N[C@@]1(CC(=O)NCc2ccc(Br)cc2)CNC[C@@H]([NH3+])[NH2+]1 | Old: C[NH+]1CCN(CCCNC(=O)C(=O)c2ccc(Br)cc2)CC1
+
+468
+Improvement:-1.5078985406 | Similarity: 0.529411764706
+New y(m): -4.68746700995 | Old y(m): -3.17956846934
+New SMILES: [NH3+][C@@H](CC(=O)[O-])c1ccccc1 | Old: [NH3+][C@@H](CC(=O)[O-])c1cccc2ccccc12
+
+469
+Improvement:1.58267993704 | Similarity: 0.455696202532
+New y(m): -1.93454091856 | Old y(m): -3.5172208556
+New SMILES: C[C@@H](C1CC1)[NH+](CC(=O)Nc1cccc(C#N)c1)C1CCCC1 | Old: C[C@@H](C1CC1)[NH+](CC(=O)Nc1nccs1)C1CC1
+
+470
+Improvement:2.40020748843 | Similarity: 0.218181818182
+New y(m): -1.07716463528 | Old y(m): -3.47737212371
+New SMILES: C[C@@H](NC(=O)Nc1ccc(SC(F)F)cc1)[N@@H+](C)C1CCCC1 | Old: C/[NH+]=C(/NCc1ccc([N+]2=CCCC2)cc1)N[C@H]1CC[C@@H](SC)C1
+
+471
+Improvement:1.54714188893 | Similarity: 0.205882352941
+New y(m): -0.860099487319 | Old y(m): -2.40724137625
+New SMILES: Nc1nc(COc2ccccc2F)c[nH]1 | Old: C[NH2+]C[C@@H]1C[C@@H]1c1c(F)cccc1Cl
+
+472
+Improvement:2.54063353118 | Similarity: 0.225225225225
+New y(m): -2.58313832961 | Old y(m): -5.1237718608
+New SMILES: CC1=N[C@@H](c2cccc(CNC(=O)C(C)(C)n3nc(N)[nH]c3=O)c2)SC1 | Old: C[C@H]1N=C(CCNC(=O)CCC2=c3ccccc3=[NH+]C2)CS1
+
+473
+Improvement:0.75130131779 | Similarity: 0.326315789474
+New y(m): -1.58047778104 | Old y(m): -2.33177909883
+New SMILES: C[C@H]1CCC[C@@H](NC(=O)Cn2ncn(-c3cccc([N+](=O)[O-])c3)c2=O)C1 | Old: C[C@@H]1CCCC[C@H]1NC(=O)Cn1cnc([N+](=O)[O-])n1
+
+474
+Improvement:2.68202772852 | Similarity: 0.220472440945
+New y(m): -1.66023692266 | Old y(m): -4.34226465118
+New SMILES: CC(=O)c1nc2cc(CNC(=O)C[N@@H+](Cc3ccccc3)C3CCC3)ccc2n1C | Old: C[NH+](Cc1c[nH]nc1-c1ccccc1)C[C@@H](O)CN1CCOCC1
+
+475
+Improvement:4.14958272778 | Similarity: 0.208633093525
+New y(m): -1.68884853169 | Old y(m): -5.83843125948
+New SMILES: CCC[N@@H+]1CCN(C(=O)N[C@@H]2CCC[C@H](C=C(C)C)C2)C[C@]12CCOc1ccccc1C2 | Old: CC(C)=CC[NH+]1CCC2(CC1)CN(CCN1CC[NH+](C(C)C)CC1)C(=O)O2
+
+476
+Improvement:-1.92026328671 | Similarity: 0.62962962963
+New y(m): -5.31072545741 | Old y(m): -3.39046217069
+New SMILES: C[C@@H]([C@@H](O)c1ccc2ncnn2c1)[NH+](C)C | Old: C[C@@H]([C@@H](O)c1ccc2ncnn2c1)[N+](=O)[O-]
+
+477
+Improvement:5.0190269965 | Similarity: 0.217391304348
+New y(m): 0.345652928561 | Old y(m): -4.67337406794
+New SMILES: CCOC(=O)N(Cc1ccccc1)CC(C)(C)[C@@H](C)O | Old: CC[NH+](CC)[C@@](C)(CC)[C@@H](C)O
+
+478
+Improvement:0.486120292985 | Similarity: 0.230769230769
+New y(m): -2.27313700164 | Old y(m): -2.75925729463
+New SMILES: CCc1cc(N)n[nH]1 | Old: CCc1cc(Cn2cc(N)nn2)n(C)n1
+
+479
+Improvement:3.05079953865 | Similarity: 0.313253012048
+New y(m): -4.15878218062 | Old y(m): -7.20958171928
+New SMILES: CC[C@H](C)C[NH+](CC)[C@@H]1CC[C@](Nc2ccc(O)cc2)(C(=O)[O-])C1 | Old: CC[C@H](C)C[NH+](C)[C@@H]1CC[C@@](CO)([NH2+]C)C1
+
+480
+Improvement:2.44971638803 | Similarity: 0.284403669725
+New y(m): -3.24579618456 | Old y(m): -5.69551257259
+New SMILES: CC[NH+]1C[C@H](C(=O)NCc2cccc([N-]S(=O)(=O)C3CC3)c2)C[C@@H]2C=CCC[C@@H]21 | Old: CC[NH+]1CCC[C@@H]1CN(C)S(=O)(=O)c1cccc(C[NH3+])c1
+
+481
+Improvement:3.9739747731 | Similarity: 0.214285714286
+New y(m): -1.78921305004 | Old y(m): -5.76318782314
+New SMILES: CCC[NH+](Cc1ccc(OC)cc1)C[C@@H]1CCCC(=O)C1 | Old: CCC[NH+](CCC)[C@@H]1CCC[C@H]([NH2+]C)C1
+
+482
+Improvement:2.85065811655 | Similarity: 0.405797101449
+New y(m): -0.0291108046036 | Old y(m): -2.87976892115
+New SMILES: CC(C)C[C@]1(NC(=O)N2CCCCC2)CCCS1 | Old: CC[C@H](C)[C@H](NC(=O)N1CCCCC1)C(=O)[O-]
+
+483
+Improvement:2.17986930751 | Similarity: 0.203389830508
+New y(m): -0.374465015745 | Old y(m): -2.55433432325
+New SMILES: CCOC(=O)c1ccc(N(C)CC(=O)N[C@@]2(C)CC(=O)N(c3ccccc3)C2)cc1 | Old: CC[NH+](CC)[C@@H](C)CNC(=O)N1C[C@@H](C)c2ccccc21
+
+484
+Improvement:0.990404987747 | Similarity: 0.333333333333
+New y(m): -3.04934524451 | Old y(m): -4.03975023226
+New SMILES: Nc1c(SCC(=O)Cl)cn[nH]c1=O | Old: Cn1ncc(SCC(=O)[O-])c(Cl)c1=O
+
+485
+Improvement:2.09276071957 | Similarity: 0.323076923077
+New y(m): -1.19071970243 | Old y(m): -3.28348042199
+New SMILES: Cc1ccc([C@H]2CC(=O)CN2)cc1 | Old: Cc1ccc([C@@]23CCC(=O)N2CCC[NH2+]3)cc1
+
+486
+Improvement:0.0 | Similarity: 1.0
+New y(m): -3.80041690699 | Old y(m): -3.80041690699
+New SMILES: C[C@H]1C[C@@H](NCCc2nc3cc(F)ccc3n2C)C[NH+]1C | Old: C[C@H]1C[C@@H](NCCc2nc3cc(F)ccc3n2C)C[NH+]1C
+
+487
+Improvement:-0.155024676028 | Similarity: 0.645161290323
+New y(m): -5.31932612609 | Old y(m): -5.16430145006
+New SMILES: C[C@@H]1C[N@H+](CCN2C(=O)NC(C)(C)C2=O)[C@H](C)CS1 | Old: C[C@@H]1C[NH+](CCN2C(=O)NC(C)(C)C2=O)C[C@@H](C)S1
+
+488
+Improvement:0.727540181585 | Similarity: 0.258426966292
+New y(m): -2.00990414055 | Old y(m): -2.73744432214
+New SMILES: CCN(C(=O)N[C@H]1CC(=O)CN1c1cc(C)cc(C)c1)[C@@H](C)O | Old: CCN(CCO)C(=O)N[C@H]1CC(=O)N(C(C)(C)C)C1
+
+489
+Improvement:0.0 | Similarity: 1.0
+New y(m): -3.14454952408 | Old y(m): -3.14454952408
+New SMILES: CCn1nnc2c(=O)n(CC(=O)NC3CC3)cnc21 | Old: CCn1nnc2c(=O)n(CC(=O)NC3CC3)cnc21
+
+490
+Improvement:2.99088198172 | Similarity: 0.231481481481
+New y(m): -0.369979275672 | Old y(m): -3.36086125739
+New SMILES: CCC(=O)Nc1ccc(C(=O)N2CCC[C@H](c3cc(C)n(CO)n3)C2)cc1 | Old: CCCC(=O)N[C@@H]1CCC[NH+](Cc2ncccc2C)C1
+
+491
+Improvement:-1.5240239819 | Similarity: 0.533333333333
+New y(m): -4.13749449514 | Old y(m): -2.61347051324
+New SMILES: C[C@](O)(C(O)O)C1(C#N)CCCC1 | Old: COC[C@](C)(O)C1(C#N)CCCC1
+
+492
+Improvement:2.53193623098 | Similarity: 0.203539823009
+New y(m): -0.0550117834663 | Old y(m): -2.58694801444
+New SMILES: CC[C@H](C)c1cc(NS(=O)(=O)CC(=O)N2CCN(CC#N)CC2)c2ccc(C)cc2c1 | Old: CCC[C@H](C)N(C)S(=O)(=O)c1ccc(CC(=O)[O-])s1
+
+493
+Improvement:-0.167441523786 | Similarity: 0.398230088496
+New y(m): -2.45371671039 | Old y(m): -2.2862751866
+New SMILES: C[C@@H](NC(=O)C12CC3CC(CC(C3)C1)C2)C(=O)N[C@@]12C=CC=C[C@H]1C(C)(C)C2=O | Old: CC1(C)[C@H]2OCC[C@@H]2[C@H]1NC(=O)CCNC(=O)C12CC3CC(CC(C3)C1)C2
+
+494
+Improvement:2.28945568946 | Similarity: 0.2421875
+New y(m): -1.06107100061 | Old y(m): -3.35052669006
+New SMILES: CCN(C(=O)Cn1nc2ccccn2c1=O)c1cccc(N2CC3(CCCC3)NC2=O)c1 | Old: CCN(C(=O)Cn1nc2n(c1=O)CCCCC2)[C@H]1CCS(=O)(=O)C1
+
+495
+Improvement:4.01006210503 | Similarity: 0.219178082192
+New y(m): 0.321649700541 | Old y(m): -3.68841240449
+New SMILES: CCS(=O)(=O)Nc1cccc(Br)c1 | Old: Cc1ccc(S(=O)(=O)N[C@H]2C=C[C@@H](C(=O)[O-])C2)cc1F
+
+496
+Improvement:-1.62374871795 | Similarity: 0.301204819277
+New y(m): -6.99999888596 | Old y(m): -5.37625016801
+New SMILES: CC[NH2+][C@H](Cc1ncn(CC)n1)[C@]1(N)CNCCO1 | Old: CC[NH2+][C@H](Cc1ncnn1CC)[C@@H]1CN(C)CCO1
+
+497
+Improvement:1.89176861116 | Similarity: 0.277108433735
+New y(m): -2.64330793253 | Old y(m): -4.53507654368
+New SMILES: [NH3+][C@@]1(CO)CCC[C@H]1OC(=O)c1cccc(Br)c1 | Old: CC[NH2+][C@@]1(C(=O)[O-])CC[C@@H](Oc2cccc(OC)c2)C1
+
+498
+Improvement:-0.743104573805 | Similarity: 0.48
+New y(m): -3.03937918429 | Old y(m): -2.29627461049
+New SMILES: NC(=O)c1[nH]c(S(=O)(=O)N2CCN(C(=O)c3ccc(O)cc3)CC2)cc1N | Old: Cn1cc(S(=O)(=O)N2CCN(C(=O)c3ccccc3O)CC2)cc1C(N)=O
+
+499
+Improvement:2.78002660047 | Similarity: 0.205128205128
+New y(m): 0.369680708621 | Old y(m): -2.41034589185
+New SMILES: CCC(C)C | Old: CC[C@H](C)[C@@H]1CCCC[C@H]([NH2+]C)C1
+
+500
+Improvement:-0.750977491438 | Similarity: 0.298507462687
+New y(m): -4.43821128247 | Old y(m): -3.68723379103
+New SMILES: Cc1cc(C[NH2+][C@H](C)CN)ccn1 | Old: Cc1ccc(C[NH2+][C@H](C)CN2CCOC2=O)nc1
+
+501
+Improvement:4.38457365999 | Similarity: 0.237804878049
+New y(m): -0.931305390495 | Old y(m): -5.31587905049
+New SMILES: O=C(CS[C@@H]1N=CN(CCc2ccccc2)C(=O)[C@]12C=NC(c1ccc([N+](=O)[O-])cc1)=C2)N1CCSCC1 | Old: O=C(CS[C@H]1NN=C(C[C@@H]2CCS(=O)(=O)C2)O1)C1=c2ccccc2=[NH+][C@@H]1c1ccccc1
+
+502
+Improvement:4.31433403845 | Similarity: 0.278260869565
+New y(m): 1.65675601127 | Old y(m): -2.65757802718
+New SMILES: CCOc1ccc(C(=O)N2CCN(c3cccc(OC)c3)[C@H](C3CCC3)C2)cc1 | Old: CCOc1cc(CN2CC[NH+]3CCCC[C@@H]3C2)ccc1OC
+
+503
+Improvement:1.06123947212 | Similarity: 0.230769230769
+New y(m): -1.39279807779 | Old y(m): -2.45403754991
+New SMILES: CC[C@H](C(=O)Nc1cc(C)ccc1Cl)[NH+](CC)CC | Old: CC[NH+](CC)[C@](C)(CC)[C@H](O)c1cscc1Br
+
+504
+Improvement:-1.77986360055 | Similarity: 0.525
+New y(m): -4.41001932691 | Old y(m): -2.63015572636
+New SMILES: [NH3+][C@]1(NC(=O)c2ncoc2-c2ccccc2)CCCC[NH2+]1 | Old: C[NH+]1CCC(NC(=O)c2ncoc2-c2ccccc2)CC1
+
+505
+Improvement:0.667059632756 | Similarity: 0.311111111111
+New y(m): -2.07132044017 | Old y(m): -2.73838007292
+New SMILES: CC(C)(C)C(=O)N1CCC[C@H](C(=O)NC[C@](O)(c2ccc(Oc3ccccc3)cc2)[NH+]2CCOCC2)C1 | Old: CC(C)(C)C(=O)N1CCC[NH+](C[C@H](O)COCc2ccccc2Cl)CC1
+
+506
+Improvement:-0.105616726302 | Similarity: 0.269230769231
+New y(m): -3.02867384038 | Old y(m): -2.92305711408
+New SMILES: C[C@@]1(O)CC(=O)[C@@]23[C@H]4C=CC=C[C@H]4C[C@@]2(C[C@@H](O)CC32CCC(C(=O)CO)CC2)C1 | Old: C[C@]12CC[C@H]3[C@@H](CC[C@]4(O)C[C@@H](O)CC[C@]34C=O)[C@@]1(O)CC[C@H]2C1=CC(=O)OC1
+
+507
+Improvement:-0.689396097348 | Similarity: 0.285714285714
+New y(m): -4.7048917968 | Old y(m): -4.01549569945
+New SMILES: CCCOCC[NH+]1CC[C@]2(C[C@H](C(C)C)C[C@@H]([C@H](C)C[NH2+]C)C2)C1 | Old: CCC[NH2+][C@@H]1CC[C@@H](C)C[C@@H]1C[NH+]1CCC(CC)(CC)C1
+
+508
+Improvement:-1.91106516546 | Similarity: 0.232876712329
+New y(m): -4.56760898078 | Old y(m): -2.65654381532
+New SMILES: NC(=O)CNC(=O)C1=CNCC=C1 | Old: O=C(CNC(=O)c1ccc[nH]c1=O)Nc1ccon1
+
+509
+Improvement:2.77103767755 | Similarity: 0.203389830508
+New y(m): -0.635164760187 | Old y(m): -3.40620243774
+New SMILES: C[N+]1(C)CCC2(CC1)CN(c1cc(Cl)cc(N=c3[nH]c4ccccc4[nH]3)c1)C(=O)N2 | Old: C[NH+]1CCC2(CC1)CNC(=N)N2c1ccc(Cl)c(Br)c1
+
+510
+Improvement:0.0964384701609 | Similarity: 0.261538461538
+New y(m): -5.83990502875 | Old y(m): -5.93634349891
+New SMILES: Cc1nscc1NC(=O)[C@H](C)C([NH3+])[NH3+] | Old: C[NH2+]C[C@H](C)C(=O)Nc1snc(C)c1C(=O)[O-]
+
+511
+Improvement:-1.1462939001 | Similarity: 0.209677419355
+New y(m): -3.92750151163 | Old y(m): -2.78120761154
+New SMILES: CCOC(=O)[C@]1(N(C)C(C)(C)S(=O)(=O)c2ccccc2)CN[C@]2(CNC(=O)C2)C1 | Old: CC[NH+](CC)C[C@@H]1CCN(C(=O)Cc2cc3ccccc3[nH]c2=O)C1
+
+512
+Improvement:3.15759600668 | Similarity: 0.251908396947
+New y(m): -0.194002313467 | Old y(m): -3.35159832015
+New SMILES: Cc1cc(Cl)c2c(c1)N[C@]1(CCN(c3ccc4c(c3)OCO4)C(=O)C1)C2=O | Old: Cc1c(Cl)ccc2c1NC(=O)[C@@]21[C@@H]2C(=O)N(c3ccc(F)cc3)C(=O)[C@@H]2[C@@H]2CCC[NH+]21
+
+513
+Improvement:2.12540280145 | Similarity: 0.242990654206
+New y(m): -2.22404221871 | Old y(m): -4.34944502016
+New SMILES: COc1cc(C(=O)N[C@@H](C)NC(=O)[C@H](C)NS(=O)(=O)c2ccccc2C)ccn1 | Old: Cc1ncccc1NC(=O)C(=O)NCC[NH+](C)C(C)C
+
+514
+Improvement:-0.122060993081 | Similarity: 0.221052631579
+New y(m): -5.16435132215 | Old y(m): -5.04229032907
+New SMILES: C[C@@]1([NH3+])CN(C(=O)c2cccc(F)c2)CC[NH2+]1 | Old: CC[NH+]1CCN(C(=O)C2CC[NH+](Cc3ccccc3F)CC2)CC1
+
+515
+Improvement:0.28661431311 | Similarity: 0.2734375
+New y(m): -2.08091470578 | Old y(m): -2.36752901889
+New SMILES: C[C@H](OC(=O)Cc1ccc(-n2cncn2)cc1)[C@](C)(NCc1ccccc1)[NH2+]c1ccn[nH]1 | Old: C[C@H]([NH2+]Cc1nc(Cc2ccccc2)no1)[C@@H](C)n1cccn1
+
+516
+Improvement:2.96431810743 | Similarity: 0.255813953488
+New y(m): -0.144299650647 | Old y(m): -3.10861775808
+New SMILES: CC(=O)Nc1ccc([C@@H]2CCCN(C(=O)N[C@H](C)C(=O)N3C[C@@H]4C=CC=C[C@@H]4C[C@H]3C)C2)cc1 | Old: CC(=O)N[C@@H]1CCCN(C(=O)C[NH+](Cc2ccc(C)s2)C(C)C)C1
+
+517
+Improvement:1.82428905413 | Similarity: 0.2
+New y(m): -0.377846263358 | Old y(m): -2.20213531748
+New SMILES: CONC(=O)Cc1cccc(NCc2noc(C(C)(C)C)n2)c1 | Old: C/[NH+]=C(/NCCc1cc(C)cc(C)c1)NCc1ncc(C)s1
+
+518
+Improvement:-0.396524558586 | Similarity: 0.21875
+New y(m): -4.46682172203 | Old y(m): -4.07029716344
+New SMILES: C[C@H](N)CC(=O)N1CCNCC1=O | Old: CC[C@H](C)N1CCN(C(=O)CC(=O)[O-])CC1
+
+519
+Improvement:0.941583821129 | Similarity: 0.238095238095
+New y(m): -1.74101907327 | Old y(m): -2.6826028944
+New SMILES: COC(=O)[C@H](C#N)N(Cc1ccc(F)cc1)C(C)=O | Old: COC(=O)[C@H](C#N)C(F)(F)F
+
+520
+Improvement:-0.814109270934 | Similarity: 0.372881355932
+New y(m): -4.90743250519 | Old y(m): -4.09332323426
+New SMILES: CCC(CC)([NH+](C)C)[C@](O)(COC)[C@H](C)OC | Old: CCC(CC)([C@H](O)COC(C)C)[NH+](C)C
+
+521
+Improvement:3.939137176 | Similarity: 0.333333333333
+New y(m): -0.814001117593 | Old y(m): -4.75313829359
+New SMILES: Cc1nn(C)c(C)c1C | Old: Cc1nn(C)c(C)c1CNC(=O)[C@@H]1C[NH2+]C[C@H]1C
+
+522
+Improvement:0.286429385832 | Similarity: 0.285714285714
+New y(m): -4.05512761878 | Old y(m): -4.34155700462
+New SMILES: C[C@H](NS(C)(=O)=O)[NH2+]C1(C)C[C@H](C)C[C@@H](C)C1 | Old: CC[C@@H]1C[C@@H](C)CC[C@@H]1[NH2+]CCNS(C)(=O)=O
+
+523
+Improvement:5.05857099867 | Similarity: 0.2109375
+New y(m): 0.689643825888 | Old y(m): -4.36892717278
+New SMILES: C[C@H]1CC(Oc2cccc(NC(=O)C3CC([NH+](C)C4CCCCCC4)C3)c2)C[C@H](C)C1 | Old: C[C@@H]1CCCC[C@H]1[NH+]1CCC([NH2+][C@@H]2CCCCC[C@@H]2CO)CC1
+
+524
+Improvement:3.74366846161 | Similarity: 0.22641509434
+New y(m): 0.126985354746 | Old y(m): -3.61668310686
+New SMILES: CC1(C)CC(N(CC(=O)OCCO)Cc2cccc3c2COCC3)CC1(C)C | Old: CC1(C)C[NH+](C[C@@H](O)COCc2ccco2)C1(C)C
+
+525
+Improvement:4.34243889511 | Similarity: 0.203883495146
+New y(m): 1.29351666438 | Old y(m): -3.04892223073
+New SMILES: CC(C)Oc1cc(I)cc(C(=O)NC2CCN(C(=O)C3CCC3)CC2)c1 | Old: CCCC[NH+]1CCC(NC(=O)C2CC=CC2)CC1
+
+526
+Improvement:3.6583854273 | Similarity: 0.284722222222
+New y(m): -0.239376309091 | Old y(m): -3.89776173639
+New SMILES: Cc1cc(C)cc(NC(=O)CN2c3[nH]ncc3C(C(=O)Nc3ccc([N+](=O)[O-])cc3)=N[C@H]2C)c1 | Old: CCn1nc(C)c(CNC(=O)[C@H]2[NH+]=c3ccccc3=C2NC(=O)c2cccc(C)c2)c1C
+
+527
+Improvement:1.1981482262 | Similarity: 0.238805970149
+New y(m): -1.7197030215 | Old y(m): -2.91785124771
+New SMILES: COc1ccc(S(=O)(=O)N2CCN(C(=O)N3C[C@@H]4C=CC=C[C@@H]43)[C@]3(C)C=CC=C[C@H]23)cc1OC | Old: COc1ccc(OC)c(S(=O)(=O)n2cc3c(=O)n(C)c(=O)n(C)c3n2)c1
+
+528
+Improvement:0.234932380952 | Similarity: 0.543859649123
+New y(m): -2.11915300547 | Old y(m): -2.35408538642
+New SMILES: CC1CCN(C(=O)[C@H]2COCCO2)CC1 | Old: C[C@H]1CCC[C@@H](C)N1C(=O)[C@@H]1COCCO1
+
+529
+Improvement:2.29905893969 | Similarity: 0.278481012658
+New y(m): -2.23046157984 | Old y(m): -4.52952051952
+New SMILES: CC(C)(C(N)=O)C(=O)c1cccc2[nH]c(=O)[nH]c12 | Old: [NH3+][C@@H](CCCCC(=O)[O-])c1ccc2[nH]c(=O)[nH]c2c1
+
+530
+Improvement:6.34119485619 | Similarity: 0.209523809524
+New y(m): 0.943667308274 | Old y(m): -5.39752754791
+New SMILES: C=CC1(OC)CC(C(=O)Nc2cc(F)ccc2S(=O)(=O)CC)(c2ccccc2)C1 | Old: C=CC[NH+](CC(=O)[O-])[C@H](C)c1ccc(F)cc1O
+
+531
+Improvement:0.754240329256 | Similarity: 0.43137254902
+New y(m): -2.42661280641 | Old y(m): -3.18085313566
+New SMILES: C[C@@](O)(C(=O)[O-])C1CCCCCCC1 | Old: C[C@@]1(C(=O)[O-])CCCCCC[C@@H]1O
+
+532
+Improvement:-1.31710785893 | Similarity: 0.233870967742
+New y(m): -4.3568493387 | Old y(m): -3.03974147977
+New SMILES: COCCN1C[C@@H]2C=C(C)C=C(NC(=O)[C@]34C=CC=C[C@@H]3C[NH2+][C@H](C)C4)[C@@H]2CC1=O | Old: COCCN1C(=O)CC[C@@H]2C[NH+](Cc3cc(C)ccc3C)CC[C@@H]21
+
+533
+Improvement:-1.32173237457 | Similarity: 0.218487394958
+New y(m): -5.93598787823 | Old y(m): -4.61425550366
+New SMILES: Cc1cc(NC(=O)C[N@H+](C)[C@H]2CC[C@]3(CC(=O)NC([O-])=N3)C2)cc(C(=O)N2CCCC2)c1 | Old: C[NH+](CC(=O)NC(C)(C)C)C1CCC2(CC1)OCCO2
+
+534
+Improvement:4.35940991599 | Similarity: 0.21875
+New y(m): -2.71279568128 | Old y(m): -7.07220559727
+New SMILES: CN(C(=O)CS)[C@H]1CCCCO1 | Old: CN(C(=O)c1nnn[n-]1)[C@H]1CCC[C@H]1C[NH3+]
+
+535
+Improvement:0.689443448401 | Similarity: 0.205607476636
+New y(m): -2.69656323695 | Old y(m): -3.38600668535
+New SMILES: COc1ccc(CN2CC[NH+](c3ccc(OC)cc3)[C@H](O)C2)cc1 | Old: COc1ccc(C[NH+]2CC[C@]3(O)CCCC[C@@H]3C2)cc1O
+
+536
+Improvement:3.92849851727 | Similarity: 0.27358490566
+New y(m): 0.828308807393 | Old y(m): -3.10018970988
+New SMILES: CC(C)CC(=O)Nc1cccc2c1[nH]c(=O)n2C(=O)N(C)c1ccccc1 | Old: CC[C@H](C)[C@@H](NC(=O)N1CC(=O)Nc2ccccc21)C(=O)[O-]
+
+537
+Improvement:0.338794594595 | Similarity: 0.574468085106
+New y(m): -3.67669201012 | Old y(m): -4.01548660471
+New SMILES: Cc1cc(C)n([C@H]2CCCC[NH2+]2)n1 | Old: Cc1cc(C)n([C@H]2CCC[NH2+]C2)n1
+
+538
+Improvement:4.15592200536 | Similarity: 0.22641509434
+New y(m): -1.37419114066 | Old y(m): -5.53011314602
+New SMILES: C[C@@H](C(=O)N1CCO[C@H](C)C1)[N@H+](Cc1ccccc1)c1ccc(Cl)cc1 | Old: CC[NH2+][C@H](Cc1ccccc1Cl)[C@H]1C[NH+](C)CCN1C
+
+539
+Improvement:5.74825451208 | Similarity: 0.237113402062
+New y(m): 0.593417994593 | Old y(m): -5.15483651749
+New SMILES: CN(Cc1ccc(N(C)C)cc1)C(=O)c1ccc(NC(N)=O)cc1F | Old: CN(Cc1[nH+]ccn1C)c1cccc(F)c1C(N)=[NH2+]
+
+540
+Improvement:0.616622742735 | Similarity: 0.213114754098
+New y(m): -2.71992920292 | Old y(m): -3.33655194565
+New SMILES: Cc1nc(CC(=O)N[C@@H](C)c2cccc(NC(=O)[C@@]34C=CC=C[C@@]3([NH3+])N=CC=N4)c2)cs1 | Old: Cc1nc(CC(=O)NCCC[NH+]2CCCC[C@H]2C)cs1
+
+541
+Improvement:1.05008477027 | Similarity: 0.315789473684
+New y(m): -1.97711598616 | Old y(m): -3.02720075644
+New SMILES: Nc1ccccc1S(N)(=O)=O | Old: CS(=O)(=O)N1C[C@H](C(N)=O)Oc2ccccc21
+
+542
+Improvement:-2.73798921183 | Similarity: 0.272727272727
+New y(m): -5.70002309387 | Old y(m): -2.96203388203
+New SMILES: C[C@H]([NH3+])C(=O)NCC(=O)N(C)C | Old: C[C@H]([NH2+]CC(=O)N(C)C)c1ccc(Cl)s1
+
+543
+Improvement:1.44255195747 | Similarity: 0.329113924051
+New y(m): -1.65467883659 | Old y(m): -3.09723079406
+New SMILES: C=CCN(CC=C)CC(=O)NC1(C)C[C@@H]2C=CC=C[C@@H]2C1 | Old: C=CCN(CC=C)C[C@@H]1CCC(C)(C)[C@H]1[NH2+]C
+
+544
+Improvement:-1.6791710989 | Similarity: 0.54347826087
+New y(m): -6.05314853521 | Old y(m): -4.37397743631
+New SMILES: C[C@H](Cc1nnc(C[NH3+])o1)C(O)O | Old: COC[C@H](C)Cc1nnc(C[NH3+])o1
+
+545
+Improvement:1.80014485819 | Similarity: 0.244444444444
+New y(m): -1.33117049691 | Old y(m): -3.1313153551
+New SMILES: COC(=O)[C@H]1CCN(S(=O)(=O)c2ccccc2)C1 | Old: COC(=O)[C@H]1C[C@H]2CCCC[C@@H]2N1S(=O)(=O)N1CCOCC1
+
+546
+Improvement:4.84700183833 | Similarity: 0.234375
+New y(m): 1.84321982077 | Old y(m): -3.00378201757
+New SMILES: CC[C@H](C)S(=O)(=O)Nc1cc(O)cc(Cn2c(C(=O)Nc3cccc(C)c3)nc3ccccc32)c1 | Old: CC[C@H](C)[NH+](C)CCNC(=O)c1ccc2c(c1)nc(C)n2C
+
+547
+Improvement:2.12739310651 | Similarity: 0.281553398058
+New y(m): -0.38678576108 | Old y(m): -2.51417886759
+New SMILES: C[C@@H]1C/C(=N\NC(=O)CN(c2ccccc2)c2cccc(Cl)c2)C[C@H]([NH3+])C1 | Old: C[C@@H]1CCC/C(=N/[NH+]=C(/[S-])NCc2ccccc2)C1
+
+548
+Improvement:2.87779722486 | Similarity: 0.234375
+New y(m): 0.013565784514 | Old y(m): -2.86423144035
+New SMILES: Cc1cccc(NC(=O)[C@]23C=NC=C[C@H]2CCN(C(=O)COCc2ccc(F)cc2)C3)c1 | Old: CCOC[C@@H]1CC[NH+](CC(=O)Nc2nc3ccc(F)cc3s2)C1
+
+549
+Improvement:-2.49435275862 | Similarity: 0.216216216216
+New y(m): -4.91525061623 | Old y(m): -2.42089785761
+New SMILES: N#C/C(=C/N[C@@H]1CCCN(C(=O)c2ccc(N3CC[NH2+][C@H]([NH3+])C3)cc2)C1)C(=O)NC1CCCC1 | Old: C[NH+](CCNC(=O)c1cccn1-c1nnc(N2CCCC2)s1)C1CCCCC1
+
+550
+Improvement:1.62417800855 | Similarity: 0.22
+New y(m): -2.70362022179 | Old y(m): -4.32779823034
+New SMILES: COC(=O)[C@H](C)[S@](=O)CC(C)C | Old: CCC(CC)[S@](=O)CCC(=O)[O-]
+
+551
+Improvement:3.36503678623 | Similarity: 0.255813953488
+New y(m): 0.0419862005349 | Old y(m): -3.32305058569
+New SMILES: CCOCCCc1coc(C(=O)NCc2ccc([N+](=O)[O-])cc2)n1 | Old: CCOCCCc1cnc(C[NH2+]C)o1
+
+552
+Improvement:5.52865589217 | Similarity: 0.213235294118
+New y(m): 2.33690362512 | Old y(m): -3.19175226705
+New SMILES: Cc1cc(CC(=O)N2CCC(C)(c3ccccc3)CC2)cc(N[C@@H](C)c2cc(O)cc(F)c2)n1 | Old: Cc1cc(CCC(N)=O)cc([C@H]2CCC[NH+]2Cc2cccnc2)n1
+
+553
+Improvement:3.43196364163 | Similarity: 0.221428571429
+New y(m): -0.0242795931288 | Old y(m): -3.45624323476
+New SMILES: COc1cc(C(=O)N2C[C@@H](c3ccccc3)C[C@](C)(c3ccccc3)C2)n(CC[S@](C)=O)n1 | Old: C[NH+](CCc1ccccc1)Cc1c([C@@H]2CCC[NH2+]C2)[nH]c2ncccc12
+
+554
+Improvement:3.54944579068 | Similarity: 0.279411764706
+New y(m): -5.60082817868 | Old y(m): -9.15027396936
+New SMILES: NC(=O)C[C@H](N)C(=O)NC12CCC(CC1)O2 | Old: NC(=O)C[C@H](NC(=O)[C@@H]1CCC[NH2+]1)C(=O)[O-]
+
+555
+Improvement:0.0977523049155 | Similarity: 0.224137931034
+New y(m): -3.68895995225 | Old y(m): -3.78671225716
+New SMILES: C[C@H]1C[C@H](C)[NH2+][C@]([NH3+])(c2cccc(NC(=O)CS(=O)(=O)N3CCCCCC3)c2)C1 | Old: C[C@@H]1C[C@@H](C)C[NH+](CCNS(=O)(=O)c2ccc(C#N)cc2)C1
+
+556
+Improvement:4.45115655053 | Similarity: 0.234375
+New y(m): -0.44536511174 | Old y(m): -4.89652166227
+New SMILES: O=C([O-])c1ccc(S(=O)(=O)N2CCN(C(=O)c3ccc(OCc4ccccc4)c(F)c3)CC2)cc1 | Old: O=C([O-])c1cc(S(=O)(=O)[N-]c2ccc(F)cc2C(=O)[O-])c[nH]1
+
+557
+Improvement:3.12501521459 | Similarity: 0.219858156028
+New y(m): -1.94142556803 | Old y(m): -5.06644078262
+New SMILES: C/C=C(/CC)C(=O)[C@@H]1C[C@H](C)C=C(/C=C\C2=COc3c(C)cc(C)cc3[C@@H]2[O-])[C@@H]1C(=O)[O-] | Old: C/C=C(\C)[C@@H]1C=C[C@@H]2C[C@H](C)C[C@H](C)[C@@H]2[C@@H]1C(=O)C1=C([O-])[C@H](C[C@](C)(O)C(=O)[O-])NC1=O
+
+558
+Improvement:3.38008821337 | Similarity: 0.2
+New y(m): -0.179105738776 | Old y(m): -3.55919395215
+New SMILES: CC(C)C | Old: CC(C)[C@@H](C)NC(=O)CSCC[NH3+]
+
+559
+Improvement:0.0 | Similarity: 1.0
+New y(m): -2.30951392248 | Old y(m): -2.30951392248
+New SMILES: CN(Cc1noc(C2CC2)n1)[C@@H]1CCN(Cc2nnnn2C2CC2)C1 | Old: CN(Cc1noc(C2CC2)n1)[C@@H]1CCN(Cc2nnnn2C2CC2)C1
+
+560
+Improvement:0.767536843963 | Similarity: 0.214285714286
+New y(m): -5.77100165895 | Old y(m): -6.53853850291
+New SMILES: C/[NH+]=C(/N[C@@H]1CC[NH2+][C@H](C)C1)N[C@H](C)C(=O)Nc1cc(C)cc(C)c1 | Old: C/[NH+]=C(/NCCC[NH+]1CCC(C)CC1)NC(C)C
+
+561
+Improvement:1.68397939972 | Similarity: 0.380530973451
+New y(m): -1.55547764385 | Old y(m): -3.23945704357
+New SMILES: COCC(=O)Nc1cc(C)ccc1C(=O)N(C)[C@@H]1CCC[N@@H+]([C@H](C)c2ccccc2)C1 | Old: COCCN(C)C(=O)[C@H]1CCC[NH+]([C@H](C)c2cccc([N+](=O)[O-])c2)C1
+
+562
+Improvement:5.23397573554 | Similarity: 0.217741935484
+New y(m): -0.104448912877 | Old y(m): -5.33842464841
+New SMILES: C[NH+](C)[C@H](CNc1cccc(C(=O)c2ccccc2)c1)c1ccnc(Cl)c1 | Old: Clc1ccc([C@H](Cc2ccccn2)[NH2+]C[C@H]2C[NH+]3CCN2CC3)cc1
+
+563
+Improvement:0.470475816296 | Similarity: 0.217391304348
+New y(m): -3.71747362521 | Old y(m): -4.18794944151
+New SMILES: CNC(=O)CN | Old: CNC(=O)CN(C)c1cc(C[NH3+])ccn1
+
+564
+Improvement:3.96927296487 | Similarity: 0.479166666667
+New y(m): -0.471774702257 | Old y(m): -4.44104766713
+New SMILES: NC(=O)C[C@@H](Br)c1ccccc1 | Old: C[C@H]([NH3+])[C@@H](CC(=O)[O-])c1ccccc1
+
+565
+Improvement:-2.12369922028 | Similarity: 0.216216216216
+New y(m): -4.87286315549 | Old y(m): -2.74916393521
+New SMILES: Cc1cccc([O-])[nH+]1 | Old: Cc1ccc([O-])c(CN2CCN(C(=O)c3ccccc3O)CC2)[nH+]1
+
+566
+Improvement:3.69148145408 | Similarity: 0.237623762376
+New y(m): 1.26821150066 | Old y(m): -2.42326995342
+New SMILES: CCC(=O)N1CCN(c2cc(C)cc(F)c2)[C@H](c2ccccc2)C1 | Old: CC[C@@H]1C[NH+]2CCCC[C@@H]2CN1c1cc(C)ccc1F
+
+567
+Improvement:-1.33858426034 | Similarity: 0.223684210526
+New y(m): -4.42696658184 | Old y(m): -3.0883823215
+New SMILES: O=C(/N=C1/CNCS1)S(=O)(=O)N1CCOCC1 | Old: O=S(=O)(/N=C(\[O-])c1ccsc1)N1CCCC1
+
+568
+Improvement:1.52760016016 | Similarity: 0.333333333333
+New y(m): -0.828384075837 | Old y(m): -2.35598423599
+New SMILES: COc1cc(N)cc(NC(=O)[C@@H]2C=CCC2)c1 | Old: CCOc1cc(NC(=O)[C@@H]2C=C[C@H]([NH3+])C2)ccc1OC
+
+569
+Improvement:-3.56606919948 | Similarity: 0.396226415094
+New y(m): -7.43702699063 | Old y(m): -3.87095779115
+New SMILES: C[C@@]1([NH3+])[NH2+]CCN[C@@]1(N)c1conc1C(=O)NC[C@@H](O)c1ccccc1 | Old: CC[NH+]1CCN(Cc2cc(C(=O)NC[C@@H](O)c3ccccc3)no2)CC1
+
+570
+Improvement:1.08274329034 | Similarity: 0.208955223881
+New y(m): -2.52378058569 | Old y(m): -3.60652387603
+New SMILES: CC[NH2+]C1(SCC(C)=O)CCCCC1 | Old: CC[NH2+][C@@H]1CCCC[C@H]1SC[C@@H](C)CO
+
+571
+Improvement:0.0 | Similarity: 1.0
+New y(m): -5.68007849588 | Old y(m): -5.68007849588
+New SMILES: CC[C@H](C)[N@H+](C)CC(=O)N1CCNCC1 | Old: CC[C@H](C)[NH+](C)CC(=O)N1CCNCC1
+
+572
+Improvement:1.19162119375 | Similarity: 0.214876033058
+New y(m): -4.89813042529 | Old y(m): -6.08975161903
+New SMILES: CCC(CC)n1nc(C(=O)N[C@@]2(C)C[NH2+][C@@H]([NH3+])[C@@](N)(c3ccc4c(c3)CCC4)N2)cc1C | Old: CCC(CC)n1ccc(C[C@@H]([NH3+])[C@H]2C[NH+](C)CCN2C)n1
+
+573
+Improvement:2.25406583551 | Similarity: 0.236559139785
+New y(m): -0.460790076093 | Old y(m): -2.7148559116
+New SMILES: CN(C(=O)CS(C)(=O)=O)[C@H](Cc1ccccc1)c1cc(N)sc1Br | Old: CC[C@@H]([NH3+])[C@H](c1cc(Br)cs1)N(C)CCS(C)(=O)=O
+
+574
+Improvement:5.03086404461 | Similarity: 0.226277372263
+New y(m): 0.710256058704 | Old y(m): -4.32060798591
+New SMILES: Cc1ccc2c(c1)[C@H](C)c1c(NC(=O)C(=O)Nc3cc(Cl)cc(N4CCOCC4)c3)ncnc1-2 | Old: Cc1cc(C)c2c(n1)oc1c(N3CC[NH+](CC(N)=O)CC3)ncnc12
+
+575
+Improvement:2.21621557804 | Similarity: 0.229357798165
+New y(m): -1.19750012587 | Old y(m): -3.41371570392
+New SMILES: CCOc1nn(-c2ccccc2)c(C)c1N(C)C(=O)N[C@H]1CCC(=O)NC1 | Old: CC[NH+]1CC[C@@H](N(C)C(=O)Nc2cnccc2C)[C@H](C)C1
+
+576
+Improvement:1.01348463601 | Similarity: 0.201438848921
+New y(m): -2.51424915514 | Old y(m): -3.52773379115
+New SMILES: C[C@@H](C(=O)NC(=O)c1cc(Cl)cc2[nH]ccc12)[NH+]1CCC([C@@]23C=CC=C[C@H]2SC=N3)CC1 | Old: O=C(C[NH+]1CCC(C(=O)c2ccc(Cl)cc2)CC1)NC[C@H]1COCCO1
+
+577
+Improvement:3.09094090293 | Similarity: 0.455445544554
+New y(m): 0.562277994593 | Old y(m): -2.52866290834
+New SMILES: Cc1cccc(S(=O)(=O)N2CCN(C(=O)C3(C)CCCCC3)CC2)c1 | Old: Cc1ccc(S(=O)(=O)N2CCN(C(=O)[C@H]3CCCC[C@@H]3C(=O)[O-])CC2)cc1C
+
+578
+Improvement:1.32301696825 | Similarity: 0.212121212121
+New y(m): -1.37198485811 | Old y(m): -2.69500182636
+New SMILES: CC(C)Oc1ccc(S(N)(=O)=O)c(NCC(=O)NCc2ccc(N3CCOC(=O)C3)cc2)c1 | Old: CC(C)Nc1cccc(CNC(=O)N[C@@H]2CC[NH+](CC3CC3)C2)c1
+
+579
+Improvement:2.31720176736 | Similarity: 0.271317829457
+New y(m): -0.257162957701 | Old y(m): -2.57436472507
+New SMILES: CCc1ccc(C(=O)N2CCC[C@H](N3C(=O)N([C@@H](C)[C@@H]4CCCO4)C(C)(C)C3=O)C2)cc1 | Old: CCc1cc(C(=O)N2CC[C@](O)(CN3CCOCC3)C(C)(C)C2)cc(=O)[nH]1
+
+580
+Improvement:6.05600528819 | Similarity: 0.222222222222
+New y(m): -0.121832229214 | Old y(m): -6.1778375174
+New SMILES: CC(C)Oc1ccc(NCCC(=O)N2CCC(NS(=O)(=O)CC(F)F)CC2)cc1 | Old: CC[NH+](C)CCNC(=O)N1CCC(CC(=O)[O-])CC1
+
+581
+Improvement:1.52730532993 | Similarity: 0.252747252747
+New y(m): -1.05148566488 | Old y(m): -2.57879099481
+New SMILES: CCn1c(C)cc(C(N)(N)C(=O)NCc2ccccc2)c1C | Old: CCn1c(C)cc(CNCC[NH+]2CCCCC2)c1C
+
+582
+Improvement:4.37988060663 | Similarity: 0.248
+New y(m): 1.64576399524 | Old y(m): -2.73411661138
+New SMILES: CC(=O)c1ccc(C)cc1NC(=O)NC[C@H]1CCCN(C(=O)c2ccc(C)cc2)C1 | Old: C[C@H]1CCC[NH+](Cc2ccc(CNC(=O)NNC(=O)C(C)(C)C)cc2)C1
+
+583
+Improvement:4.64285164285 | Similarity: 0.218487394958
+New y(m): 2.02937267512 | Old y(m): -2.61347896773
+New SMILES: COC(=O)N(CC(=O)Nc1cccc(NC(C)(C)C)c1)Cc1ccc(F)cc1 | Old: C/[NH+]=C(/NCc1noc(C(C)(C)C)n1)N[C@@H](C)c1ccc(F)cc1F
+
+584
+Improvement:2.44526472405 | Similarity: 0.365079365079
+New y(m): -0.548814660943 | Old y(m): -2.99407938499
+New SMILES: CC(=O)N[C@@H](C)C(=O)NC1CCCCCCC1 | Old: CC(=O)N[C@@H](C(=O)NC1COC1)C(C)C
+
+585
+Improvement:2.53143451268 | Similarity: 0.2
+New y(m): -0.0324113400145 | Old y(m): -2.56384585269
+New SMILES: C[C@@]12C=CC=C[C@H]1CN(C(=O)c1cccc(N3CC(C(=O)OC(F)(F)F)C3)c1)CC2 | Old: C[C@H]1CCCN(C(=O)C2CC[NH+](C[C@@H](O)c3ccc(F)cc3F)CC2)C1
+
+586
+Improvement:-1.87937549021 | Similarity: 0.377777777778
+New y(m): -4.87942102501 | Old y(m): -3.00004553481
+New SMILES: C[C@@H](C(=O)NCc1ccsc1)N1CCN2NC(=O)N[C@@]2(N)C1 | Old: C[C@@H](C(=O)NCc1cccs1)N1CCn2c(nn(C)c2=O)C1
+
+587
+Improvement:0.170505961007 | Similarity: 0.263157894737
+New y(m): -3.63998456424 | Old y(m): -3.81049052524
+New SMILES: CC1(C)OCO[C@]1(C)[C@@H]1COCO1 | Old: C[C@H]1CO[C@H]([C@]2(C)OC[C@H](C)O2)O1
+
+588
+Improvement:-1.47987558508 | Similarity: 0.214285714286
+New y(m): -5.00392216091 | Old y(m): -3.52404657584
+New SMILES: CN1CC[NH2+]C[C@](N)(c2cc(Cl)cc(NC(=O)[C@@H]3COCCO3)c2)C1 | Old: CN1CCC[NH+](Cc2cc(Cl)ccc2N)CC1
+
+589
+Improvement:0.880085188147 | Similarity: 0.242424242424
+New y(m): -3.78485495458 | Old y(m): -4.66494014272
+New SMILES: CC(C)N[C@@H](C)[C@@]1(C)CCCC[NH2+]C1 | Old: C[C@@H](C[C@@H]1CCCCC[NH2+]1)[NH2+]CC(C)(C)C
+
+590
+Improvement:-3.50813904377 | Similarity: 0.45652173913
+New y(m): -6.87658972106 | Old y(m): -3.36845067729
+New SMILES: CC(C)(CNC(=O)NC[C@]1([NH3+])CC[NH2+]C(O)(O)C1)c1ccncc1 | Old: COC1CC[NH+](CCNC(=O)NCC(C)(C)c2ccncc2)CC1
+
+591
+Improvement:0.0495038731261 | Similarity: 0.317073170732
+New y(m): -4.86784577445 | Old y(m): -4.91734964758
+New SMILES: COCCNC1=N[C@@H](SC[C@H]2CCC(=O)N2C)NC1=O | Old: COCCNCC1=N[C@H]2C(=N1)C(=O)N(C)C(=O)N2C
+
+592
+Improvement:2.8751726929 | Similarity: 0.327102803738
+New y(m): -2.00822708376 | Old y(m): -4.88339977666
+New SMILES: COCCN1C(=O)CC(C)(C)[C@@H](C(=O)[O-])[C@H]1c1ccc(N2CCCC2)cc1 | Old: COCCN1C(=O)c2ccccc2[C@@H](C(=O)[O-])[C@H]1c1[nH+]ccn1C
+
+593
+Improvement:3.09055884138 | Similarity: 0.243902439024
+New y(m): -1.07031180608 | Old y(m): -4.16087064746
+New SMILES: CNC(=O)c1cnnc(Oc2cccc(O)c2)c1 | Old: CNC(=O)c1ccc(O[C@@H]2CCC[C@H]([NH3+])C2)nn1
+
+594
+Improvement:2.27335826485 | Similarity: 0.321739130435
+New y(m): -1.66915730632 | Old y(m): -3.94251557117
+New SMILES: C[C@@H]1C[C@@H](N(C)C(=O)c2ccc(OCC3CC[NH+](C)CC3)cc2)C[C@]2(CCSC2)C1 | Old: C[NH+]1CCC(C[NH+](C)C2CCC(c3ccc(O)cc3)CC2)CC1
+
+595
+Improvement:-0.959347245456 | Similarity: 0.271186440678
+New y(m): -3.47711013284 | Old y(m): -2.51776288738
+New SMILES: Nc1ncncc1N1C=NCC1 | Old: CN(c1ncncc1N)[C@H]1CCSC1
+
+596
+Improvement:-1.06578797524 | Similarity: 0.4
+New y(m): -4.72323346924 | Old y(m): -3.657445494
+New SMILES: CC(S)(S)Cn1cc[nH+]c1 | Old: SCCCCn1cc[nH+]c1
+
+597
+Improvement:2.47361730367 | Similarity: 0.209677419355
+New y(m): 0.0934489306363 | Old y(m): -2.38016837303
+New SMILES: C=C(c1ccccc1)c1nc(N(N)C(=O)[C@@H](C)Oc2cc(C)c(F)cc2C)no1 | Old: Cc1cc2c(cc1C)O[C@@H](C(=O)N(CC[NH+](C)C)Cc1ccco1)C2
+
+598
+Improvement:0.0 | Similarity: 1.0
+New y(m): -2.8088493131 | Old y(m): -2.8088493131
+New SMILES: O=C(NCC1([NH+]2CCCCC2)CCOCC1)c1n[nH]c(C2CC2)c1Cl | Old: O=C(NCC1([NH+]2CCCCC2)CCOCC1)c1n[nH]c(C2CC2)c1Cl
+
+599
+Improvement:1.42460972615 | Similarity: 0.262295081967
+New y(m): -4.70221542404 | Old y(m): -6.12682515019
+New SMILES: N[C@@H]1C=CC=C[C@]12[NH+]=Cc1cc(Br)ccc12 | Old: NC1=c2cc(Br)ccc2=[NH+]C1
+
+600
+Improvement:2.73877401434 | Similarity: 0.218181818182
+New y(m): -0.339997237995 | Old y(m): -3.07877125234
+New SMILES: CC1(C)CCCC(=O)C1 | Old: CC1(C)CCCC[C@H]1[NH2+]Cc1c[nH]cn1
+
+601
+Improvement:-0.525420630108 | Similarity: 0.263888888889
+New y(m): -2.85836060962 | Old y(m): -2.33293997951
+New SMILES: CC(C)(CBr)CNC(=O)[C@]12C=CC=C[C@@H]1CS(=O)(=O)C2 | Old: CC(C)(CBr)CN1C(=O)C(C)(C)S1(=O)=O
+
+602
+Improvement:3.60356500042 | Similarity: 0.380165289256
+New y(m): -0.332810630887 | Old y(m): -3.9363756313
+New SMILES: COc1ccc(S(=O)(=O)NCC(=O)N[C@H]2C[C@H](c3ccccc3)OC3(CCCC3)C2)cc1 | Old: COc1ccc(S(=O)(=O)NCC[NH2+][C@H]2CCOC3(CCOCC3)C2)cc1
+
+603
+Improvement:-2.38266171547 | Similarity: 0.438596491228
+New y(m): -6.02778031928 | Old y(m): -3.64511860381
+New SMILES: CCNC(=O)C(=O)NC[C@@](C)(O)C(O)O | Old: COC[C@@](C)(O)CNC(=O)C(=O)NCC(C)C
+
+604
+Improvement:2.38543759595 | Similarity: 0.204301075269
+New y(m): -1.98164744743 | Old y(m): -4.36708504338
+New SMILES: CCC1(CC)CN(C(N)=O)C(=O)N(c2ccc(S(=O)(=O)NN)cc2)C1 | Old: CCC1(CC)C(=O)NC(=NNC(N)=S)NC1=O
+
+605
+Improvement:0.0 | Similarity: 1.0
+New y(m): -4.60244460632 | Old y(m): -4.60244460632
+New SMILES: c1nnn(C23C[C@H]4C[C@H](CC(c5nc6c7cn[nH]c7ncn6n5)(C4)C2)C3)n1 | Old: c1nnn(C23C[C@H]4C[C@H](CC(c5nc6c7cn[nH]c7ncn6n5)(C4)C2)C3)n1
+
+606
+Improvement:-0.247366363421 | Similarity: 0.260869565217
+New y(m): -3.26859119237 | Old y(m): -3.02122482895
+New SMILES: CCNc1cccc(OC(=O)[C@@]2(C[NH+](C)C)CCCNC2)c1 | Old: CCN[C@H]1CCCC[C@@H]1[NH+](C)Cc1cccc(C)n1
+
+607
+Improvement:4.00965226747 | Similarity: 0.242424242424
+New y(m): -0.495942434556 | Old y(m): -4.50559470203
+New SMILES: Cc1cc(OC(=O)N2CCCCC2)c(NC(=O)[C@@H](C)[NH2+]CCn2cnc3ccccc32)cc1F | Old: Cc1ccc(NC(=O)C[NH+](C)C[C@@H](O)CN2CCOCC2)cc1F
+
+608
+Improvement:4.14840181808 | Similarity: 0.201680672269
+New y(m): 0.37610065851 | Old y(m): -3.77230115957
+New SMILES: C[C@@H](OCc1cccc(NC(=O)C23C=CC(C#N)(CC2)CC3)c1)C1CCC1 | Old: C[C@@H]([NH2+]C[C@H]1CC[C@H](C(N)=O)O1)c1ccc2c(c1)OCCCO2
+
+609
+Improvement:-0.579062310079 | Similarity: 0.272727272727
+New y(m): -4.70162252937 | Old y(m): -4.12256021929
+New SMILES: C[C@@H](OC(=O)CO)[C@@H]([NH3+])c1ccccc1[S@@](C)=O | Old: CCOC(=O)[C@@H]([NH3+])[C@@H](O)c1ccc(S(C)(=O)=O)cc1
+
+610
+Improvement:1.56810398544 | Similarity: 0.418367346939
+New y(m): -1.27439859651 | Old y(m): -2.84250258195
+New SMILES: Cc1ccc(NC(=O)CS(=O)(=O)CN2CC(C)(C)[C@@H]3C=CC=C[C@@H]32)c([N+](=O)[O-])c1 | Old: Cc1ccc(NC(=O)C[NH+]2CCSC(C)(C)C2)c([N+](=O)[O-])c1
+
+611
+Improvement:-0.319369270377 | Similarity: 0.2
+New y(m): -4.93871114816 | Old y(m): -4.61934187779
+New SMILES: CC[NH2+][C@H](C=O)C1CCOCC1 | Old: CCC[NH2+][C@H](c1[nH]cc[nH+]1)[C@H]1CCOC2(CCSCC2)C1
+
+612
+Improvement:-1.36408429746 | Similarity: 0.271186440678
+New y(m): -3.57263138584 | Old y(m): -2.20854708838
+New SMILES: CO[C@@H]([NH3+])C1CCCC1 | Old: C[NH2+][C@@H](C1CCCC1)[C@@H]1CCc2cccnc21
+
+613
+Improvement:6.02250799816 | Similarity: 0.238095238095
+New y(m): 1.23082289034 | Old y(m): -4.79168510783
+New SMILES: COc1cc(C(=O)Nc2cccc(C(=O)OCC3CCOCC3)c2)ccc1[N+](=O)[O-] | Old: COc1ccc(-c2noc(C[NH+]3CCCC[C@@H]3C(=O)[O-])n2)cc1OC
+
+614
+Improvement:-1.92367483639 | Similarity: 0.25
+New y(m): -5.88297624448 | Old y(m): -3.95930140809
+New SMILES: C[NH2+][C@H](C(O)O)[C@H](C)Sc1ccncn1 | Old: C[NH2+][C@H](COC(C)C)c1ncccn1
+
+615
+Improvement:2.58072122664 | Similarity: 0.21875
+New y(m): -1.75517033171 | Old y(m): -4.33589155835
+New SMILES: C[C@@H](O)c1cccc(N2CC[NH+](CCCNC(=O)c3cc(F)cc4ncccc34)CC2)c1 | Old: NC(=O)[C@H]1CCC[NH+](CCCNc2nccc(C(F)(F)F)n2)C1
+
+616
+Improvement:1.15086691799 | Similarity: 0.307692307692
+New y(m): -1.8226054493 | Old y(m): -2.9734723673
+New SMILES: C[C@H](C(=O)NCC(=O)N1CC[C@@H]2C=CC=C(Br)[C@@H]2C1)c1ccc2c(c1)C(=O)NC2=O | Old: C[C@H](CC(=O)N1CCC(C(=O)[O-])CC1)N1C(=O)c2ccccc2C1=O
+
+617
+Improvement:1.39557885894 | Similarity: 0.263157894737
+New y(m): -2.96365474376 | Old y(m): -4.3592336027
+New SMILES: CCC[C@@H]1C[C@H](C[NH3+])C[C@](Oc2cc(C)cc(C)c2)([NH+]2CCC2)C1 | Old: CCC[C@@H]1CC[C@H](C[NH3+])[C@H]([NH+]2C[C@@H](C)C[C@@H](C)C2)C1
+
+618
+Improvement:-2.41285195266 | Similarity: 0.269841269841
+New y(m): -5.92769891762 | Old y(m): -3.51484696496
+New SMILES: Cc1nn(C)c(=O)cc1C[NH2+]C(C)(O)O | Old: CCOCC[NH2+]Cc1c(C)nn(C)c1C
+
+619
+Improvement:3.47696337029 | Similarity: 0.2
+New y(m): -3.59538456424 | Old y(m): -7.07234793453
+New SMILES: C[C@@]1(C(=O)N[C@H]2CCO2)C=CSC1 | Old: O=C(C[C@@H]1C[NH2+]CCO1)N[C@H]1C=CS(=O)(=O)C1
+
+620
+Improvement:-2.50393967877 | Similarity: 0.292307692308
+New y(m): -5.66667372584 | Old y(m): -3.16273404707
+New SMILES: NC(=O)Cc1cccc(N2CCN(C(=O)N3C(=O)N(CCO)[C@@]45C=CC=C[C@@]34C[NH2+]C5)CC2)c1 | Old: NC(=O)CN1CCN([C@H]2CC(=O)N(CCc3ccccc3)C2=O)CC1
+
+621
+Improvement:0.479988316069 | Similarity: 0.261538461538
+New y(m): -1.94365501354 | Old y(m): -2.42364332961
+New SMILES: COCCCn1c(C)c(CNC(=O)[C@H](C)[NH+]2CCSCC2)c(-n2nc(Cl)c3cc(C)oc32)c1C | Old: COCCCn1c(C)c(C)c(C#N)c1NC(=O)C[NH+]1CC(C)(C)C1(C)C
+
+622
+Improvement:2.50336443808 | Similarity: 0.2
+New y(m): -3.03414362261 | Old y(m): -5.53750806069
+New SMILES: C[C@]1(NC(=O)N2CC[C@H](c3ccsc3)[C@@H]2O)CCCS1(=O)=O | Old: C[C@@H]1[C@@H](C(=O)[O-])CCN1C(=O)NC[C@@H]1COCCO1
+
+623
+Improvement:0.916624055492 | Similarity: 0.27397260274
+New y(m): -2.31172252034 | Old y(m): -3.22834657584
+New SMILES: C[C@]1(C[NH3+])CCC[C@@H]1Nc1cccc(O)c1 | Old: CC1(C[NH2+][C@@H]2CCc3c(O)cccc32)COC1
+
+624
+Improvement:-0.857609952911 | Similarity: 0.203389830508
+New y(m): -4.49691029996 | Old y(m): -3.63930034705
+New SMILES: CC(=O)[C@@]1(N)NN=C(C)[C@@]2(C)NC(C)=C(C(=O)Nc3ccc4c(c3)[nH]c(=O)n4C)N21 | Old: CC(=O)CN1N=C(C)[C@@H](C)n2c1nc1c2c(=O)n(C)c(=O)n1C
+
+625
+Improvement:2.84263871525 | Similarity: 0.2109375
+New y(m): -1.32498411618 | Old y(m): -4.16762283143
+New SMILES: Cc1nc2cc(C[NH2+][C@@H]3CC(=O)CN(C(=O)NCc4ccc(F)cc4)C3)ccc2s1 | Old: CCc1nc2n(n1)C[C@H]([NH2+]CCNS(=O)(=O)c1ccccc1)CC2
+
+626
+Improvement:-1.53880088232 | Similarity: 0.225806451613
+New y(m): -4.85013822981 | Old y(m): -3.3113373475
+New SMILES: CC(C)N1C=N[C@@H](c2csc(C[NH+]3CCN(C)CC3)n2)C1 | Old: CC(C)n1cnnc1[C@H]1CCC[NH+](CC2CCC2)C1
+
+627
+Improvement:3.22247008702 | Similarity: 0.372093023256
+New y(m): 0.719380475513 | Old y(m): -2.50308961151
+New SMILES: C[C@H](Cc1cccc(O)c1)NC(=O)Cc1cccc(N(C)C(=O)Cl)c1 | Old: C[C@H](CC[NH+](C)C)NC(=O)Cc1cccc(Cl)c1
+
+628
+Improvement:3.92608906022 | Similarity: 0.303797468354
+New y(m): -2.98056451334 | Old y(m): -6.90665357356
+New SMILES: CS(=O)(=O)Cc1cccc(NC(=O)NCCC(=O)[O-])c1 | Old: CS(=O)(=O)NCC[NH2+]Cc1ccc(C(=O)[O-])cn1
+
+629
+Improvement:2.322065309 | Similarity: 0.436363636364
+New y(m): -0.900960521667 | Old y(m): -3.22302583067
+New SMILES: COc1ccc(S(=O)(=O)N2CCN(CC(=O)Nc3cc(OC)cc4c3OCCO4)CC2)cc1 | Old: COc1ccc(S(=O)(=O)N2CCCN(CC[NH+](C)C)CC2)cc1
+
+630
+Improvement:2.47558975192 | Similarity: 0.2
+New y(m): 0.0318566092232 | Old y(m): -2.44373314269
+New SMILES: CC1=C[C@]23N=C(c4ccccc4)N=C(C(=O)N4CC[C@H](c5cc(O)ccc5[N+](=O)[O-])C4)[C@]2(C=C1)C=C(C)O3 | Old: CC1=C([C@H](c2cccc([N+](=O)[O-])c2)c2c(C)n[nH]c2[O-])[C@@H](O)N=N1
+
+631
+Improvement:2.54305746429 | Similarity: 0.294642857143
+New y(m): -0.84780730868 | Old y(m): -3.39086477297
+New SMILES: COc1ccc([C@@H]2CN(C(=O)Nc3ccc4c(c3)n(C)c(=O)n4C)C(=O)N2)cc1 | Old: COc1ccc(N2CCn3c2nn(CC(N)=O)c(=O)c3=O)cc1
+
+632
+Improvement:1.57427695257 | Similarity: 0.271844660194
+New y(m): -2.4828409005 | Old y(m): -4.05711785307
+New SMILES: C[NH2+]C1(N(C)CC(=O)N[C@H](C)C(=O)Nc2ccccc2)CCCCC1 | Old: C[C@H](NC(=O)NCC1([NH+](C)C)CCCCC1)c1nncn1C
+
+633
+Improvement:2.86300154517 | Similarity: 0.372549019608
+New y(m): 0.435463386365 | Old y(m): -2.4275381588
+New SMILES: CCc1ccc(S(=O)(=O)Nc2cccc(C(=O)N3CCC[C@H](CO)C3)c2)cc1 | Old: CCc1ccc(S(=O)(=O)N[C@@H]2CCCC[C@@H]2C[NH+](C)C)cc1
+
+634
+Improvement:0.880220860657 | Similarity: 0.207692307692
+New y(m): -2.2970817298 | Old y(m): -3.17730259046
+New SMILES: CN(C)C(=O)N1CCN[C@H](c2cc(C(=O)NCCc3ccc([N+](=O)[O-])cc3)nn2C)C1 | Old: Cn1cc(C[NH+]2CCN(CCC(N)=O)CC2)c(-c2cccc(Cl)c2)n1
+
+635
+Improvement:-2.16170264565 | Similarity: 0.220338983051
+New y(m): -4.48010992578 | Old y(m): -2.31840728013
+New SMILES: Cc1cc(C(=O)NC[C@@H]2CN(C(=O)N3C[C@@H]4CC[C@@H]3C4)CC(=O)N2)no1 | Old: CCc1cc(C(=O)NCc2cc3n(n2)CCCN(S(C)(=O)=O)C3)on1
+
+636
+Improvement:1.16111139425 | Similarity: 0.305263157895
+New y(m): -1.31698862955 | Old y(m): -2.47810002379
+New SMILES: NN(C(=O)c1ccccc1)C(=O)C12CCC(CC1)C2 | Old: O=C(NNC(=O)[C@H]1C[C@H]2CC[C@@H]1C2)C1=NN=C(c2ccccc2)C1
+
+637
+Improvement:-0.690966864181 | Similarity: 0.2421875
+New y(m): -3.32546468906 | Old y(m): -2.63449782488
+New SMILES: CCOc1cccc(OC)c1C(=O)N(CC)[C@@H]1C[NH2+]C[C@]([NH3+])(C(=O)Nc2cccc(C)c2)C1 | Old: CCOc1cc(C[NH+]2CCC[C@H](C(=O)N(CC)CC)C2)ccc1O
+
+638
+Improvement:1.45672091457 | Similarity: 0.373626373626
+New y(m): -3.12655496409 | Old y(m): -4.58327587866
+New SMILES: CN(C(=O)c1ccccc1)[C@@]1(C)[NH+]=C2CCC=CC2=CC1=O | Old: CN(C[C@H]1C=c2ccccc2=[NH+]C1=O)C(=O)c1ccccc1
+
+639
+Improvement:4.07375436012 | Similarity: 0.206349206349
+New y(m): 1.26969670465 | Old y(m): -2.80405765547
+New SMILES: Cc1ccccc1C | Old: CCc1cccc(C)c1NC(=O)C[C@H]1C[NH2+]CCO1
+
+640
+Improvement:0.197281430192 | Similarity: 0.301886792453
+New y(m): -2.72713954569 | Old y(m): -2.92442097588
+New SMILES: CC(C)C1([NH3+])CCCC1 | Old: CC(C)[C@H](C)[NH2+][C@H]1CCOC2(CCCC2)C1
+
+641
+Improvement:1.57776303206 | Similarity: 0.21359223301
+New y(m): -2.17182272549 | Old y(m): -3.74958575755
+New SMILES: C[C@](C(N)=O)(C(F)F)N1CC[C@H](C(=O)NCCc2ccc(F)cc2)CC1=O | Old: C[C@@](N)(C(=O)N1CCCC[C@@H]1CCC(=O)[O-])C(F)(F)F
+
+642
+Improvement:1.53434242321 | Similarity: 0.3375
+New y(m): -2.51933062684 | Old y(m): -4.05367305004
+New SMILES: CC(=O)N1CCC[C@H]1[NH2+][C@@H](C)c1ccccc1 | Old: CC(=O)N1CC[C@@H]([NH2+][C@H](C)c2ccc3[nH]c(=O)[nH]c3c2)C1
+
+643
+Improvement:4.02464702264 | Similarity: 0.28125
+New y(m): -0.504542820428 | Old y(m): -4.52918984307
+New SMILES: Cc1cc(S(=O)(=O)N[C@@H](C(=O)Nc2cccc(N(C)C)c2)[C@@H](C)O)ccc1Br | Old: Cc1cc([C@@H]([NH2+]CCN(C)C)C(=O)[O-])ccc1Br
+
+644
+Improvement:-1.65380234234 | Similarity: 0.226666666667
+New y(m): -6.06467118522 | Old y(m): -4.41086884288
+New SMILES: CC(C)[NH2+][C@@H](C(O)O)[C@@H](C)N1CCOC[C@H]1C | Old: CCC[NH2+][C@@H](COC)[C@H]1CN(C(C)C)CCO1
+
+645
+Improvement:2.27624833266 | Similarity: 0.233333333333
+New y(m): -0.421635188635 | Old y(m): -2.69788352129
+New SMILES: CC(C)Nc1ccncc1C(=O)N1CCC1 | Old: CC(C)Cn1ncc2cc(C(=O)N3CCOC[C@@H]3C(N)=O)cnc21
+
+646
+Improvement:2.94943515422 | Similarity: 0.23275862069
+New y(m): -0.351703313234 | Old y(m): -3.30113846746
+New SMILES: CCN(CC)C(=O)c1cccc(NC(=O)N2CC3(CCCC3)C[C@]3(COCO3)C2)c1 | Old: CCN(CC)C(=O)CN1CCC([NH+]2CCCCC2)CC1
+
+647
+Improvement:1.6567946025 | Similarity: 0.209302325581
+New y(m): -0.870915874909 | Old y(m): -2.52771047741
+New SMILES: CC(C)[N@H+](C)Cc1ccc(C(C)(C)C(=O)N(C)C2CCCC2)cc1 | Old: C[C@H]([NH+](C)Cc1cnc(Cl)s1)C(C)(C)C
+
+648
+Improvement:-0.120194348771 | Similarity: 0.246268656716
+New y(m): -3.08209588444 | Old y(m): -2.96190153567
+New SMILES: CCOc1cc(OC)cc(OC)c1C(=O)N[C@@H]1C[NH2+]C[C@]([NH3+])(c2nc3cc(C)ccc3s2)C1 | Old: CCOc1ccc(C[NH+]2CCC[C@H]([C@H](O)c3nccn3C)C2)cc1OC
+
+649
+Improvement:7.68734080903 | Similarity: 0.311111111111
+New y(m): 1.0933831436 | Old y(m): -6.59395766543
+New SMILES: CC1CCN(C(=O)CSc2cccc3c2SCC3)CC1 | Old: C[C@H]1CCCN(C(=O)CS[C@@H]2[NH+]=c3ccc(Cl)cc3=[NH+]2)C1
+
+650
+Improvement:4.7619983116 | Similarity: 0.24347826087
+New y(m): 0.794733438433 | Old y(m): -3.96726487317
+New SMILES: CC(=O)N1C[C@H](C(=O)N(CC(=O)Nc2cccc(F)c2)c2cccc(F)c2)CC(C)(C)C1 | Old: CC(=O)N1CCC[C@H](C(=O)N(CC(=O)[O-])CC(F)(F)F)C1
+
+651
+Improvement:2.70610623404 | Similarity: 0.209150326797
+New y(m): -1.76017114997 | Old y(m): -4.46627738402
+New SMILES: C[NH+](Cc1cc(F)cc2c1CO[C@@H](c1ccccc1)O2)[C@@H]1CN(C(=O)c2cc(=O)oc3ccccc23)CCN1 | Old: O=C1NC([O-])=C2C[NH+](Cc3ccco3)CN=C2N1c1ccccc1F
+
+652
+Improvement:-0.742361862768 | Similarity: 0.313953488372
+New y(m): -4.59581733385 | Old y(m): -3.85345547109
+New SMILES: CC(C)(NC(=O)N1CCCCC1(O)O)[NH+]1CCCCC1 | Old: CO[C@H]1CCCN(C(=O)NCCC[NH+]2CCCCC2)C1
+
+653
+Improvement:1.75919112191 | Similarity: 0.248
+New y(m): -0.748471037092 | Old y(m): -2.507662159
+New SMILES: COc1ccc(-n2nccc2CS(=O)(=O)[C@H](C)C(=O)Nc2cc(C)ccc2C(N)=O)cc1 | Old: Cc1ccc(NC(=O)[C@H](C)[NH+](C)Cc2nnc(C3CC3)n2C)c(C)c1
+
+654
+Improvement:-1.54581629328 | Similarity: 0.317307692308
+New y(m): -5.32028655364 | Old y(m): -3.77447026036
+New SMILES: C[NH+](C)C1(NC(=O)N2CCNC[C@]2(N)c2ccncc2)CCCC1 | Old: C[NH+](C)[C@H]1CC[C@H](NC(=O)N2CCN(Cc3ccncc3)CC2)C1
+
+655
+Improvement:-2.68155610736 | Similarity: 0.206349206349
+New y(m): -5.81951361613 | Old y(m): -3.13795750877
+New SMILES: NC1(N)C(=O)C=C2C=NC=C[C@@H]2C1=O | Old: NC1=C(N)C(=O)c2ncccc2C1=O
+
+656
+Improvement:1.57801306425 | Similarity: 0.224489795918
+New y(m): -2.83341833031 | Old y(m): -4.41143139457
+New SMILES: CC(C)NC(=O)C=O | Old: CC(C)[C@@H](NC(=O)[C@H]1CCCO1)C(=O)[O-]
+
+657
+Improvement:3.77962207152 | Similarity: 0.207207207207
+New y(m): -0.438805021612 | Old y(m): -4.21842709314
+New SMILES: CCc1nc(-c2cccc(ONC(=O)[C@H]3C[C@@H](C)N(C(=O)N(C)C)C3)c2)cs1 | Old: CCc1csc([C@H]2CCC[NH+](CC(=O)N(C)OC)C2)n1
+
+658
+Improvement:4.44890866424 | Similarity: 0.223404255319
+New y(m): 1.91216127693 | Old y(m): -2.53674738731
+New SMILES: CC(C)Oc1ccc(CC(=O)Nc2ccccc2N(C)[C@H]2CCCS2)cc1 | Old: CC(C)c1ccc(CNC(N)=[NH2+])cc1
+
+659
+Improvement:3.8324248262 | Similarity: 0.300970873786
+New y(m): 0.351246912481 | Old y(m): -3.48117791372
+New SMILES: Cc1cccc(S(=O)(=O)N(C)CC(=O)Nc2cc(F)cc(OC[C@@H]3CCCOC3)c2)c1 | Old: Cc1cc(F)cc(S(=O)(=O)N(C)CC[NH+](C)C)c1
+
+660
+Improvement:2.17103133682 | Similarity: 0.220689655172
+New y(m): -0.81536442372 | Old y(m): -2.98639576054
+New SMILES: O=C1[C@H]2[C@H]3CC[C@@H](C3)[C@]2(S[C@@H](CO)c2ccccc2)C(=O)N1CCc1cccc(F)c1 | Old: O=C1C(=O)N(CC[NH+]2CCOCC2)[C@@H](c2cccc([N+](=O)[O-])c2)/C1=C(\O)c1cccs1
+
+661
+Improvement:-0.0978226781664 | Similarity: 0.339285714286
+New y(m): -4.03186849386 | Old y(m): -3.93404581569
+New SMILES: COc1cc(CNC(=O)N(C)C[C@@H]2C[NH2+][C@H]([NH3+])C2)cc(OCc2ccncc2)c1 | Old: CN(C[C@@H]1CC[NH+](C)C1)C(=O)NCc1ccnc(OCC(F)F)c1
+
+662
+Improvement:-2.10198895361 | Similarity: 0.207692307692
+New y(m): -7.15943560573 | Old y(m): -5.05744665212
+New SMILES: CN1CC[NH2+]C[C@]([NH3+])(c2cccc(O[C@H](CO)[C@@H]3CN(C)C(=O)CN3C3(C)CC3)c2)C1 | Old: CN1CCC[NH+](C[C@@H]2CN(C(=O)c3ccc(O)cc3)C[C@@H]2CO)CC1
+
+663
+Improvement:2.38693297907 | Similarity: 0.204724409449
+New y(m): -1.39337168704 | Old y(m): -3.78030466612
+New SMILES: CC(=O)NCc1ccc(OCN(CC(N)=O)c2ccccc2)c(-n2cncn2)c1 | Old: CC/[NH+]=C(/NCc1nc(C)no1)N[C@H]1CCN(c2ccccc2)C1
+
+664
+Improvement:0.586786440893 | Similarity: 0.246666666667
+New y(m): -1.64138090667 | Old y(m): -2.22816734756
+New SMILES: COc1cc(C)cc2c1[C@@](C(=O)NCC[NH+]1CC[C@H]3C=CC(Cl)=C[C@H]3C1)(c1ccc(Br)cc1)NC(=O)N2 | Old: COc1ccc(C(=O)C2=C([O-])C(=O)N(CC[NH+](C)C)[C@H]2c2ccc(Cl)cc2)cc1Cl
+
+665
+Improvement:2.29166771007 | Similarity: 0.333333333333
+New y(m): -0.114894171458 | Old y(m): -2.40656188153
+New SMILES: CO[C@H](CN1CCOCC1)c1cc(Cl)c([N+](=O)[O-])cc1Cl | Old: [NH3+][C@H](CO)c1ccc(N2CCOCC2)c(Cl)c1Cl
+
+666
+Improvement:3.06118342729 | Similarity: 0.285714285714
+New y(m): -0.983314742669 | Old y(m): -4.04449816996
+New SMILES: COc1ccc(C(C)(C)NC(=O)NCC(=O)NNC(=O)c2ccc3c(c2)OCCOC3)cc1 | Old: COc1ccc(CNC(=O)CNC(=O)[C@]2(C)CN(S(C)(=O)=O)CC(=O)N2C)cc1
+
+667
+Improvement:-0.0217 | Similarity: 0.741935483871
+New y(m): -3.52049253327 | Old y(m): -3.49879253327
+New SMILES: O=C(C[NH+]1CCC(CO)CC1)NCc1csc(Br)c1 | Old: O=C(C[NH+]1CCC(CO)CC1)NCc1cc(Br)cs1
+
+668
+Improvement:-0.103190934066 | Similarity: 0.513513513514
+New y(m): -5.22066738413 | Old y(m): -5.11747645006
+New SMILES: C[C@@H](c1noc([C@H]2COCCS2)n1)N1CC[NH2+]CC1 | Old: C[C@@H](c1nc([C@H]2CSCCO2)no1)N1CC[NH2+]CC1
+
+669
+Improvement:7.73695753207 | Similarity: 0.20202020202
+New y(m): 0.705210396342 | Old y(m): -7.03174713573
+New SMILES: C[C@@H](OC(=O)c1cc(F)cc(NS(=O)(=O)C(C)(C)C)c1)C(=O)N(C)c1ccccc1 | Old: C[C@@H](C(=O)N(C)C)[NH+](CC(=O)[O-])C(C)(C)C
+
+670
+Improvement:-0.735604216921 | Similarity: 0.240506329114
+New y(m): -3.35906499019 | Old y(m): -2.62346077327
+New SMILES: COC(=O)[C@]1(C(=O)Nc2cccc(C)c2)O[C@]1(C)CC(O)O | Old: COCC[C@]1(C)O[C@]1(C(=O)OC)C(C)C
+
+671
+Improvement:2.28928952732 | Similarity: 0.224489795918
+New y(m): -2.99777069506 | Old y(m): -5.28706022237
+New SMILES: CC1(C)C[C@@H](Cn2nc(-c3ccccc3)n(C(C)(C)O)c2=O)CC[NH2+]1 | Old: CCn1c(CC2CC[NH2+]CC2)nn(CCO)c1=O
+
+672
+Improvement:1.36918553319 | Similarity: 0.23595505618
+New y(m): -1.10950893152 | Old y(m): -2.4786944647
+New SMILES: CC1(C)CCC[C@H](N2CCN[C@]3(Br)C=CC=C[C@H]23)C1 | Old: CC1(C)CCC[C@]2(C[NH+]=C(N)N2c2cccc(Br)c2)C1
+
+673
+Improvement:-2.7158258323 | Similarity: 0.25
+New y(m): -6.64826486709 | Old y(m): -3.93243903479
+New SMILES: CN(C)C(=O)N1CC[NH2+]C[C@@]1([NH3+])C(C)(C)C | Old: CCCCC[NH+]1CCN(C(=O)N(C)C)CC1
+
+674
+Improvement:2.37457100856 | Similarity: 0.338709677419
+New y(m): -0.766864830639 | Old y(m): -3.1414358392
+New SMILES: CNS(=O)(=O)c1ccccc1C | Old: CNS(=O)(=O)c1cccc([C@@H](C)[NH2+]C[C@H](C)SC)c1
+
+675
+Improvement:2.53912712132 | Similarity: 0.212121212121
+New y(m): -3.04082823451 | Old y(m): -5.57995535583
+New SMILES: Cn1c(=O)[nH]c(=O)c2nc(C(=O)NCc3cccc(O)c3)[nH]c21 | Old: Cn1c(=O)c2nc(C[NH+]3CCCCC3)[nH]c2n(C)c1=O
+
+676
+Improvement:0.562371774224 | Similarity: 0.285714285714
+New y(m): -5.28433906973 | Old y(m): -5.84671084395
+New SMILES: CCO[C@@]1([C@@H](O)CO)OCCC1=O | Old: CCO[C@H]1C(=O)O[C@H]([C@@H](O)CO)C1=O
+
+677
+Improvement:3.43870977009 | Similarity: 0.245614035088
+New y(m): -0.918983026127 | Old y(m): -4.35769279621
+New SMILES: CC(C)[C@H](NC(=O)c1ccccc1)C(=O)NCC(=O)N[C@@H](C)c1cc2c(cc1N(C)C)OCO2 | Old: CC(C)C[C@H](NC(N)=O)C(=O)N[C@@H](C(=O)[O-])C(C)C
+
+678
+Improvement:1.20121688439 | Similarity: 0.209302325581
+New y(m): -1.9272506143 | Old y(m): -3.12846749869
+New SMILES: N=C1CCCN[C@@H]1NC(=O)c1cccc(F)c1 | Old: Cc1n[nH]c(/N=C(\[O-])CNC(=O)c2ccccc2F)n1
+
+679
+Improvement:0.94692408461 | Similarity: 0.268817204301
+New y(m): -1.56921654655 | Old y(m): -2.51614063116
+New SMILES: CC[C@H](C(S)S)N(C)C(=O)N(C)[C@H](C)Cn1ccc(Br)n1 | Old: CC[C@H](CSC)N(C)C(=O)[C@@H](C)N(C)c1nccn2cnnc12
+
+680
+Improvement:0.112354630823 | Similarity: 0.47619047619
+New y(m): -2.97345433044 | Old y(m): -3.08580896127
+New SMILES: CC1(C)CC(=O)C[C@@]2(C[NH+](CCO)C3CCCCC3)C=CC=C[C@@H]12 | Old: CC1(C)CCC[C@@H](C[NH+](CCO)C2CCCCC2)C1=O
+
+681
+Improvement:3.19556370182 | Similarity: 0.252747252747
+New y(m): -1.01435930109 | Old y(m): -4.20992300291
+New SMILES: CC[C@]1(C)C[C@]2(Nn3c(N)nnc3-c3ccccc3)C=CC=C[C@@H]2S1 | Old: CC[C@]1(C)NN(c2ccccc2)C([S-])=[NH+]1
+
+682
+Improvement:-2.37543881848 | Similarity: 0.210526315789
+New y(m): -5.0166194281 | Old y(m): -2.64118060962
+New SMILES: COC(=O)[C@]12C[C@](c3ccc(Br)cc3)(CC(=O)O1)NCN2S(=O)(=O)[C@@H]1CCC(=O)N1 | Old: COC(=O)[C@@H]1[C@H](CBr)N1N1C(=O)c2ccccc2C1=O
+
+683
+Improvement:1.79557912221 | Similarity: 0.212389380531
+New y(m): -2.62275421716 | Old y(m): -4.41833333937
+New SMILES: CC(=O)N1C[C@@H](c2ccc(Br)c(OC(=O)CN3C(=O)CN(C)C3=O)c2)C1=O | Old: CC1=C(C(=O)[O-])N2C(=O)[C@@H](NC(=O)c3c(Br)c(C)nn3C)[C@H]2SC1
+
+684
+Improvement:4.57296192803 | Similarity: 0.311111111111
+New y(m): -0.0453141965877 | Old y(m): -4.61827612462
+New SMILES: Cc1nc(COc2ccc(S(=O)(=O)N[C@H](C#N)C(C)C)cc2)cs1 | Old: Cc1nc(C[NH+](C)[C@H](C)c2ccc(C(=O)[O-])o2)cs1
+
+685
+Improvement:1.22543757121 | Similarity: 0.31067961165
+New y(m): -1.18660512423 | Old y(m): -2.41204269545
+New SMILES: COC(=O)[C@@H](NC(=O)Nc1cccc(F)c1)c1ccc(S(=O)(=O)NO)cc1 | Old: COC(=O)[C@@H](NC(=O)Cn1cnnn1)c1ccc(Cl)c(F)c1
+
+686
+Improvement:1.5413275569 | Similarity: 0.62962962963
+New y(m): -3.80476552783 | Old y(m): -5.34609308473
+New SMILES: O=C([O-])[C@H]1CCCN(c2cccnn2)C1 | Old: O=C([O-])[C@H]1CCCN(c2ccc([O-])nn2)C1
+
+687
+Improvement:0.0 | Similarity: 1.0
+New y(m): -2.58874424259 | Old y(m): -2.58874424259
+New SMILES: CC[C@H](CC[NH3+])N1CCCN(CC(F)(F)F)CC1 | Old: CC[C@H](CC[NH3+])N1CCCN(CC(F)(F)F)CC1
+
+688
+Improvement:-0.381208245771 | Similarity: 0.325581395349
+New y(m): -2.59956148274 | Old y(m): -2.21835323696
+New SMILES: C/C(=C/[C@H](C)[NH2+]C(C)C)[C@@H]1CCOCC12CCSCC2 | Old: CCC[NH2+]CC/C=C(/C)[C@@H]1CCOC2(CCSCC2)C1
+
+689
+Improvement:-2.95808278549 | Similarity: 0.255172413793
+New y(m): -6.02937305565 | Old y(m): -3.07129027016
+New SMILES: CC(=O)C(=O)N1C[C@@]2(CC(=O)N(C)C2)N[C@@](N)(C(=O)Nc2cccc3c2OCCO3)C1 | Old: O=C(CN1CCN(C(=O)[C@H]2CC(=O)N(c3ccc4c(c3)OCCO4)C2)CC1)N1CCOCC1
+
+690
+Improvement:-0.464723384615 | Similarity: 0.538461538462
+New y(m): -4.30042341999 | Old y(m): -3.83570003537
+New SMILES: COc1ccc([C@@](C)([NH3+])Cc2c[nH]c(N)[nH+]2)cc1 | Old: COc1ccc([C@@](C)([NH3+])Cc2[nH+]ccn2C)cc1
+
+691
+Improvement:5.24244805748 | Similarity: 0.259259259259
+New y(m): -1.34476674442 | Old y(m): -6.5872148019
+New SMILES: Cc1cscc1O | Old: Cc1cscc1C[NH2+]C[C@@H](O)C[NH+]1CCCC1
+
+692
+Improvement:4.73146374058 | Similarity: 0.255319148936
+New y(m): 0.439713348007 | Old y(m): -4.29175039258
+New SMILES: Oc1cccc(Br)c1 | Old: COc1cc(Br)ccc1[C@H]([NH3+])C(=O)[O-]
+
+693
+Improvement:3.41468539011 | Similarity: 0.236220472441
+New y(m): -1.26845860763 | Old y(m): -4.68314399774
+New SMILES: COc1ccc(CN2C(=O)N[C@](C)(c3ccc(C[NH+]4CCCCC4)cc3)C2=O)c(OC)c1C | Old: CCOc1ccc(CN2CC[NH2+][C@H](C(=O)[O-])C2)c(OCC)c1C
+
+694
+Improvement:0.240734678397 | Similarity: 0.269230769231
+New y(m): -2.69700240654 | Old y(m): -2.93773708493
+New SMILES: CCn1cc(C(=O)Nc2cc([O-])cc3nnn(C[C@@H]4CCOC4)c23)cn1 | Old: CCn1cc(C[NH+]2CCc3c(F)cc(F)cc3C2)cn1
+
+695
+Improvement:-0.615663876442 | Similarity: 0.236363636364
+New y(m): -4.02000801191 | Old y(m): -3.40434413547
+New SMILES: C[C@]1(NC2CCN(S(=O)(=O)c3cc(C(=O)[O-])ccc3S(C)(=O)=O)CC2)CCCO1 | Old: O=S(=O)(C1CC1)N1CCC([NH2+]Cc2ccncc2)CC1
+
+696
+Improvement:2.74141818165 | Similarity: 0.228813559322
+New y(m): -0.359576887771 | Old y(m): -3.10099506942
+New SMILES: COC(=O)[C@H]1CCN(c2ccnc(NS(=O)(=O)c3ccc(C(C)C)cc3)n2)C1 | Old: CCCCS(=O)(=O)[N-]c1ccc(NC(=O)[C@H]2CCC[NH+](C)C2)cc1
+
+697
+Improvement:1.2541253402 | Similarity: 0.27731092437
+New y(m): -1.03679927515 | Old y(m): -2.29092461534
+New SMILES: Cc1ccc([C@]2(O)[C@@H]3C=CC=C[C@@H]3CN2C(C)(C)CNC(=O)Cn2c(C)c(C)sc2=O)cc1 | Old: Cc1sc(=O)n(CCC(=O)NC2CC(C)(C)[NH2+]C(C)(C)C2)c1C
+
+698
+Improvement:4.32922707476 | Similarity: 0.201754385965
+New y(m): 1.51594464696 | Old y(m): -2.8132824278
+New SMILES: COC(=O)c1cc2c(c(NC(=O)C(=O)NCc3ccc(Br)cc3)c1)CCCCC2 | Old: O=C(NC[C@H]1CC[C@@H](C(=O)[O-])O1)c1ccc(Br)c(F)c1
+
+699
+Improvement:-0.20967118521 | Similarity: 0.275862068966
+New y(m): -4.28553495168 | Old y(m): -4.07586376647
+New SMILES: C=C(C)[NH2+]CC(=O)NC(C)C | Old: C=CC[NH2+]CC(=O)N[C@H](C)c1c(C)noc1C
+
+700
+Improvement:0.0 | Similarity: 1.0
+New y(m): -2.60162024072 | Old y(m): -2.60162024072
+New SMILES: CC1(C)C[C@@H]1NC(=O)[C@](C)(N)C(F)(F)F | Old: CC1(C)C[C@@H]1NC(=O)[C@@](C)(N)C(F)(F)F
+
+701
+Improvement:3.91617430429 | Similarity: 0.209459459459
+New y(m): 1.21114497127 | Old y(m): -2.70502933301
+New SMILES: CCOc1ccc(OCc2cc(C)c3c(c2)O[C@H](NC(=O)c2ccc([N+](=O)[O-])cc2)C3=O)cc1 | Old: CCOc1ccccc1/C=C1\Oc2c(ccc([O-])c2C[NH+]2CCN(C)CC2)C1=O
+
+702
+Improvement:0.499101540115 | Similarity: 0.258823529412
+New y(m): -3.39877408472 | Old y(m): -3.89787562483
+New SMILES: C[C@H](c1cc(N2CCCC2)ncn1)[NH+]1CCCC1 | Old: c1nc(CCN2CCC[NH+]3CCCC[C@@H]3C2)cs1
+
+703
+Improvement:4.24870125638 | Similarity: 0.206349206349
+New y(m): 1.52674961527 | Old y(m): -2.72195164111
+New SMILES: COc1cc(NC(=O)C[C@]23C=CC=C[C@H]2CSC3)cc(C(=O)Cc2ccc(C)cc2)c1 | Old: COc1ccc(Cc2nc(C)c(CC(=O)[O-])c(=O)[nH]2)cc1OC
+
+704
+Improvement:-0.093493906797 | Similarity: 0.416666666667
+New y(m): -4.250714684 | Old y(m): -4.1572207772
+New SMILES: C[C@@H]1CS[C@]2(C1)[NH+]=CN(c1ccc(Cl)cc1)[C@@H]2N | Old: C[C@@H]1C[C@]2(C[NH+]=C(N)N2c2ccc(Cl)cc2)CS1
+
+705
+Improvement:2.31563418947 | Similarity: 0.342857142857
+New y(m): -0.212000647493 | Old y(m): -2.52763483697
+New SMILES: C[C@H](O)[C@H](C)[C@H](Br)C(=O)c1ccc2c(c1)CCC=C2 | Old: C[C@H](O)[C@H](C)[C@H](C(=O)[O-])c1ccccc1Br
+
+706
+Improvement:3.00485188252 | Similarity: 0.23595505618
+New y(m): 0.552573874337 | Old y(m): -2.45227800818
+New SMILES: Cc1ccc(C(=O)N[C@@]2(CO)CCC[C@@H](SC(C)(C)C)C2)cc1 | Old: CCCCS[C@H]1CCC[C@@](CO)([NH2+]C(C)C)C1
+
+707
+Improvement:0.0 | Similarity: 1.0
+New y(m): -3.47913161908 | Old y(m): -3.47913161908
+New SMILES: C[NH+](C)C1([C@@H](N)c2cnccn2)CCCCCC1 | Old: C[NH+](C)C1([C@@H](N)c2cnccn2)CCCCCC1
+
+708
+Improvement:1.00883029116 | Similarity: 0.535714285714
+New y(m): -4.8780258705 | Old y(m): -5.88685616165
+New SMILES: O=C(N[C@H]1CCCS1)C1CC[NH2+]CC1 | Old: O=C(N[C@H]1CCS(=O)(=O)C1)C1CC[NH2+]CC1
+
+709
+Improvement:-2.27697517001 | Similarity: 0.416666666667
+New y(m): -4.60267725198 | Old y(m): -2.32570208197
+New SMILES: N#C[C@]1(N)CN(C(=O)CNC(=O)NC2CCCC2)CCN1 | Old: N#CCN1CCN(CC(=O)NC(=O)NC2CCCC2)CC1
+
+710
+Improvement:2.75368976631 | Similarity: 0.21359223301
+New y(m): -0.271015595189 | Old y(m): -3.02470536149
+New SMILES: CC(C)C(=O)c1cccc(NC(=O)N(C)[C@@H](C)N2CCOCC2)c1 | Old: CC(C)[C@@H](C)C(=O)Nc1cnn(CC[NH+]2CCCCC2)c1
+
+711
+Improvement:1.14237898981 | Similarity: 0.242424242424
+New y(m): -2.45288592229 | Old y(m): -3.5952649121
+New SMILES: [NH3+]C1CCCCCC1 | Old: [NH3+][C@@H]1CCCCC[C@@H]1c1nnc2c3[nH]cnc3ncn12
+
+712
+Improvement:2.52280207894 | Similarity: 0.263736263736
+New y(m): -2.22014787285 | Old y(m): -4.7429499518
+New SMILES: Cc1ccc(C)c([C@@H](C)[NH+]2CCC[C@@H](CN3CCOCC3)C2)c1 | Old: Cc1ccccc1CC[NH+]1CCC[C@@H](C[NH3+])C1
+
+713
+Improvement:2.04719196276 | Similarity: 0.238461538462
+New y(m): -2.70304346254 | Old y(m): -4.7502354253
+New SMILES: CC1=[NH+][C@]2(C=CC=CC2)C=C1CC(=O)Nc1cccc2c1CN(C1CCCC1)C(=O)C(=O)O2 | Old: C[C@@H]1[NH+]=c2ccccc2=C1CCN1C(=O)[C@H]2CCCC[C@@H]2C1=O
+
+714
+Improvement:6.13293568575 | Similarity: 0.243902439024
+New y(m): 1.95313163397 | Old y(m): -4.17980405178
+New SMILES: Cc1cc(S(=O)(=O)N2CC[C@H](CNC(=O)c3ccc4ccccc4c3)C2)c(C)cc1Br | Old: Cc1cc2oc(=O)cc(C[NH+]3CCC[C@@H]3CS(N)(=O)=O)c2cc1C
+
+715
+Improvement:2.63281035552 | Similarity: 0.327731092437
+New y(m): -0.687752308071 | Old y(m): -3.32056266359
+New SMILES: COc1cc(OC)cc(OCc2cccc(NC(=O)N3C[C@](C)([NH+]4CCCCC4)[C@@H]3C)c2)c1 | Old: COc1cc(OC)cc(OCCN[C@@H]2C[C@H](C)[NH+](C)C[C@H]2C)c1
+
+716
+Improvement:3.62119952578 | Similarity: 0.463157894737
+New y(m): -0.0834589190755 | Old y(m): -3.70465844485
+New SMILES: CCS[C@H]1CC[C@@H](NC(=O)N(C)CCN(C)c2ccc([N+](=O)[O-])cc2)C1 | Old: CCS[C@H]1CC[C@@H](NC(=O)N(C)CCN(C)C2CC[NH+](C)CC2)C1
+
+717
+Improvement:0.689720739028 | Similarity: 0.236641221374
+New y(m): -2.08147066256 | Old y(m): -2.77119140159
+New SMILES: CCOc1cc(Cl)cc(NC2CCCC2)c1C(=O)N1CC[NH2+][C@]([NH3+])(c2cccc3c2OCO3)C1 | Old: CCOc1cc(C[NH+]2CCN(C3CC3)C(=O)C2)cc(Cl)c1OC
+
+718
+Improvement:2.92329397672 | Similarity: 0.227848101266
+New y(m): -2.62620205865 | Old y(m): -5.54949603537
+New SMILES: CC(C)C[C@H](C[NH2+]Cc1cnn(C)c1)C1CC1 | Old: CC(C)C[C@H](C[NH3+])CN1CC[NH+](CC2CC2)CC1
+
+719
+Improvement:1.09203949481 | Similarity: 0.211538461538
+New y(m): -3.47756358311 | Old y(m): -4.56960307792
+New SMILES: CS(=O)(=O)N1CCC[C@H](C(=O)CN(Cc2cccc(O)c2)C(=O)[O-])C1 | Old: C[NH+](CCS(C)(=O)=O)CC(=O)N1CCC[C@H]2CCCC[C@@H]21
+
+720
+Improvement:0.0 | Similarity: 1.0
+New y(m): -3.29335415424 | Old y(m): -3.29335415424
+New SMILES: c1cc(CN2CC[NH+](Cc3ccc4c(c3)OCCO4)CC2)no1 | Old: c1cc(CN2CC[NH+](Cc3ccc4c(c3)OCCO4)CC2)no1
+
+721
+Improvement:1.60871079691 | Similarity: 0.232876712329
+New y(m): -0.758572036173 | Old y(m): -2.36728283308
+New SMILES: C[C@@H](O)c1ccccc1[N+](=O)[O-] | Old: C[C@@H]([NH3+])c1ccccc1O[C@H]1CCO[C@]2(CCSC2)C1
+
+722
+Improvement:0.0 | Similarity: 1.0
+New y(m): -2.41088637622 | Old y(m): -2.41088637622
+New SMILES: CCC[NH2+]C1CCC(O)(Cc2nc(C)cs2)CC1 | Old: CCC[NH2+]C1CCC(O)(Cc2nc(C)cs2)CC1
+
+723
+Improvement:0.961202816814 | Similarity: 0.231884057971
+New y(m): -1.30265923858 | Old y(m): -2.26386205539
+New SMILES: C[C@@H](O)CN(C)C(=O)c1csc2c1CCC2 | Old: C[C@@H](C#N)CN(C)C(=O)C1[C@H]2CCC[C@@H]12
+
+724
+Improvement:2.78276528707 | Similarity: 0.274509803922
+New y(m): -1.66046661806 | Old y(m): -4.44323190513
+New SMILES: CC(C)OC(=O)c1ccc(C(=O)NCNC(=S)N(C)[C@@H]2CC[C@@H](O)C2)cc1 | Old: CC(C)OC(=O)[C@H](C)CNC(=O)N[C@H]1CC[C@H]([NH+](C)C)C1
+
+725
+Improvement:1.27605218131 | Similarity: 0.245901639344
+New y(m): -2.23490841639 | Old y(m): -3.5109605977
+New SMILES: CC1(C)[C@H]2CC3C[C@H]1CC(O)(C3)C2 | Old: CCCC12C[C@@H]3C[C@@H](CC([NH3+])(C3)C1)C2
+
+726
+Improvement:3.82087244891 | Similarity: 0.3125
+New y(m): -2.63856707814 | Old y(m): -6.45943952706
+New SMILES: CNC(=O)[C@@H]1CCSC1 | Old: CNC(=O)[C@@H]1C[NH2+]CCN(C(C)=O)C1
+
+727
+Improvement:3.30809594368 | Similarity: 0.330434782609
+New y(m): 0.584190653547 | Old y(m): -2.72390529014
+New SMILES: CC(C)N(C(=O)CNC(=O)c1ccc2c(c1)CN(C)C2)c1cccc(F)c1 | Old: CN1CCc2cc([C@H](CNC(=O)C(=O)Nc3ccccc3F)[NH+](C)C)ccc21
+
+728
+Improvement:0.0980986083438 | Similarity: 0.283582089552
+New y(m): -3.60789069522 | Old y(m): -3.70598930356
+New SMILES: Cc1nc[nH+]c(C)c1N1CCCC[C@@H]1O | Old: Cc1cc(N2CC[C@H](C)[C@H](O)C2)nc(C)[nH+]1
+
+729
+Improvement:-0.157771161326 | Similarity: 0.215053763441
+New y(m): -2.8635286159 | Old y(m): -2.70575745458
+New SMILES: COCC(=O)N(N)C(=O)c1ccc2c(c1)CN(C)C2=O | Old: CCOC(=O)CN1C(=O)CS[C@@]12C(=O)Nc1ccccc12
+
+730
+Improvement:-2.08326111345 | Similarity: 0.21875
+New y(m): -5.66082082332 | Old y(m): -3.57755970988
+New SMILES: C[NH+](C)C1(NC(=O)[C@@H]2CCCN[C@]2(N)C(F)F)CCCC1 | Old: C[NH+](C)[C@@H]1CC[C@H](NC(=O)C2CCN(CC(F)(F)F)CC2)C1
+
+731
+Improvement:4.38143763018 | Similarity: 0.436507936508
+New y(m): 0.10822748768 | Old y(m): -4.2732101425
+New SMILES: Cc1cc(C)cc(C(=O)N[C@@H](C)C(=O)N2CCc3cc(N4CC5(CCCC5)NC4=O)ccc3C2)c1 | Old: Cc1cc(C)cc(C(=O)N[C@H](C)C(=O)N2CCC3(CC2)[NH2+]CCC2=NC=N[C@@H]23)c1
+
+732
+Improvement:1.41287453479 | Similarity: 0.226086956522
+New y(m): -0.791308459341 | Old y(m): -2.20418299413
+New SMILES: Cc1cc(NC(=O)COc2cnn(Cc3cccc(N)c3)c(=O)c2)ccn1 | Old: Cc1cc([N+](=O)[O-])cnc1Nc1cnn(CC(=O)NCCO)c1
+
+733
+Improvement:4.53875060101 | Similarity: 0.229166666667
+New y(m): -0.243352092165 | Old y(m): -4.78210269318
+New SMILES: CCC(CC)NC(=O)Nc1cc(C(=O)[O-])cc(N2CCCCC2)c1 | Old: CCC(CC)(NC(=O)N[C@H]1CCCNC1=O)C(=O)[O-]
+
+734
+Improvement:5.16088136055 | Similarity: 0.243055555556
+New y(m): 0.656285259186 | Old y(m): -4.50459610136
+New SMILES: COC1=Cc2[nH+]c(Nc3cccc(C)c3)cc(C(=O)N(c3cccc(C)c3)[C@@H]3CCS(=O)(=O)C3)c2CC1 | Old: COc1ccc2c(c1)=C[C@H](CN(c1ccc(C)c(C)c1)S(C)(=O)=O)C(=O)[NH+]=2
+
+735
+Improvement:0.333207552712 | Similarity: 0.22619047619
+New y(m): -2.25934312684 | Old y(m): -2.59255067955
+New SMILES: C[C@@H](SCBr)[C@@H]([O-])Nc1cccc2c1OCO2 | Old: C[C@@H](CS(C)(=O)=O)[NH2+][C@H]1CCCOc2c(Br)cccc21
+
+736
+Improvement:0.848749853586 | Similarity: 0.252525252525
+New y(m): -5.63224441098 | Old y(m): -6.48099426457
+New SMILES: C[C@@H]1Cc2ccc(N3CCN([C@@H]4CC[NH2+]4)CC3=O)cc2[C@H](C(=O)[O-])C1 | Old: C[C@H]1CC[C@H](C(=O)[O-])[C@H]([NH+]2CCN3CCC[C@@H]3C2)C1
+
+737
+Improvement:-0.484387662285 | Similarity: 0.20253164557
+New y(m): -4.61196655721 | Old y(m): -4.12757889493
+New SMILES: O=C1OC([O-])=N/C1=C\c1cc(=O)n2[nH]ccc2c1 | Old: O=c1nnc(-c2ccc([N+](=O)[O-])o2)c([O-])[nH]1
+
+738
+Improvement:-1.60345521628 | Similarity: 0.230769230769
+New y(m): -4.21906681842 | Old y(m): -2.61561160214
+New SMILES: C[C@H]1CCN(C(=O)[C@@]2(N)NN=C3C=CC=C[C@H]3C2=O)[C@@H](C)C1 | Old: C[C@H]1CC[C@H](C(N)=O)CN1C(=O)Cn1ncc(=O)c2ccccc21
+
+739
+Improvement:0.562237293796 | Similarity: 0.225563909774
+New y(m): -2.78267514061 | Old y(m): -3.34491243441
+New SMILES: C[C@H](NC(=O)C(=O)N[C@]1(C)CC[NH2+][C@H](C2CCCCC2)C1)c1ccc(S(C)(=O)=O)cc1 | Old: C[C@H](NC(=O)[C@H](C)N1CC[NH+](CCCO)CC1)c1ccc2c(c1)CCCC2
+
+740
+Improvement:0.903342347408 | Similarity: 0.203703703704
+New y(m): -1.64513551291 | Old y(m): -2.54847786032
+New SMILES: CC(C)N[C@@]1(C#N)CC[C@@H](NC(=O)Cc2nc(N)[nH]c2-c2ccccc2)C1 | Old: CCCN[C@@]1(C#N)CC[C@@H](n2cc[nH+]c2CCC)C1
+
+741
+Improvement:-1.32771834368 | Similarity: 0.230769230769
+New y(m): -5.52838683962 | Old y(m): -4.20066849593
+New SMILES: CC[NH2+]C1(CC(=O)N[C@H]2CCC[NH2+]CC2)CCCC1 | Old: CCC[NH2+][C@@H]1CCC[C@H]1CC[NH+]1CCCC(C)(C)CC1
+
+742
+Improvement:-1.35059814014 | Similarity: 0.275229357798
+New y(m): -5.94920742164 | Old y(m): -4.5986092815
+New SMILES: CCn1c[nH+]c([C@@H]2CCCN(C(=O)C(S)(S)[C@]3(N)NCC(=O)O3)C2)c1 | Old: CCn1cc[nH+]c1[C@@H]1CCCN(C(=O)CSCC[NH+]2CCCC2)C1
+
+743
+Improvement:-1.49699507827 | Similarity: 0.342857142857
+New y(m): -4.24087023274 | Old y(m): -2.74387515446
+New SMILES: CCOC(=O)C1(C)CC[NH2+]CC1 | Old: CCOC(=O)C1(C)CC[NH+](C[C@@H](O)c2ccccc2C)CC1
+
+744
+Improvement:-2.77995730728 | Similarity: 0.219512195122
+New y(m): -8.399576979 | Old y(m): -5.61961967172
+New SMILES: C[C@H]1C[C@@H](N)[NH2+][C@@]([NH3+])(C(=O)N2CCNCC2)C1 | Old: C[C@H]1C[C@@H](N(C)CC(=O)N2CCOCC2)CC[NH+]1C
+
+745
+Improvement:2.47753238938 | Similarity: 0.210526315789
+New y(m): -0.848266283749 | Old y(m): -3.32579867313
+New SMILES: CCC(=O)N[C@@H](C)C(C)C | Old: CCCC[C@@H](C)NC(=O)[C@H]1CCC[NH2+][C@@H]1C
+
+746
+Improvement:0.719609162182 | Similarity: 0.288888888889
+New y(m): -1.64050163173 | Old y(m): -2.36011079392
+New SMILES: C[C@@H](NC(=O)C(F)(F)F)C(=O)Nc1cccc(S(=O)(=O)N(C)C)c1 | Old: CN(C(=O)N[C@@](C)(C(=O)[O-])C(F)(F)F)c1ccc(F)cc1
+
+747
+Improvement:-0.454067937843 | Similarity: 0.220930232558
+New y(m): -5.51049000781 | Old y(m): -5.05642206996
+New SMILES: [NH3+][C@]1(C(=O)N2CCN(C=O)CC2)C=CCC1 | Old: [NH3+][C@@H]1C=C[C@H](C(=O)N2CCC[C@@H]2C(=O)N2CCOCC2)C1
+
+748
+Improvement:-0.543962709097 | Similarity: 0.234234234234
+New y(m): -3.62615984489 | Old y(m): -3.08219713579
+New SMILES: CN(C(=O)C[C@H]1C[NH2+]C[C@@H]([NH3+])C1)c1cc(F)ccc1C(=O)c1ccccc1 | Old: O=C(c1ccc(F)cc1)[C@H]1CCC[NH+](Cc2c[nH]cn2)C1
+
+749
+Improvement:0.0 | Similarity: 1.0
+New y(m): -2.71634326948 | Old y(m): -2.71634326948
+New SMILES: C=C(C)C[NH+]1CCN(CC(=O)N2CCCc3ccccc32)CC1 | Old: C=C(C)C[NH+]1CCN(CC(=O)N2CCCc3ccccc32)CC1
+
+750
+Improvement:1.15917498584 | Similarity: 0.308641975309
+New y(m): -3.97757422164 | Old y(m): -5.13674920747
+New SMILES: CCC(CC)[N@H+](C)CC(=O)NCc1ccc(N2CNC(=O)C2)cc1 | Old: CCC(CC)[NH+](C)CCC(=O)NC(N)=O
+
+751
+Improvement:4.61841679126 | Similarity: 0.359154929577
+New y(m): 1.24503197794 | Old y(m): -3.37338481332
+New SMILES: CN(C(=O)CNC(=O)C(=O)Nc1cccc(C2CCCC2)c1)c1ccc([C@H](N)c2ccccc2)cc1 | Old: CN(C)c1ccc([C@H](CNC(=O)C(=O)Nc2ccccc2C#N)N2CC[NH+](C)CC2)cc1
+
+752
+Improvement:-0.534102417765 | Similarity: 0.252336448598
+New y(m): -7.41367666269 | Old y(m): -6.87957424492
+New SMILES: CC[NH+](CC)CCN1CN(c2cc(C)cc(O)c2)[C@@]23C=CC=C[C@@]12NC(N)=[NH+]3 | Old: CC[NH+](CC)CCN1C(N)=[NH+]C[C@@]12CCCC(C)(C)C2
+
+753
+Improvement:3.10171071992 | Similarity: 0.209302325581
+New y(m): -0.0805507150973 | Old y(m): -3.18226143502
+New SMILES: COc1ccc(C(=O)N[C@@H](C)NS(=O)(=O)[C@H](C)c2ccc(N3CCCC3)cc2)cc1 | Old: COc1ccc(CNC(=O)NC[C@@H](C)[NH+]2CCc3sccc3C2)cn1
+
+754
+Improvement:2.03870650357 | Similarity: 0.228070175439
+New y(m): -0.208403890565 | Old y(m): -2.24711039414
+New SMILES: Cn1cc2c(n1)C=C(NC(=O)c1cccc(OC3CCC3)c1)CC2=O | Old: Cn1ncc2c1CCC[C@H]2[NH2+][C@H]1CCN(c2ccc(Cl)cc2)C1=O
+
+755
+Improvement:2.2684763046 | Similarity: 0.224489795918
+New y(m): -2.28508007292 | Old y(m): -4.55355637753
+New SMILES: CC1(C)CCCc2cc(C[N@@H+]3CCCC[C@@]3(C)CNS(C)(=O)=O)ccc21 | Old: CC1(C)CCCC[C@H]1[NH+]1CCCC[C@@H]1CC[NH3+]
+
+756
+Improvement:2.61000175147 | Similarity: 0.21
+New y(m): 0.0444450615455 | Old y(m): -2.56555668992
+New SMILES: CCN(Cc1ccc(OC)cc1)c1cccc[n+]1[C@]1(C)CCCO1 | Old: CCN(Cc1ccccn1)[C@@H]1CCC[C@H]([NH2+]C)C1
+
+757
+Improvement:-2.79414385003 | Similarity: 0.220238095238
+New y(m): -5.12283236514 | Old y(m): -2.3286885151
+New SMILES: Cc1cccc(C(=O)Nc2cccc([C@]3([NH3+])C[NH2+][C@H](C)CN3CC(=O)N3CCN4C=CC=C[C@]4(N)C3)c2)c1 | Old: Cc1ccc(C[NH+]2CCN(c3nc4c(c(=O)[nH]c(=O)n4C)n3Cc3cccc(C)c3)CC2)cc1
+
+758
+Improvement:5.0872637166 | Similarity: 0.201342281879
+New y(m): 2.65886300747 | Old y(m): -2.42840070913
+New SMILES: CC(C)(C)OC1(OCc2ccccc2)CC(C(=O)NCc2ccc(Cn3nc4ccccn4c3=S)cc2)C1 | Old: CC(C)(C)C[NH+]1CCN(Cc2cccc3cccnc23)C[C@@H]1CCO
+
+759
+Improvement:-3.04434284761 | Similarity: 0.408602150538
+New y(m): -5.4268594684 | Old y(m): -2.38251662079
+New SMILES: COc1ccc(NC(=O)C(=O)N[C@@]2([NH3+])CCCC[NH2+]2)cc1 | Old: C[NH+]1CCC(NC(=O)C(=O)Nc2ccc(OC3CCCC3)cc2)CC1
+
+760
+Improvement:-0.485319607019 | Similarity: 0.207207207207
+New y(m): -3.16934435638 | Old y(m): -2.68402474936
+New SMILES: CC(C)[N@@H+]1CCCN(c2cc(Cl)cc(N3CCN[C@](C)(C#N)C3)c2)CC1 | Old: CCC[NH+]1CCCN(Cc2c(Cl)nc3ccccn23)CC1
+
+761
+Improvement:3.06129636264 | Similarity: 0.208695652174
+New y(m): 0.83495113764 | Old y(m): -2.226345225
+New SMILES: O=C(Nc1cccc(C(=O)N2CCC[C@@]3(COCO3)C2)c1)c1c(Cl)cc(F)cc1Br | Old: O=C(N[C@H]1C=C[C@H](C(=O)[O-])C1)c1cc(F)c(Cl)cc1Cl
+
+762
+Improvement:2.1525616984 | Similarity: 0.232558139535
+New y(m): -5.17279004626 | Old y(m): -7.32535174466
+New SMILES: COc1ccc(C(C)(C)C(=O)N[C@@]2(C)C[C@@H](C(=O)[O-])C[NH2+]2)cc1 | Old: C[C@H]1[C@H](C(=O)[O-])CC[NH+]1CC(=O)NC(C)(C)C
+
+763
+Improvement:4.3147332326 | Similarity: 0.281879194631
+New y(m): 0.602250969383 | Old y(m): -3.71248226322
+New SMILES: C/C(O)=C/c1nn(-c2cccc([N+](=O)[O-])c2)c(=O)cc1N1CCC[C@@H](C(=O)N(C)CCc2ccccc2)C1 | Old: CNc1nc([C@H]2CCCN(C(=O)CCc3ccccc3)C2)[nH+]c2c1CC[NH+](C)C2
+
+764
+Improvement:2.32275305011 | Similarity: 0.236842105263
+New y(m): -0.174058659469 | Old y(m): -2.49681170958
+New SMILES: COCc1ccc(OCC(=O)Nc2cccc3c2nc(C)n3[C@]2(C)CCS(=O)(=O)C2)cc1 | Old: COCCOc1cccc(C[NH+]2CCC2(C)C)c1
+
+765
+Improvement:2.92334130875 | Similarity: 0.203703703704
+New y(m): 0.0443102710837 | Old y(m): -2.87903103767
+New SMILES: Cc1cccc(N)c1 | Old: Cc1ccc([C@@H](C)NC2=[NH+]CCC2)cc1
+
+766
+Improvement:-6.32556148156 | Similarity: 0.212121212121
+New y(m): -9.94126677767 | Old y(m): -3.61570529611
+New SMILES: CC(C)NC(=O)C(=O)N[C@@H](C)[C@@]1(N)NCC[NH2+][C@H]1[NH3+] | Old: CC(C)NC(=O)NC(=O)[C@@H](C)N1CC[NH+](CCc2ccccc2)CC1
+
+767
+Improvement:5.6375000357 | Similarity: 0.2
+New y(m): -1.46349567921 | Old y(m): -7.10099571491
+New SMILES: CC(C)[C@@H](C[N+](=O)[O-])C(=O)Nc1cc(Br)c2[nH]nnc2c1 | Old: CC(C)[C@@H](C[NH+](C)C)C(=O)[O-]
+
+768
+Improvement:0.0 | Similarity: 1.0
+New y(m): -8.72558851491 | Old y(m): -8.72558851491
+New SMILES: CN1C[NH+](C)CC2=C1NCNS2(=O)=O | Old: CN1C[NH+](C)CC2=C1NCNS2(=O)=O
+
+769
+Improvement:-0.495652595852 | Similarity: 0.260273972603
+New y(m): -4.61658003216 | Old y(m): -4.12092743631
+New SMILES: CCC[NH+](C[C@H](C)NC)C[C@]12C=CC=C[C@@H]1CC(=O)C2 | Old: CCC[NH+](CCC)[C@@H]1CCC(=O)C1
+
+770
+Improvement:6.07592991698 | Similarity: 0.206611570248
+New y(m): 2.86994950156 | Old y(m): -3.20598041542
+New SMILES: Cc1cccc(NC(=S)Nc2cc(C)cc(NC(=O)C3CC(OC(C)C)C3)c2)c1 | Old: CC[NH+](CC)[C@H](C)CNC(=O)Nc1ccc2c(c1)NC(=O)[C@H](C)O2
+
+771
+Improvement:1.65899119293 | Similarity: 0.307692307692
+New y(m): -1.85123466112 | Old y(m): -3.51022585405
+New SMILES: Cc1cc(C[N@@H+]2CC[C@@H](c3ccc(N4CCNC4=O)cc3)[C@@H](C)C2)oc1C | Old: Cc1ccoc1C[NH+]1CC[C@@H](C)[C@H](C)C1
+
+772
+Improvement:-1.61001719362 | Similarity: 0.202702702703
+New y(m): -4.18276376946 | Old y(m): -2.57274657584
+New SMILES: CC(C)([NH3+])c1nc([C@@]2(C)CCOC2)no1 | Old: CC(C)(C)[NH2+]Cc1ncoc1[C@H]1CCCCO1
+
+773
+Improvement:-0.00991905319275 | Similarity: 0.470588235294
+New y(m): -4.63682419802 | Old y(m): -4.62690514483
+New SMILES: O=C([O-])C12C[C@@H]3C[C@H](C1)CC(N1C=N[C@@H]4C=CC=C[C@@]41I)(C3)C2 | Old: O=C([O-])C12C[C@@H]3C[C@H](C1)CC(n1cc([N+](=O)[O-])cn1)(C3)C2
+
+774
+Improvement:2.81748359475 | Similarity: 0.209302325581
+New y(m): 0.369680708621 | Old y(m): -2.44780288613
+New SMILES: CCC(C)C | Old: CC[C@H](C)[C@H](C)[NH2+]Cc1ncccc1F
+
+775
+Improvement:1.80733027077 | Similarity: 0.428571428571
+New y(m): -1.03823919393 | Old y(m): -2.8455694647
+New SMILES: CC1(C)CCC[C@](O)(C[NH2+]C2CCCCCCC2)C1 | Old: CC1(C)CCC(O)(C[NH2+][C@@H]2CCOC3(CCC3)C2)CC1
+
+776
+Improvement:-1.79435428969 | Similarity: 0.4
+New y(m): -4.62099745323 | Old y(m): -2.82664316354
+New SMILES: C[C@@H]1CC[NH2+][C@]([NH3+])(C(C)(C)NC(=O)Nc2ccccn2)C1 | Old: C[C@@H]1CCC[NH+](CCCCNC(=O)Nc2ccccn2)C1
+
+777
+Improvement:-0.755486114733 | Similarity: 0.416666666667
+New y(m): -7.29197685108 | Old y(m): -6.53649073635
+New SMILES: Cc1ccc(N2C[C@@]3(CCCC[C@@](C)([NH3+])[NH2+]3)[NH+]=C2N)cc1 | Old: CC[NH+]1CCC[C@@]2(CC1)C[NH+]=C(N)N2c1ccc(C)cc1
+
+778
+Improvement:2.25328250649 | Similarity: 0.236842105263
+New y(m): -4.10297692991 | Old y(m): -6.3562594364
+New SMILES: CC(=O)N1C[C@H](C)c2c(C(=O)OCC(=O)N3CCC[N@H+](C)CC3)cccc21 | Old: CC1=C(C(=O)OCC(=O)C2=c3ccccc3=[NH+][C@@H]2C)[C@@H](C)N(C)N1
+
+779
+Improvement:0.952523263641 | Similarity: 0.472222222222
+New y(m): -2.88133854908 | Old y(m): -3.83386181272
+New SMILES: CNC(=O)[C@H](C)CN(C)Cc1cc[nH]c(=O)c1 | Old: CNC(=O)[C@H](C)CN(C)Cc1cc(=O)n2cccc(C)c2[nH+]1
+
+780
+Improvement:0.179511420353 | Similarity: 0.268817204301
+New y(m): -2.39402372653 | Old y(m): -2.57353514689
+New SMILES: COc1ccc(C(=O)N2CCN(CC(=O)[O-])CC2)cc1Cl | Old: COc1ccc(Cl)cc1C[C@H]([NH3+])[C@H]1CN2CCC[C@@H]2CO1
+
+781
+Improvement:0.145376184332 | Similarity: 0.393258426966
+New y(m): -2.09448827067 | Old y(m): -2.239864455
+New SMILES: CC[S@](=O)C1(NC(=O)NC[C@H](O)c2ccoc2)CCCCC1 | Old: CC[S@](=O)[C@H]1CCCC[C@@H]1NC(=O)NC[C@H](O)c1ccco1
+
+782
+Improvement:0.956317051566 | Similarity: 0.236486486486
+New y(m): -1.5035511271 | Old y(m): -2.45986817866
+New SMILES: CCOc1cc2c(cc1OC)-c1nnnn1[C@H](C(=O)N[C@@H](C)N1CCO[C@H](c3ccc(OC)cc3)C1)C2 | Old: CCOc1cc2c(cc1OCC)CN(C(=O)NC[C@@H]1CCC[NH+]1CC)CC2
+
+783
+Improvement:2.91362427099 | Similarity: 0.22131147541
+New y(m): 0.6684305713 | Old y(m): -2.24519369969
+New SMILES: CCOC(=O)c1ccc2c(c1)[C@H](C(=O)NC1CCC1)CN(c1cccc(NC(C)=O)c1)C2 | Old: C[C@@H]1CCO[C@@H]1C(=O)N1CC[C@H](C(N)=O)c2ccccc21
+
+784
+Improvement:2.50008719193 | Similarity: 0.211538461538
+New y(m): -1.37577977906 | Old y(m): -3.87586697099
+New SMILES: CCC(=O)OC | Old: COC(=O)C[C@H](C)S(=O)(=O)C[C@@H]1CN(C)CCO1
+
+785
+Improvement:-1.11205963268 | Similarity: 0.267716535433
+New y(m): -4.19423612019 | Old y(m): -3.08217648751
+New SMILES: C[C@H](NC(=O)c1cccc(N2SC(=O)C[C@@H]2C)c1)[C@@H]1C[NH+](C2CCCC2)CC(=O)N1 | Old: O=C(NCCC[NH+]1CCCC1)c1ccc2c(c1)NC(=O)[C@@H]1CCCCN21
+
+786
+Improvement:-1.18695957355 | Similarity: 0.2375
+New y(m): -4.52957469785 | Old y(m): -3.3426151243
+New SMILES: CS(=O)(=O)C1([C@@H]2CCCC([NH3+])([NH3+])C2)CCCCC1 | Old: C[NH2+][C@@H]1CCC[C@H]([C@@H]2CCC[C@H](S(C)(=O)=O)C2)C1
+
+787
+Improvement:0.111109616437 | Similarity: 0.418604651163
+New y(m): -7.18957809387 | Old y(m): -7.3006877103
+New SMILES: N#CCC[NH2+][C@H](C(=O)[O-])C1CC1 | Old: N#CCC[NH2+]C1(C(=O)[O-])CC1
+
+788
+Improvement:5.06722294088 | Similarity: 0.272058823529
+New y(m): 1.50192703816 | Old y(m): -3.56529590272
+New SMILES: CCO[C@]12C=CC=C[C@]13CCC[C@]3(C(=O)Nc1cccc(-c3ccc(C(C)=O)cc3)c1)C2 | Old: CC(=O)c1cccc(C[NH+]2CC[C@]3(CCC[NH+](Cc4cccc(C)c4)C3)C2)c1
+
+789
+Improvement:-1.93437874064 | Similarity: 0.315068493151
+New y(m): -4.13043196585 | Old y(m): -2.19605322521
+New SMILES: N[C@@H](C(=O)NCNc1ccccc1)C(O)O | Old: COC[C@@H](C)NC(=O)N[C@@H](C(N)=O)c1ccccc1
+
+790
+Improvement:0.447924422546 | Similarity: 0.454545454545
+New y(m): -2.81169655377 | Old y(m): -3.25962097631
+New SMILES: C[C@@H]1SCCC[C@@H]1[NH2+]C1(C)CCCC1 | Old: C[C@@H]1CCC[C@@H]1[NH2+][C@@H]1CCCS[C@@H]1C
+
+791
+Improvement:1.09866173155 | Similarity: 0.2375
+New y(m): -1.48252811352 | Old y(m): -2.58118984507
+New SMILES: NC(=O)C1(SC(=O)c2ccsc2)C2CCC1CC2 | Old: NC(=O)CONC(=O)[C@H]1CCCc2sccc21
+
+792
+Improvement:-0.213126661051 | Similarity: 0.22972972973
+New y(m): -3.73110522932 | Old y(m): -3.51797856827
+New SMILES: C[C@@H]1Cc2nnc(CNC(=O)CC3CCC4(C=c5ccccc5=[NH+]4)CC3)n2C(=O)N1c1ccccc1 | Old: CCn1c(=O)c2ccccc2n2c(CN3CC[C@H](C[NH+](C)CC)C3)nnc12
+
+793
+Improvement:-0.892522069475 | Similarity: 0.239669421488
+New y(m): -4.12622338691 | Old y(m): -3.23370131744
+New SMILES: Cc1cc(N)n(CC(=O)N[C@@H]2C[C@@H]3C=CC(N)=C[C@@H]3C[NH+]2[C@@H]2C[C@H](C)CC(C)(C)C2)n1 | Old: CC[C@H]1C[C@H](C)CC[C@@H]1[NH2+][C@@H]1CCN(c2cc(C)nn2C)C1=O
+
+794
+Improvement:2.3344650869 | Similarity: 0.223076923077
+New y(m): -1.1970964948 | Old y(m): -3.5315615817
+New SMILES: Cc1nc(C)c(C(=O)NCc2ccc(O[C@]3(C)CNCCO3)cc2)c2c1CCC(=O)C2 | Old: Cc1ccc(C(=O)NC[C@@H]2C[C@@H](O)C[NH+]2Cc2ccccc2)c(C)n1
+
+795
+Improvement:1.21921395018 | Similarity: 0.236363636364
+New y(m): -2.80879708731 | Old y(m): -4.02801103749
+New SMILES: CC(C)[C@@H](C)c1noc(CS(=O)(=O)[C@@]23C=C(O)C=C[C@H]2CN(C(N)=O)CC3)n1 | Old: CC(C)CCc1noc(C[NH+](C)[C@H]2CCC[C@@H]2S(C)(=O)=O)n1
+
+796
+Improvement:2.48339664655 | Similarity: 0.280701754386
+New y(m): -0.437580330294 | Old y(m): -2.92097697684
+New SMILES: CC(C)C[C@@]1(C)CCCOC1 | Old: CC(C)[C@@]1(CC2CCOCC2)CCC[NH2+]1
+
+797
+Improvement:3.54734141628 | Similarity: 0.201550387597
+New y(m): 1.12730863582 | Old y(m): -2.42003278046
+New SMILES: CC[C@H](NC(=O)c1ccnc(C(=O)NCc2ccccc2)c1)c1ccnc2c1C=CCC2 | Old: CC[C@H](NC(=O)c1ccc(C#N)cn1)C(=O)N1CCOCC1
+
+798
+Improvement:-0.743346400963 | Similarity: 0.341666666667
+New y(m): -3.99266951656 | Old y(m): -3.2493231156
+New SMILES: C[C@@H](CO)[NH+]1CCC(C)(C)C[C@H]1NC(=O)N(C)C1(C)CCN(c2ncccn2)CC1 | Old: CCC[NH+]1CCC(N(C)C(=O)NC[C@H]2CCCN(c3ncccn3)C2)CC1
+
+799
+Improvement:2.34011203426 | Similarity: 0.237762237762
+New y(m): -1.35862312923 | Old y(m): -3.69873516348
+New SMILES: Cc1ccc(-c2nc3n(n2)[C@]2(c4cccc(NC(=O)[C@@H]5CCCO5)c4)C[C@@H](N)CCN2C3=O)cc1 | Old: Cc1nc(-c2cccc(C(=O)N3C[C@@H]4[C@H](C3)C[NH+]3CCCC[C@H]43)c2)n[nH]1
+
+Avg of Improvement :1.31806951942
+Avg of Similarity: 0.301026830151
+Sum of New y(m) :-2.36135657527
+Sum of Old y(m): -3.67942609468

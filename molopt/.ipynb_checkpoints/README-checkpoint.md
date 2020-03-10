@@ -49,4 +49,8 @@ Replace `opt.test.log-SA` with `opt.valid.log-SA` for validation.
 
 ![optimize_result2](./result_img/optimize_result2.png)
 
-- 이런식으로 **n** 개가 나옴.
+- 이런식으로 **n** 개가 나옴.(1분에 15개)
+
+![optimize_result3](./result_img/optimize_result3.png)
+
+- 마지막 결과 요약([optimize.out](optimize.out))
