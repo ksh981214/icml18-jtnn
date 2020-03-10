@@ -46,7 +46,7 @@ with open(opts.test_path) as f:
 
 res = []
 print("Found New SMILES: {}".format(len(data)))
-for smiles in data:
+for i,smiles in enumerate(data):
     mol = Chem.MolFromSmiles(smiles)
     score = Descriptors.MolLogP(mol) - sascorer.calculateScore(mol)
 
@@ -55,6 +55,7 @@ for smiles in data:
     new_score = Descriptors.MolLogP(new_mol) - sascorer.calculateScore(new_mol)
 
     res.append( (new_score - score, sim, score, new_score, smiles, new_smiles) )
+    print(i)
     print("Improvement:{} | Similarity: {}".format(new_score - score, sim))
     print("New y(m): {} | Old y(m): {}".format(new_score, score))
     print("New SMILES: {} | Old: {}".format(new_smiles, smiles))
@@ -62,5 +63,5 @@ for smiles in data:
 
 print("Avg of Improvement :{}".format(sum([x[0] for x in res])/len(data))) 
 print("Avg of Similarity: {}".format(sum([x[1] for x in res])/len(data)))
-print("Sum of New y(m) :{}".format(sum([x[4] for x in res])/len(data))) 
-print("Sum of Old y(m): {}".format(sum([x[3] for x in res])/len(data)))
+print("Sum of New y(m) :{}".format(sum([x[3] for x in res])/len(data))) 
+print("Sum of Old y(m): {}".format(sum([x[2] for x in res])/len(data)))

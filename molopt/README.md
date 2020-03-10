@@ -43,3 +43,7 @@ Replace `opt.test.log-SA` with `opt.valid.log-SA` for validation.
 
 - y(m) = logP(m) - SA(m)
 - test도 메모리를 약 4기가 차지함.
+
+![optimize_result2](./error_img/optimize_result2.png)
+
+- 이런식으로 **n** 개가 나옴.
