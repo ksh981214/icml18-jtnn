@@ -47,6 +47,10 @@ mkdir new_models/
 nohup python vaetrain.py --train ../data/zinc/train.txt --vocab ../data/zinc/vocab.txt --hidden 450 --depth 3 --latent 56 --batch 40 --lr 0.0007 --beta 0.005 --model pre_model/model.2 --save_dir new_models/ > ./new_models/LOG.out &
 ```
 
+![training_img](./result_img/training_img.png)
+
+- batch_size 40 --> 20으로 조정, 약 1시간정도 늘어남
+
 ## Testing
 train된 모델로부터 새로운 분자들을 뽑아보고 싶을 때
 ```

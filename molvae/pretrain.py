@@ -81,11 +81,9 @@ dataset = MoleculeDataset(opts.train_path)
 MAX_EPOCH = 3
 PRINT_ITER = 20
 
-#print(type(opts))
 d=datetime.now()
 now = str(d.year)+'_'+str(d.month)+'_'+str(d.day)+'_'+str(d.hour)+'_'+str(d.minute)
 folder_name = opts.train_path.split('/')[2] + '_' +now#../data/zinc/train.txt --> zinc
-#folder_name = str(datetime.now())
 os.makedirs('./pretrain_plot/'+folder_name+'/KL')        #KL
 os.makedirs('./pretrain_plot/'+folder_name+'/Acc')       #Word, Topo, Assm
 print("...Finish Making Plot Folder...")
@@ -95,8 +93,6 @@ kl_plot=[]
 word_plot=[]
 topo_plot=[]
 assm_plot=[]
-pnorm_plot=[]
-gnorm_plot=[]
 steo_plot=[]
 
 
