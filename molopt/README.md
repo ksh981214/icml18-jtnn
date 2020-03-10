@@ -33,6 +33,9 @@ CUDA_VISIBLE_DEVICES=0 python vaetrain.py --train ../data/zinc/train.txt --vocab
 ```
 
 ## Testing
+
+test셋(800개)에서를 새로운 SMILE로 변환 
+
 To optimize a set of molecules, run
 ```
 CUDA_VISIBLE_DEVICES=1 nohup python optimize.py --test ../data/zinc/opt.test.logP-SA --vocab ../data/zinc/vocab.txt --hidden 420 --depth 3 --latent 56 --sim 0.2 --model joint-h420-L56-d3-beta0.005/model.iter-4 > optimize.out
@@ -40,10 +43,10 @@ CUDA_VISIBLE_DEVICES=1 nohup python optimize.py --test ../data/zinc/opt.test.log
 Replace `opt.test.log-SA` with `opt.valid.log-SA` for validation.
 
 ![optimize_result](./result_img/optimize_result.png)
-
+- 기존 코드를 수정
 - y(m) = logP(m) - SA(m)
-- test도 메모리를 약 4기가 차지함.
+- test도 메모리를 약 4기가 차지함정
 
-![optimize_result2](./error_img/optimize_result2.png)
+![optimize_result2](./result_img/optimize_result2.png)
 
 - 이런식으로 **n** 개가 나옴.
