@@ -1,7 +1,12 @@
+# -*- coding: utf-8 -*- 
+
 import rdkit
 import rdkit.Chem as Chem
 from chemutils import get_clique_mol, tree_decomp, get_mol, get_smiles, set_atommap, enum_assemble, decode_stereo
 from vocab import *
+
+from datetime import datetime
+from tqdm import tqdm
 
 class MolTreeNode(object):
 
@@ -112,15 +117,22 @@ def dfs(node, fa_idx):
 
 if __name__ == "__main__":
     import sys
+    
+    start = datetime.now()
+    print("Start:{}".format(start))
+    
     lg = rdkit.RDLogger.logger() 
     lg.setLevel(rdkit.RDLogger.CRITICAL)
 
     cset = set()
-    for line in sys.stdin:
+    for line in tqdm(sys.stdin, desc="Making Vocab"):
         smiles = line.split()[0]
         mol = MolTree(smiles)
         for c in mol.nodes:
             cset.add(c.smiles)
     for x in cset:
         print x
+        
+    print("Finish:{}".format(datetime.now()))
+    print("Consume Time:{}".format(datetime.now()-start))
 

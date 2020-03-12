@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*- 
+
 import torch
 import torch.nn as nn
 from multiprocessing import Pool
@@ -8,6 +10,9 @@ import cPickle as pickle
 
 from fast_jtnn import *
 import rdkit
+
+from datetime import datetime
+from tqdm import tqdm
 
 def tensorize(smiles, assm=True):
     mol_tree = MolTree(smiles)
@@ -25,6 +30,10 @@ def tensorize(smiles, assm=True):
     return mol_tree
 
 if __name__ == "__main__":
+    
+    start = datetime.now()
+    print("Start:{}".format(start))
+    
     lg = rdkit.RDLogger.logger() 
     lg.setLevel(rdkit.RDLogger.CRITICAL)
 
@@ -39,7 +48,12 @@ if __name__ == "__main__":
     num_splits = int(opts.nsplits)
 
     with open(opts.train_path) as f:
-        data = [line.strip("\r\n ").split()[0] for line in f]
+        #data = [line.strip("\r\n ").split()[0] for line in f]
+        data = []
+        for i, line in enumerate(f):
+            if i % 10000 == 0:
+                print(i)
+            data.append(line.strip("\r\n ").split()[0])
 
     all_data = pool.map(tensorize, data)
 
@@ -52,3 +66,6 @@ if __name__ == "__main__":
         with open('tensors-%d.pkl' % split_id, 'wb') as f:
             pickle.dump(sub_data, f, pickle.HIGHEST_PROTOCOL)
 
+            
+    print("Finish:{}".format(datetime.now()))
+    print("Consume Time:{}".format(datetime.now()-start))

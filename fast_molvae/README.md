@@ -9,28 +9,32 @@ The MOSES dataset is in `icml18-jtnn/data/moses` (copied from https://github.com
 If you are running our code on a new dataset, you need to compute the vocabulary from your dataset.
 To perform tree decomposition over a set of molecules, run
 ```
-python ../fast_jtnn/mol_tree.py < ../data/moses/train.txt
+python ../fast_jtnn/mol_tree.py < ../data/{name}/train.txt | tee {name}_vocab.txt
 ```
 This gives you the vocabulary of cluster labels over the dataset `train.txt`. 
 
 ## Training
 Step 1: **Preprocess** the data:
 ```
-python preprocess.py --train ../data/moses/train.txt --split 100 --jobs 16
-mkdir moses-processed
-mv tensor* moses-processed
+python preprocess.py --train ../data/zinc/train.txt --split 10 --jobs 16
+mkdir zinc-processed
+mv tensor* zinc-processed
 ```
 
-- 약 4시간 반 소요
-
-This script will preprocess the training data (subgraph enumeration & tree decomposition), and save results into a list of files. We suggest you to use small value for `--split` if you are working with smaller datasets.
+This script will preprocess the training data (subgraph enumeration & tree decomposition), and save results into a list of files. We suggest you to use small value for `--split` if you are **working with smaller datasets.(158만 → 22만)**
 
 Step 2: Train VAE model with KL annealing. 
 ```
-mkdir new_models/
-python vae_train.py --train moses-processed --vocab ../data/moses/vocab.txt --save_dir ./newmodels/moses | tee ./newmodels/moses/LOG
+mkdir new_model/
 
-nohup python vae_train.py --train moses-processed --vocab ../data/moses/vocab.txt --save_dir ./newmodels/moses | tee ./newmodels/moses/LOG &
+nohup python vae_train.py --train zinc-processed --vocab ../data/zinc/vocab.txt --save_dir ./new_model/ --step_beta 0.00002 --max_beta 0.01 > ./new_model/LOG.out &
+
+nohup python vae_train.py --train zinc-processed --vocab ../data/zinc/vocab.txt --save_dir ./new_model/ --batch_size 16 --warmup 4000 --step_beta 0.00002 --max_beta 0.01 --print_iter 100 > ./new_model/LOG.out &
+
+- batch_size 32→ 16
+- print_iter 50 → 100
+- warmup 40000 → 4000
+- max_beta 1.0 → 0.01
 
 ```
 Default Options:
@@ -43,7 +47,9 @@ Default Options:
 
 `--max_beta 1.0 ` sets the maximum value of beta to be 1.0. 
 
-`--save_dir vae_model`: the model will be saved in vae_model/
+    `→ /molvae에서 beta가 0.01이상이 되면 reconstruction에 손상을 준다고 언급. 따라서, 0.01로 설정하고 step_beta도 같이 조정함.
+
+`--save_dir new_model`: the model will be saved in new_model/
 
 Please note that this is not necessarily the best annealing strategy. You are welcomed to adjust these parameters.
 
