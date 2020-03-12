@@ -4,3 +4,7 @@ fast_molvae/moses-processed/
 
 bo/old_result/
 bo/*.txt
+
+molvae/pre_model/
+molvae/new_models/
+
