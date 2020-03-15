@@ -223,9 +223,9 @@ for epoch in xrange(args.epoch):
             beta = min(args.max_beta, beta + args.step_beta)
             
     if args.load_epoch != 0: 
-        torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(total_step+args.load_epoch))
+        torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(epoch+args.load_epoch))
     else:
-        torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(total_step))
+        torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(epoch))
             
     #Plot per 1 epoch
     print "Cosume Time per Epoch %s" % (str(datetime.now()-start))

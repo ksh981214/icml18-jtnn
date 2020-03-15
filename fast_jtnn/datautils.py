@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*- 
+
 import torch
 from torch.utils.data import Dataset, DataLoader
 from mol_tree import MolTree
@@ -7,6 +9,8 @@ from mpn import MPN
 from jtmpn import JTMPN
 import cPickle as pickle
 import os, random
+
+import numpy as np
 
 class PairTreeFolder(object):
 
@@ -44,7 +48,6 @@ class PairTreeFolder(object):
             del data, batches, dataset, dataloader
 
 class MolTreeFolder(object):
-
     def __init__(self, data_folder, vocab, batch_size, num_workers=4, shuffle=True, assm=True, replicate=None):
         self.data_folder = data_folder
         self.data_files = [fn for fn in os.listdir(data_folder)]
@@ -75,6 +78,73 @@ class MolTreeFolder(object):
 
             for b in dataloader:
                 yield b
+
+            del data, batches, dataset, dataloader
+            
+class MolTreeFolderMLP(object):
+    def __init__(self, data_folder, gene_exp, vocab, batch_size, num_workers=4, shuffle=True, assm=True, replicate=None):
+        self.data_folder = data_folder
+        self.data_files = [fn for fn in os.listdir(data_folder)]
+        self.batch_size = batch_size
+        self.vocab = vocab
+        self.num_workers = num_workers
+        self.shuffle = shuffle
+        self.assm = assm
+        
+        path = os.path.join(gene_exp,'embedding.txt')
+        print(path)
+        with open(path) as f:
+            all_gene=f.readlines()
+            
+        print("Finish gene exp loading")    
+        
+        self.all_gene = [list(map(float, emb.split())) for emb in all_gene] #LIST[LIST]
+        
+        
+        
+        print("Len(all_gen) is {}".format(len(self.all_gene)))
+        
+        
+        if replicate is not None: #expand is int
+            self.data_files = self.data_files * replicate
+
+    def __iter__(self):
+        idx =0
+        for fn in self.data_files:
+            fn = os.path.join(self.data_folder, fn)
+            with open(fn) as f:
+                data = pickle.load(f)
+            
+            gene = self.all_gene[idx:idx+len(data)] 
+            idx = idx + len(data)
+            
+            if len(data) != len(gene):
+                print("len(data) != len(gene)")
+            
+            if self.shuffle: 
+                #random.shuffle(data) #shuffle data before batch
+                indices = np.arange(len(data))
+                np.random.shuffle(indices)
+                data = np.array(data)[indices]
+                data = list(data)
+                
+                gene = np.array(gene)[indices]
+                gene = list(gene)
+                
+            batches = [data[i : i + self.batch_size] for i in xrange(0, len(data), self.batch_size)]
+            if len(batches[-1]) < self.batch_size:
+                batches.pop()
+            
+            gene_batches = [gene[i : i + self.batch_size] for i in xrange(0, len(gene), self.batch_size)]
+            if len(gene_batches[-1]) < self.batch_size:
+                gene_batches.pop()
+
+            dataset = MolTreeDataset(batches, self.vocab, self.assm)
+            dataloader = DataLoader(dataset, batch_size=1, shuffle=False, num_workers=self.num_workers, collate_fn=lambda x:x[0])
+
+            for i,b in enumerate(dataloader):
+                #print("len(gene_batches[i]) is {}".format(len(gene_batches[i])))
+                yield b, gene_batches[i]
 
             del data, batches, dataset, dataloader
 
