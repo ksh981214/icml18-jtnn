@@ -78,6 +78,10 @@ parser.add_argument('--train', required=True)
 parser.add_argument('--gene', required=True)
 parser.add_argument('--vocab', required=True)
 parser.add_argument('--save_dir', required=True)
+####
+parser.add_argument('--pre_vocab_dir', required=True)
+parser.add_argument('--pre_model_dir', required=True)
+####
 parser.add_argument('--load_epoch', type=int, default=0)
 
 parser.add_argument('--hidden_size', type=int, default=450)
@@ -100,14 +104,25 @@ parser.add_argument('--kl_anneal_iter', type=int, default=2000)
 parser.add_argument('--print_iter', type=int, default=50)
 #parser.add_argument('--save_iter', type=int, default=5000)
 
+
 args = parser.parse_args()
 print args
 
+'''
+    pre_model loading
+'''
 vocab = [x.strip("\r\n ") for x in open(args.vocab)] 
 vocab = Vocab(vocab)
 
+pre_vocab = [x.strip("\r\n ") for x in open(args.pre_vocab_dir)] 
+pre_vocab = Vocab(pre_vocab)
+
+pre_model = JTNNVAE(pre_vocab, args.hidden_size, args.latent_size, args.depthT, args.depthG)
+
+pre_model.load_state_dict(torch.load(args.pre_model_dir))
+print("{} loading finish".format(args.pre_model_dir))
+
 model = JTNNVAEMLP(vocab, args.hidden_size, args.latent_size, args.depthT, args.depthG).cuda()
-print model
 
 for param in model.parameters():
     if param.dim() == 1:
@@ -119,6 +134,39 @@ if args.load_epoch > 0:
     model.load_state_dict(torch.load(args.save_dir + "/model.iter-" + str(args.load_epoch)))
     print("load model.iter-{}".format(str(args.load_epoch)))
 
+else:
+    pre_model_dict = pre_model.state_dict()
+    model_dict = model.state_dict()
+    clear_pre_model_dict={}
+    
+    for k,v in pre_model_dict.items():
+        if k in model_dict and pre_model_dict[k].size() == model_dict[k].size():
+            clear_pre_model_dict[k]=v
+    
+    model_dict.update(clear_pre_model_dict) 
+    model.load_state_dict(model_dict)
+        
+    '''
+        the size of decoder.W_o.weight is different!
+        the size of decoder.W_o.bias is different!
+        the size of jtnn.embedding.weight is different!
+        the size of decoder.embedding.weight is different!
+    '''
+    '''
+        Embedding Loading
+    '''
+
+    #print(len(list(set(vocab.vocab) & set(pre_vocab.vocab)))) #270
+    pre_vocab_dict = {v:k for k,v in enumerate(pre_vocab.vocab)}
+
+    vocab_dict = {v:k for k,v in enumerate(vocab.vocab)}
+    for w in vocab.vocab:
+        if w in pre_vocab_dict:
+            model.state_dict()['decoder.embedding.weight'][vocab_dict[w]] = pre_model.state_dict()['decoder.embedding.weight'][pre_vocab_dict[w]]
+            model.state_dict()['jtnn.embedding.weight'][vocab_dict[w]] = pre_model.state_dict()['jtnn.embedding.weight'][pre_vocab_dict[w]]
+    
+    print("Finish Embedding Loading")
+    
 print "Model #Params: %dK" % (sum([x.nelement() for x in model.parameters()]) / 1000,)
 
 optimizer = optim.Adam(model.parameters(), lr=args.lr)
@@ -226,9 +274,9 @@ for epoch in xrange(args.epoch):
             beta = min(args.max_beta, beta + args.step_beta)
             
     if args.load_epoch != 0: 
-        torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(total_step+args.load_epoch))
+        torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(epoch+args.load_epoch))
     else:
-        torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(total_step))
+        torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(epoch))
             
     #Plot per 1 epoch
     print "Cosume Time per Epoch %s" % (str(datetime.now()-start))

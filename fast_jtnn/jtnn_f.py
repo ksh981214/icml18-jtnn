@@ -43,7 +43,6 @@ class JTNNVAEMLP(nn.Module):
         #New MLP
         self.gene_exp_size = 978
         self.tree_mlp = nn.Linear(latent_size+self.gene_exp_size, latent_size)
-        #self.mol_mlp = nn.Linear(latent_size+self.gene_exp_size, latent_size)
 
     def encode(self, jtenc_holder, mpn_holder):
         tree_vecs, tree_mess = self.jtnn(*jtenc_holder)
@@ -86,20 +85,18 @@ class JTNNVAEMLP(nn.Module):
         z_tree_vecs,tree_kl = self.rsample(x_tree_vecs, self.T_mean, self.T_var)
         z_mol_vecs,mol_kl = self.rsample(x_mol_vecs, self.G_mean, self.G_var)
 
-        kl_div = tree_kl + mol_kl
-        
         #MLP
         gene_batch = torch.tensor(gene_batch, dtype=torch.float32).cuda()
         z_hat_tree = self.tree_mlp(torch.cat([z_tree_vecs, gene_batch], dim=-1))
         #sampling z'
-        '''
-            TODO z_hat_kl
-        '''
         z_hat_tree_vecs, z_hat_kl = self.rsample(z_hat_tree, self.T_hat_mean, self.T_hat_var)
+        
         #decode a junction tree T from z_T
         word_loss, topo_loss, word_acc, topo_acc = self.decoder(x_batch, z_hat_tree_vecs)
         #Reproduce a molecular graph G that underlies the predicted junction tree T^(여러개중에 고름)
         assm_loss, assm_acc = self.assm(x_batch, x_jtmpn_holder, z_mol_vecs, x_tree_mess)
+        
+        kl_div = tree_kl + mol_kl + z_hat_kl
         
         return word_loss + topo_loss + assm_loss + beta * kl_div, kl_div.item(), word_acc, topo_acc, assm_acc, word_loss, topo_loss, assm_loss
 
