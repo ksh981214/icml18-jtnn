@@ -5,37 +5,27 @@ export PYTHONPATH=$PREFIX/icml18-jtnn
 ```
 The MOSES dataset is in `icml18-jtnn/data/moses` (copied from https://github.com/molecularsets/moses).
 
-## Deriving Vocabulary 
+## Deriving Vocabulary
 If you are running our code on a new dataset, you need to compute the vocabulary from your dataset.
 To perform tree decomposition over a set of molecules, run
 ```
-python ../fast_jtnn/mol_tree.py < ../data/{name}/train.txt | tee {name}_vocab.txt
+python ../fast_jtnn/mol_tree.py < ../data/moses/train.txt
 ```
-This gives you the vocabulary of cluster labels over the dataset `train.txt`. 
+This gives you the vocabulary of cluster labels over the dataset `train.txt`.
 
 ## Training
-Step 1: **Preprocess** the data:
+Step 1: Preprocess the data:
 ```
-python preprocess.py --train ../data/zinc/train.txt --split 10 --jobs 16
-mkdir zinc-processed
-mv tensor* zinc-processed
+python preprocess.py --train ../data/moses/train.txt --split 100 --jobs 16
+mkdir moses-processed
+mv tensor* moses-processed
 ```
+This script will preprocess the training data (subgraph enumeration & tree decomposition), and save results into a list of files. We suggest you to use small value for `--split` if you are working with smaller datasets.
 
-This script will preprocess the training data (subgraph enumeration & tree decomposition), and save results into a list of files. We suggest you to use small value for `--split` if you are **working with smaller datasets.(158만 → 22만)**
-
-Step 2: Train VAE model with KL annealing. 
+Step 2: Train VAE model with KL annealing.
 ```
-mkdir new_model/
-
-nohup python vae_train.py --train zinc-processed --vocab ../data/zinc/vocab.txt --save_dir ./new_model/ --step_beta 0.00002 --max_beta 0.01 > ./new_model/LOG.out &
-
-nohup python vae_train.py --train zinc-processed --vocab ../data/zinc/vocab.txt --save_dir ./new_model/ --batch_size 16 --warmup 4000 --step_beta 0.00002 --max_beta 0.01 --print_iter 100 > ./new_model/LOG.out &
-
-- batch_size 32→ 16
-- print_iter 50 → 100
-- warmup 40000 → 4000
-- max_beta 1.0 → 0.01
-
+mkdir vae_model/
+python vae_train.py --train moses-processed --vocab ../data/vocab.txt --save_dir vae_model/
 ```
 Default Options:
 
@@ -45,18 +35,25 @@ Default Options:
 
 `--step_beta 0.002 --kl_anneal_iter 1000` means beta will increase by 0.002 every 1000 training steps (batch updates). You should observe that the KL will decrease as beta increases.
 
-`--max_beta 1.0 ` sets the maximum value of beta to be 1.0. 
+`--max_beta 1.0 ` sets the maximum value of beta to be 1.0.
 
-    `→ /molvae에서 beta가 0.01이상이 되면 reconstruction에 손상을 준다고 언급. 따라서, 0.01로 설정하고 step_beta도 같이 조정함.
-
-`--save_dir new_model`: the model will be saved in new_model/
+`--save_dir vae_model`: the model will be saved in vae_model/
 
 Please note that this is not necessarily the best annealing strategy. You are welcomed to adjust these parameters.
+
+## F_training
+
+```
+python f_train.py --train gene-processed --gene ../data/121 --vocab ../data/121/train_vocab_121.txt --save_dir ./f_train_model/ --pre_vocab_dir ../data/121 train_vocab_121.txt --pre_model_dir ./new_model/l100_h200/model.iter-25000 --batch_size 16 --hidden_size 200
+```
+```
+python f_train.py --train {pkl파일} --gene {embedding.txt의 위치} --vocab {} --save_dir {} --pre_vocab_dir {} --pre_model_dir {} --batch_size 16 --hidden_size 200
+```
 
 ## Testing
 To sample new molecules with trained models, simply run
 ```
-python sample.py --nsample 30000 --vocab ../data/moses/vocab.txt --hidden 450 --model moses-h450z56/model.iter-400000 > mol_samples.txt
+python sample.py --nsample 30000 --vocab ../data/moses/vocab.txt --hidden 450 --model moses-h450z56/model.iter-700000 > mol_samples.txt
 ```
 This script prints in each line the SMILES string of each molecule. `model.iter-700000` is a model trained with 700K steps with the default hyperparameters. This should give you the same samples as in [moses-h450z56/sample.txt](moses-h450z56/sample.txt). The result is as follows:
 ```
