@@ -135,6 +135,9 @@ if args.load_epoch > 0:
     print("load model.iter-{}".format(str(args.load_epoch)))
 
 else:
+    '''
+        Modeal Parameter Loading
+    '''
     pre_model_dict = pre_model.state_dict()
     model_dict = model.state_dict()
     clear_pre_model_dict={}
@@ -145,27 +148,25 @@ else:
     
     model_dict.update(clear_pre_model_dict) 
     model.load_state_dict(model_dict)
-        
     '''
         the size of decoder.W_o.weight is different!
         the size of decoder.W_o.bias is different!
         the size of jtnn.embedding.weight is different!
         the size of decoder.embedding.weight is different!
     '''
+    
     '''
         Embedding Loading
     '''
-
     #print(len(list(set(vocab.vocab) & set(pre_vocab.vocab)))) #270
     pre_vocab_dict = {v:k for k,v in enumerate(pre_vocab.vocab)}
-
     vocab_dict = {v:k for k,v in enumerate(vocab.vocab)}
     for w in vocab.vocab:
         if w in pre_vocab_dict:
             model.state_dict()['decoder.embedding.weight'][vocab_dict[w]] = pre_model.state_dict()['decoder.embedding.weight'][pre_vocab_dict[w]]
             model.state_dict()['jtnn.embedding.weight'][vocab_dict[w]] = pre_model.state_dict()['jtnn.embedding.weight'][pre_vocab_dict[w]]
-    
     print("Finish Embedding Loading")
+
     
 print "Model #Params: %dK" % (sum([x.nelement() for x in model.parameters()]) / 1000,)
 
@@ -215,12 +216,17 @@ for epoch in xrange(args.epoch):
     loader = MolTreeFolderMLP(args.train, args.gene, vocab, args.batch_size, num_workers=4)
     for it, (batch, gene_batch) in enumerate(loader):
         total_step += 1
+        print(total_step)
         try:
             model.zero_grad()
             loss, kl_div, wacc, tacc, sacc, word_loss, topo_loss, assm_loss = model(batch, gene_batch,  beta)
+            print("model Finish")
             loss.backward()
+            print("loss backward Finish")
             nn.utils.clip_grad_norm_(model.parameters(), args.clip_norm)
+            print("clip norm Finish")
             optimizer.step()
+            print("opt step Finish")
         except Exception as e:
             print e
             continue

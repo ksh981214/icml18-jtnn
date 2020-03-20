@@ -13,7 +13,8 @@ def index_select_ND(source, dim, index):
     index_size = index.size()
     suffix_dim = source.size()[1:]
     final_size = index_size + suffix_dim
-    target = source.index_select(dim, index.view(-1))
+    target = source.index_select(dim, index.view(-1)) ######################################
+
     return target.view(final_size)
 
 def avg_pool(all_vecs, scope, dim):
@@ -37,7 +38,7 @@ def flatten_tensor(tensor, scope):
     return torch.cat(tlist, dim=0)
 
 #2D matrix to 3D padded tensor
-def inflate_tensor(tensor, scope): 
+def inflate_tensor(tensor, scope):
     max_len = max([le for _,le in scope])
     batch_vecs = []
     for st,le in scope:
@@ -56,11 +57,10 @@ def GRU(x, h_nei, W_z, W_r, U_r, W_h):
     r_1 = W_r(x).view(-1,1,hidden_size)
     r_2 = U_r(h_nei)
     r = F.sigmoid(r_1 + r_2)
-    
+
     gated_h = r * h_nei
     sum_gated_h = gated_h.sum(dim=1)
     h_input = torch.cat([x,sum_gated_h], dim=1)
     pre_h = F.tanh(W_h(h_input))
     new_h = (1.0 - z) * sum_h + z * pre_h
     return new_h
-

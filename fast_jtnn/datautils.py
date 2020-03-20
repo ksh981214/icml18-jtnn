@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 
 import torch
 from torch.utils.data import Dataset, DataLoader
@@ -32,7 +32,7 @@ class PairTreeFolder(object):
             with open(fn) as f:
                 data = pickle.load(f)
 
-            if self.shuffle: 
+            if self.shuffle:
                 random.shuffle(data) #shuffle data before batch
 
             batches = [data[i : i + self.batch_size] for i in xrange(0, len(data), self.batch_size)]
@@ -66,7 +66,7 @@ class MolTreeFolder(object):
             with open(fn) as f:
                 data = pickle.load(f)
 
-            if self.shuffle: 
+            if self.shuffle:
                 random.shuffle(data) #shuffle data before batch
 
             batches = [data[i : i + self.batch_size] for i in xrange(0, len(data), self.batch_size)]
@@ -80,7 +80,7 @@ class MolTreeFolder(object):
                 yield b
 
             del data, batches, dataset, dataloader
-            
+
 class MolTreeFolderMLP(object):
     def __init__(self, data_folder, gene_exp, vocab, batch_size, num_workers=4, shuffle=True, assm=True, replicate=None):
         self.data_folder = data_folder
@@ -90,21 +90,21 @@ class MolTreeFolderMLP(object):
         self.num_workers = num_workers
         self.shuffle = shuffle
         self.assm = assm
-        
+
         path = os.path.join(gene_exp,'train_embedding_121.txt')
         print(path)
         with open(path) as f:
             all_gene=f.readlines()
-            
-        print("Finish gene exp loading")    
-        
+
+        print("Finish gene exp loading")
+
         self.all_gene = [list(map(float, emb.split())) for emb in all_gene] #LIST[LIST]
-        
-        
-        
+
+
+
         print("Len(all_gen) is {}".format(len(self.all_gene)))
-        
-        
+
+
         if replicate is not None: #expand is int
             self.data_files = self.data_files * replicate
 
@@ -114,27 +114,27 @@ class MolTreeFolderMLP(object):
             fn = os.path.join(self.data_folder, fn)
             with open(fn) as f:
                 data = pickle.load(f)
-            
-            gene = self.all_gene[idx:idx+len(data)] 
+
+            gene = self.all_gene[idx:idx+len(data)]
             idx = idx + len(data)
-            
+
             if len(data) != len(gene):
                 print("len(data) != len(gene)")
-            
-            if self.shuffle: 
+
+            if self.shuffle:
                 #random.shuffle(data) #shuffle data before batch
                 indices = np.arange(len(data))
                 np.random.shuffle(indices)
                 data = np.array(data)[indices]
                 data = list(data)
-                
+
                 gene = np.array(gene)[indices]
                 gene = list(gene)
-                
+
             batches = [data[i : i + self.batch_size] for i in xrange(0, len(data), self.batch_size)]
             if len(batches[-1]) < self.batch_size:
                 batches.pop()
-            
+
             gene_batches = [gene[i : i + self.batch_size] for i in xrange(0, len(gene), self.batch_size)]
             if len(gene_batches[-1]) < self.batch_size:
                 gene_batches.pop()
@@ -157,7 +157,7 @@ class PairTreeDataset(Dataset):
 
     def __len__(self):
         return len(self.data)
-    
+
     def __getitem__(self, idx):
         batch0, batch1 = zip(*self.data[idx])
         return tensorize(batch0, self.vocab, assm=False), tensorize(batch1, self.vocab, assm=self.y_assm)
@@ -171,7 +171,7 @@ class MolTreeDataset(Dataset):
 
     def __len__(self):
         return len(self.data)
-    
+
     def __getitem__(self, idx):
         return tensorize(self.data[idx], self.vocab, assm=self.assm)
 
