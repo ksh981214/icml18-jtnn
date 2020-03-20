@@ -109,19 +109,10 @@ args = parser.parse_args()
 print args
 
 '''
-    pre_model loading
+    model initializing
 '''
 vocab = [x.strip("\r\n ") for x in open(args.vocab)]
 vocab = Vocab(vocab)
-
-pre_vocab = [x.strip("\r\n ") for x in open(args.pre_vocab_dir)]
-pre_vocab = Vocab(pre_vocab)
-
-pre_model = JTNNVAE(pre_vocab, args.hidden_size, args.latent_size, args.depthT, args.depthG)
-
-pre_model.load_state_dict(torch.load(args.pre_model_dir))
-print("{} loading finish".format(args.pre_model_dir))
-
 model = JTNNVAEMLP(vocab, args.hidden_size, args.latent_size, args.depthT, args.depthG).cuda()
 
 for param in model.parameters():
@@ -135,6 +126,18 @@ if args.load_epoch > 0:
     print("load model.iter-{}".format(str(args.load_epoch)))
 
 else:
+    '''
+        pre_model loading
+    '''
+
+    pre_vocab = [x.strip("\r\n ") for x in open(args.pre_vocab_dir)]
+    pre_vocab = Vocab(pre_vocab)
+
+    pre_model = JTNNVAE(pre_vocab, args.hidden_size, args.latent_size, args.depthT, args.depthG)
+
+    pre_model.load_state_dict(torch.load(args.pre_model_dir))
+    print("{} loading finish".format(args.pre_model_dir))
+
     '''
         Modeal Parameter Loading
     '''
@@ -177,7 +180,7 @@ scheduler.step()
 param_norm = lambda m: math.sqrt(sum([p.norm().item() ** 2 for p in m.parameters()]))
 grad_norm = lambda m: math.sqrt(sum([p.grad.norm().item() ** 2 for p in m.parameters() if p.grad is not None]))
 
-total_step = args.load_epoch
+total_step = 0
 beta = args.beta
 meters = np.zeros(7)
 
@@ -265,6 +268,7 @@ for epoch in xrange(args.epoch):
 #                 torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(total_step+args.load_epoch))
 #             else:
 #                 torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(total_step))
+
 
         if total_step % args.anneal_iter == 0:
             scheduler.step()
