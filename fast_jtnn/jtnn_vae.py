@@ -46,6 +46,16 @@ class JTNNVAE(nn.Module):
         _, jtenc_holder, mpn_holder = tensorize(tree_batch, self.vocab, assm=False)
         tree_vecs, _, mol_vecs = self.encode(jtenc_holder, mpn_holder)
         return torch.cat([tree_vecs, mol_vecs], dim=-1)
+    
+    def encode_latent_from_smiles(self, smiles_list):
+        tree_batch = [MolTree(s) for s in smiles_list]
+        _, jtenc_holder, mpn_holder = tensorize(tree_batch, self.vocab, assm=False)
+        tree_vecs, _, mol_vecs = self.encode(jtenc_holder, mpn_holder)
+        
+        z_tree_vecs,_ = self.rsample(tree_vecs, self.T_mean, self.T_var)
+        z_mol_vecs,_ = self.rsample(mol_vecs, self.G_mean, self.G_var)
+
+        return torch.cat([z_tree_vecs, z_mol_vecs], dim=-1)
 
     def encode_latent(self, jtenc_holder, mpn_holder):
         tree_vecs, _ = self.jtnn(*jtenc_holder)
