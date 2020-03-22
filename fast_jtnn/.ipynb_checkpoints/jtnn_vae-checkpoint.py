@@ -46,16 +46,6 @@ class JTNNVAE(nn.Module):
         _, jtenc_holder, mpn_holder = tensorize(tree_batch, self.vocab, assm=False)
         tree_vecs, _, mol_vecs = self.encode(jtenc_holder, mpn_holder)
         return torch.cat([tree_vecs, mol_vecs], dim=-1)
-    
-    def encode_latent_from_smiles(self, smiles_list):
-        tree_batch = [MolTree(s) for s in smiles_list]
-        _, jtenc_holder, mpn_holder = tensorize(tree_batch, self.vocab, assm=False)
-        tree_vecs, _, mol_vecs = self.encode(jtenc_holder, mpn_holder)
-        
-        z_tree_vecs,_ = self.rsample(tree_vecs, self.T_mean, self.T_var)
-        z_mol_vecs,_ = self.rsample(mol_vecs, self.G_mean, self.G_var)
-
-        return torch.cat([z_tree_vecs, z_mol_vecs], dim=-1)
 
     def encode_latent(self, jtenc_holder, mpn_holder):
         tree_vecs, _ = self.jtnn(*jtenc_holder)
@@ -89,9 +79,8 @@ class JTNNVAE(nn.Module):
         kl_div = tree_kl + mol_kl
         word_loss, topo_loss, word_acc, topo_acc = self.decoder(x_batch, z_tree_vecs)
         assm_loss, assm_acc = self.assm(x_batch, x_jtmpn_holder, z_mol_vecs, x_tree_mess)
-        
-        
-        return word_loss + topo_loss + assm_loss + beta * kl_div, kl_div.item(), word_acc, topo_acc, assm_acc, word_loss, topo_loss, assm_loss
+
+        return word_loss + topo_loss + assm_loss + beta * kl_div, kl_div.item(), word_acc, topo_acc, assm_acc
 
     def assm(self, mol_batch, jtmpn_holder, x_mol_vecs, x_tree_mess):
         jtmpn_holder,batch_idx = jtmpn_holder

@@ -68,6 +68,16 @@ class JTNNVAEMLP(nn.Module):
         mol_var = -torch.abs(self.G_var(mol_vecs))
         return torch.cat([tree_mean, mol_mean], dim=1), torch.cat([tree_var, mol_var], dim=1)
 
+    # def encode_latent_mean(self, smiles_list):
+    #     mol_batch = [MolTree(s) for s in smiles_list]
+    #     for mol_tree in mol_batch:
+    #         mol_tree.recover()
+    #
+    #     _, tree_vec, mol_vec = self.encode(mol_batch)
+    #     tree_mean = self.T_mean(tree_vec)
+    #     mol_mean = self.G_mean(mol_vec)
+    #     return torch.cat([tree_mean,mol_mean], dim=1)
+
     def rsample(self, z_vecs, W_mean, W_var):
         batch_size = z_vecs.size(0)
         z_mean = W_mean(z_vecs)
