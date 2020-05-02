@@ -24,6 +24,10 @@ matplotlib.use('Agg')
 from matplotlib import pyplot as plt
 import os # for save plot
 
+#for debug
+from pympler import muppy, summary
+import pandas as pd
+
 def save_KL_plt(save_dir, epoch, x, kl):
     plt.plot(x, kl)
     plt.xlabel('Iteration')
@@ -170,12 +174,12 @@ else:
             model.state_dict()['jtnn.embedding.weight'][vocab_dict[w]] = pre_model.state_dict()['jtnn.embedding.weight'][pre_vocab_dict[w]]
     print("Finish Embedding Loading")
 
-
+    del(pre_vocab, pre_model, pre_model_dict, clear_pre_model_dict, pre_vocab_dict)
 print "Model #Params: %dK" % (sum([x.nelement() for x in model.parameters()]) / 1000,)
 
 optimizer = optim.Adam(model.parameters(), lr=args.lr)
 scheduler = lr_scheduler.ExponentialLR(optimizer, args.anneal_rate)
-scheduler.step()
+# scheduler.step()
 
 param_norm = lambda m: math.sqrt(sum([p.norm().item() ** 2 for p in m.parameters()]))
 grad_norm = lambda m: math.sqrt(sum([p.grad.norm().item() ** 2 for p in m.parameters() if p.grad is not None]))
@@ -188,30 +192,21 @@ d=datetime.now()
 now = str(d.year)+'_'+str(d.month)+'_'+str(d.day)+'_'+str(d.hour)+'_'+str(d.minute)
 
 if args.load_epoch != 0:
-    folder_name = "h" + str(args.hidden_size) + '_' + "bs" + str(args.batch_size) + '_' + now + "_from_" +str(args.load_epoch)
+    folder_name = "f_" + "h" + str(args.hidden_size) + '_' + "bs" + str(args.batch_size) + '_' + now + "_from_" +str(args.load_epoch)
 else:
-    folder_name = "h" + str(args.hidden_size) + '_' + "bs" + str(args.batch_size) + '_' + now
+    folder_name = "f_" + "h" + str(args.hidden_size) + '_' + "bs" + str(args.batch_size) + '_' + now
 
-os.makedirs('./plot/'+folder_name+'/KL')        #KL
-os.makedirs('./plot/'+folder_name+'/Acc')       #Word, Topo, Assm
-os.makedirs('./plot/'+folder_name+'/Norm')      #PNorm, GNorm
-os.makedirs('./plot/'+folder_name+'/Loss')      #Word, Topo, Assm LOSS
-os.makedirs('./plot/'+folder_name+'/Beta')      #Word, Topo, Assm LOSS
-print("...Finish Making Plot Folder...")
-#Plot
-x_plot=[]
-kl_plot=[]
-word_plot=[]
-topo_plot=[]
-assm_plot=[]
-pnorm_plot=[]
-gnorm_plot=[]
-beta_plot=[]
-wloss_plot=[]
-tloss_plot=[]
-aloss_plot=[]
+# os.makedirs('./plot/'+folder_name+'/KL')        #KL
+# os.makedirs('./plot/'+folder_name+'/Acc')       #Word, Topo, Assm
+# os.makedirs('./plot/'+folder_name+'/Norm')      #PNorm, GNorm
+# os.makedirs('./plot/'+folder_name+'/Loss')      #Word, Topo, Assm LOSS
+# os.makedirs('./plot/'+folder_name+'/Beta')      #Word, Topo, Assm LOSS
+# print("...Finish Making Plot Folder...")
 
 for epoch in xrange(args.epoch):
+    # x_plot,kl_plot,word_plot, topo_plot, assm_plot, pnorm_plot, gnorm_plot, beta_plot, wloss_plot, tloss_plot, aloss_plot =[],[],[],[],[],[],[],[],[],[],[]
+    meters *= 0
+
     start = datetime.now()
     print("EPOCH: %d | TIME: %s " % (epoch+1, str(start)))
 
@@ -220,7 +215,7 @@ for epoch in xrange(args.epoch):
         total_step += 1
         try:
             model.zero_grad()
-            loss, kl_div, wacc, tacc, sacc, word_loss, topo_loss, assm_loss = model(batch, gene_batch,  beta)
+            loss, kl_div, wacc, tacc, sacc, word_loss, topo_loss, assm_loss = model(batch, gene_batch, beta)
             loss.backward()
             nn.utils.clip_grad_norm_(model.parameters(), args.clip_norm)
             optimizer.step()
@@ -245,30 +240,20 @@ for epoch in xrange(args.epoch):
             print "[%d][%d] Beta: %.6f, KL: %.2f, Word: %.2f, Topo: %.2f, Assm: %.2f, PNorm: %.2f, GNorm: %.2f" % (epoch, it+1, beta, meters[0], meters[1], meters[2], meters[3], pnorm, gnorm)
             print "Wloss: %.2f, Tloss: %.2f, Aloss: %.2f" %(meters[4], meters[5], meters[6])
 
-            x_plot.append(it+1)
-            kl_plot.append(meters[0])
-            word_plot.append(meters[1])
-            topo_plot.append(meters[2])
-            assm_plot.append(meters[3])
-            pnorm_plot.append(pnorm)
-            gnorm_plot.append(gnorm)
-            beta_plot.append(beta)
-            wloss_plot.append(meters[4])
-            tloss_plot.append(meters[5])
-            aloss_plot.append(meters[6])
+            # x_plot.append(it+1)
+            # kl_plot.append(meters[0])
+            # word_plot.append(meters[1])
+            # topo_plot.append(meters[2])
+            # assm_plot.append(meters[3])
+            # pnorm_plot.append(pnorm)
+            # gnorm_plot.append(gnorm)
+            # beta_plot.append(beta)
+            # wloss_plot.append(meters[4])
+            # tloss_plot.append(meters[5])
+            # aloss_plot.append(meters[6])
 
             sys.stdout.flush()
             meters *= 0
-
-#         if total_step / args.print_iter == 3:
-#             break
-
-#         if total_step % args.save_iter == 0:
-#             if args.load_epoch != 0:
-#                 torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(total_step+args.load_epoch))
-#             else:
-#                 torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(total_step))
-
 
         if total_step % args.anneal_iter == 0:
             scheduler.step()
@@ -277,6 +262,17 @@ for epoch in xrange(args.epoch):
         if total_step % args.kl_anneal_iter == 0 and total_step >= args.warmup:
             beta = min(args.max_beta, beta + args.step_beta)
 
+        if (it+1) % 1000 == 0:
+            all_objects = muppy.get_objects()
+            sum1 = summary.summarize(all_objects)
+            # Prints out a summary of the large objects
+            summary.print_(sum1)
+            # Get references to certain types of objects such as dataframe
+            dataframes = [ao for ao in all_objects if isinstance(ao, pd.DataFrame)]
+            for d in dataframes:
+                print d.columns.values
+                print len(d)
+
     if args.load_epoch != 0:
         torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(epoch+args.load_epoch))
     else:
@@ -284,19 +280,9 @@ for epoch in xrange(args.epoch):
 
     #Plot per 1 epoch
     print "Cosume Time per Epoch %s" % (str(datetime.now()-start))
-    save_KL_plt(folder_name, epoch, x_plot, kl_plot)
-    save_Acc_plt(folder_name, epoch, x_plot, word_plot, topo_plot, assm_plot)
-    save_Norm_plt(folder_name, epoch, x_plot, pnorm_plot, gnorm_plot)
-    save_Loss_plt(folder_name, epoch, x_plot, wloss_plot, tloss_plot, aloss_plot)
-    save_Beta_plt(folder_name, epoch, x_plot, beta_plot)
-    x_plot=[]
-    kl_plot=[]
-    word_plot=[]
-    topo_plot=[]
-    assm_plot=[]
-    pnorm_plot=[]
-    gnorm_plot=[]
-    beta_plot=[]
-    wloss_plot=[]
-    tloss_plot=[]
-    aloss_plot=[]
+    # save_KL_plt(folder_name, epoch, x_plot, kl_plot)
+    # save_Acc_plt(folder_name, epoch, x_plot, word_plot, topo_plot, assm_plot)
+    # save_Norm_plt(folder_name, epoch, x_plot, pnorm_plot, gnorm_plot)
+    # save_Loss_plt(folder_name, epoch, x_plot, wloss_plot, tloss_plot, aloss_plot)
+    # save_Beta_plt(folder_name, epoch, x_plot, beta_plot)
+    # del(x_plot,kl_plot,word_plot, topo_plot, assm_plot, pnorm_plot, gnorm_plot, beta_plot, wloss_plot, tloss_plot, aloss_plot)
