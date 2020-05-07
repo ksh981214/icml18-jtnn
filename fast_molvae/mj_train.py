@@ -12,16 +12,15 @@ import numpy as np
 import argparse
 from collections import deque
 import cPickle as pickle
+import pdb
 
 from fast_jtnn import *
-from fast_jtnn.jtnn_mj import *
-from fast_jtnn.datautils import *
 import rdkit
 
 from datetime import datetime
 import matplotlib
 matplotlib.use('Agg')
-from matplotlib import pyplot as plt
+#from matplotlib import pyplot as plt
 import os # for save plot
 
 #for debug
@@ -79,7 +78,7 @@ lg.setLevel(rdkit.RDLogger.CRITICAL)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--train', required=True)
-parser.add_argument('--neg_mols', required=True) ##
+parser.add_argument('--num_neg_folder', type=int, required=True) ##
 parser.add_argument('--gene', required=True)
 parser.add_argument('--vocab', required=True)
 parser.add_argument('--save_dir', required=True)
@@ -107,7 +106,12 @@ parser.add_argument('--anneal_rate', type=float, default=0.9)
 parser.add_argument('--anneal_iter', type=int, default=40000)
 parser.add_argument('--kl_anneal_iter', type=int, default=2000)
 parser.add_argument('--print_iter', type=int, default=50)
-#parser.add_argument('--save_iter', type=int, default=5000)
+parser.add_argument('--save_iter', type=int, default=5000)
+
+## !! Need for GPU
+parser.add_argument('--debug', type=int, default=1)
+import gc
+## !! Need for GPU
 
 
 args = parser.parse_args()
@@ -118,6 +122,7 @@ print args
 '''
 vocab = [x.strip("\r\n ") for x in open(args.vocab)]
 vocab = Vocab(vocab)
+#model = JTNNVAEMJ(vocab, args.hidden_size, args.latent_size, args.depthT, args.depthG).cuda()
 model = JTNNVAEMJ(vocab, args.hidden_size, args.latent_size, args.depthT, args.depthG).cuda()
 
 for param in model.parameters():
@@ -188,7 +193,6 @@ grad_norm = lambda m: math.sqrt(sum([p.grad.norm().item() ** 2 for p in m.parame
 total_step = 0
 beta = args.beta
 meters = np.zeros(8)
-
 d=datetime.now()
 now = str(d.year)+'_'+str(d.month)+'_'+str(d.day)+'_'+str(d.hour)+'_'+str(d.minute)
 
@@ -203,15 +207,16 @@ else:
 # os.makedirs('./plot/'+folder_name+'/Loss')      #Word, Topo, Assm LOSS
 # os.makedirs('./plot/'+folder_name+'/Beta')      #Word, Topo, Assm LOSS
 # print("...Finish Making Plot Folder...")
-
+#pdb.set_trace()
 for epoch in xrange(args.epoch):
     # x_plot,kl_plot,word_plot, topo_plot, assm_plot, pnorm_plot, gnorm_plot, beta_plot, wloss_plot, tloss_plot, aloss_plot =[],[],[],[],[],[],[],[],[],[],[]
     meters *= 0
 
     start = datetime.now()
     print("EPOCH: %d | TIME: %s " % (epoch+1, str(start)))
+    loader = MolTreeFolderMJ(args.train, args.num_neg_folder, args.gene, vocab, args.batch_size, num_workers=4)
+    #pdb.set_trace()
 
-    loader = MolTreeFolderMJ(args.train, args.neg_mols, args.gene, vocab, args.batch_size, num_workers=4)
     for it, (batch, gene_batch, label_batch) in enumerate(loader):
         total_step += 1
         try:
@@ -256,6 +261,9 @@ for epoch in xrange(args.epoch):
             sys.stdout.flush()
             meters *= 0
 
+        if total_step % args.save_iter == 0:
+            torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(total_step))
+
         if total_step % args.anneal_iter == 0:
             scheduler.step()
             print "learning rate: %.6f" % scheduler.get_lr()[0]
@@ -263,21 +271,33 @@ for epoch in xrange(args.epoch):
         if total_step % args.kl_anneal_iter == 0 and total_step >= args.warmup:
             beta = min(args.max_beta, beta + args.step_beta)
 
-        if (it+1) % 1000 == 0:
-            all_objects = muppy.get_objects()
-            sum1 = summary.summarize(all_objects)
-            # Prints out a summary of the large objects
-            summary.print_(sum1)
-            # Get references to certain types of objects such as dataframe
-            dataframes = [ao for ao in all_objects if isinstance(ao, pd.DataFrame)]
-            for d in dataframes:
-                print d.columns.values
-                print len(d)
+        ## !! Need for GPU
+        if total_step % args.debug == 0:
+            for obj in gc.get_objects():
+                try:
+                    if torch.is_tensor(obj) or (hasattr(obj, 'data') and torch.is_tensor(obj.data)):
+                        del obj
+                except:
+                    pass
+            torch.cuda.empty_cache()
+        ## !! Need for GPU
+
+        # if (it+1) % 10 == 0:
+        #     all_objects = muppy.get_objects()
+        #     sum1 = summary.summarize(all_objects)
+        #     # Prints out a summary of the large objects
+        #     summary.print_(sum1)
+        #     # Get references to certain types of objects such as dataframe
+        #     dataframes = [ao for ao in all_objects if isinstance(ao, pd.DataFrame)]
+        #     for d in dataframes:
+        #             print d.columns.values
+        #         print len(d)
+
 
     if args.load_epoch != 0:
-        torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(epoch+args.load_epoch))
+        torch.save(model.state_dict(), args.save_dir + "/model.epoch-" + str(epoch+args.load_epoch))
     else:
-        torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(epoch))
+        torch.save(model.state_dict(), args.save_dir + "/model.epoch-" + str(epoch))
 
     #Plot per 1 epoch
     print "Cosume Time per Epoch %s" % (str(datetime.now()-start))

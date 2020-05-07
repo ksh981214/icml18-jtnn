@@ -47,7 +47,7 @@ class JTNNVAEMJ(nn.Module):
 
         self.tree_mlp = nn.Linear(latent_size, hidden_size)
         self.mol_mlp = nn.Linear(latent_size, hidden_size)
-        
+
         self.cos = nn.CosineSimilarity()
         if loss_type=='L1':
             self.cos_loss = torch.nn.L1Loss(reduction='elementwise_mean')
@@ -104,10 +104,10 @@ class JTNNVAEMJ(nn.Module):
 
         z_tree_vecs,tree_kl = self.rsample(x_tree_vecs, self.T_mean, self.T_var)
         z_mol_vecs,mol_kl = self.rsample(x_mol_vecs, self.G_mean, self.G_var)
-        
+
         #decode a junction tree T from z_T
         word_loss, topo_loss, word_acc, topo_acc = self.decoder(x_batch, z_tree_vecs)
-               
+
         #Reproduce a molecular graph G that underlies the predicted junction tree T^(여러개중에 고름)
         assm_loss, assm_acc = self.assm(x_batch, x_jtmpn_holder, z_mol_vecs, x_tree_mess)
 
@@ -121,14 +121,18 @@ class JTNNVAEMJ(nn.Module):
         '''
         gene_batch = torch.tensor(gene_batch, dtype=torch.float32).cuda() # b.s * 978
         gene_batch = self.gene_mlp(gene_batch) # b.s * 978 --> b.s * (2 * hidden_size)
-        
+
         z_hat_tree_vecs = self.tree_mlp(z_tree_vecs) #b.s * latent_size --> b.s * hidden_size
         z_hat_mol_vecs = self.mol_mlp(z_mol_vecs) #b.s * latent_size --> b.s * hidden_size
         z_hat = torch.cat([z_hat_tree_vecs, z_hat_mol_vecs], dim=-1) # b.s * (2* hidden_size)
-        
+
         cos_result = self.cos(gene_batch, z_hat) #b.s
-        cos_loss = self.cos_loss(torch.tensor(label_batch).cuda(), cos_result) # scalar
-        
+
+        #print(cos_result.unsqueeze(1).shape)
+        #print(torch.tensor(label_batch).unsqueeze(1).shape)
+        cos_loss = self.cos_loss(torch.tensor(label_batch).unsqueeze(1).cuda(), cos_result.unsqueeze(1)) / len(label_batch) # scalar
+        #print(cos_loss)
+        #print()
         #Normalization among the losses
         '''
             Some Code

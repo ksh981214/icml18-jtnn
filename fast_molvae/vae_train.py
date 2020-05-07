@@ -21,6 +21,7 @@ import matplotlib
 matplotlib.use('Agg')
 #from matplotlib import pyplot as plt
 import os # for save plot
+import gc
 
 #for debug
 from pympler import muppy, summary
@@ -97,7 +98,7 @@ parser.add_argument('--anneal_rate', type=float, default=0.9)
 parser.add_argument('--anneal_iter', type=int, default=40000)
 parser.add_argument('--kl_anneal_iter', type=int, default=2000)
 parser.add_argument('--print_iter', type=int, default=50)
-#parser.add_argument('--save_iter', type=int, default=5000)
+parser.add_argument('--save_iter', type=int, default=5000)
 
 ## !! Need for GPU
 parser.add_argument('--debug', type=int, default=1)
@@ -162,23 +163,23 @@ for epoch in xrange(args.epoch):
     loader = MolTreeFolder(args.train, vocab, args.batch_size, num_workers=4)
     for it, batch in enumerate(loader):
         total_step += 1
-        # try:
-        #     model.zero_grad()
-        #     loss, kl_div, wacc, tacc, sacc, word_loss, topo_loss, assm_loss = model(batch, beta)
-        #     loss.backward()
-        #     nn.utils.clip_grad_norm_(model.parameters(), args.clip_norm)
-        #     optimizer.step()
-        # except Exception as e:
-        #     print e
-        #     continue
+        try:
+            model.zero_grad()
+            loss, kl_div, wacc, tacc, sacc, word_loss, topo_loss, assm_loss = model(batch, beta)
+            loss.backward()
+            nn.utils.clip_grad_norm_(model.parameters(), args.clip_norm)
+            optimizer.step()
+        except Exception as e:
+            print e
+            continue
 
-        ## !! Need for GPU
-        model.zero_grad()
-        loss, kl_div, wacc, tacc, sacc, word_loss, topo_loss, assm_loss = model(batch, beta)
-        loss.backward()
-        nn.utils.clip_grad_norm_(model.parameters(), args.clip_norm)
-        optimizer.step()
-        ## !! Need for GPU
+        # ## !! Need for GPU
+        # model.zero_grad()
+        # loss, kl_div, wacc, tacc, sacc, word_loss, topo_loss, assm_loss = model(batch, beta)
+        # loss.backward()
+        # nn.utils.clip_grad_norm_(model.parameters(), args.clip_norm)
+        # optimizer.step()
+        # ## !! Need for GPU
 
         meters = meters + np.array([kl_div, wacc * 100, tacc * 100, sacc * 100, word_loss, topo_loss, assm_loss])
         '''
@@ -212,16 +213,18 @@ for epoch in xrange(args.epoch):
             sys.stdout.flush()
             meters *= 0
 
-        if (it+1) % 100 == 0:
-            all_objects = muppy.get_objects()
-            sum1 = summary.summarize(all_objects)
-            # Prints out a summary of the large objects
-            summary.print_(sum1)
-            # Get references to certain types of objects such as dataframe
-            dataframes = [ao for ao in all_objects if isinstance(ao, pd.DataFrame)]
-            for d in dataframes:
-                print d.columns.values
-                print len(d)
+        # if (it+1) % 100 == 0:
+        #     all_objects = muppy.get_objects()
+        #     sum1 = summary.summarize(all_objects)
+        #     # Prints out a summary of the large objects
+        #     summary.print_(sum1)
+        #     # Get references to certain types of objects such as dataframe
+        #     dataframes = [ao for ao in all_objects if isinstance(ao, pd.DataFrame)]
+        #     for d in dataframes:
+        #         print d.columns.values
+        #         print len(d)
+        if total_step % args.save_iter == 0:
+            torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(total_step))
 
         if total_step % args.anneal_iter == 0:
             scheduler.step()
@@ -247,7 +250,7 @@ for epoch in xrange(args.epoch):
         torch.save(model.state_dict(), args.save_dir + "/model.iter-" + str(epoch))
 
     #Plot per 1 epoch
-    print "Cosume Time per Epoch %s" % (str(datetime.now()-start))
+    print "Consume Time per Epoch %s" % (str(datetime.now()-start))
     # save_KL_plt(folder_name, epoch, x_plot, kl_plot)
     # save_Acc_plt(folder_name, epoch, x_plot, word_plot, topo_plot, assm_plot)
     # save_Norm_plt(folder_name, epoch, x_plot, pnorm_plot, gnorm_plot)

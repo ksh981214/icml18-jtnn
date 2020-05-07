@@ -14,8 +14,6 @@ from collections import deque
 import cPickle as pickle
 
 from fast_jtnn import *
-from fast_jtnn.jtnn_f import *
-from fast_jtnn.datautils import *
 import rdkit
 
 from datetime import datetime
